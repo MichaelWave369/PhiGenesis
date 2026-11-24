@@ -14,13 +14,13 @@ An experimental research project into language-free relational computation and t
 | 004 | Transfer and negative transfer |
 | 005 | Reusable symbols through grammar induction |
 | 006 | Learned signaling and compositional transfer |
-| 007 | Executable relational composition (planned) |
-| 008 | Bounded architecture comparison (planned) |
+| 007 | Executable relational composition ([Φ007](docs/phi007.md)) |
+| 008 | Bounded architecture selection ([Φ008](docs/phi008.md)) |
 | 009 | Open-ended discovery (planned) |
 
 ## Run
 
-Python 3.10+; NumPy for 001–004 and 006. From the repository root:
+Python 3.10+; NumPy for 001–004, 006 and 008. From the repository root:
 
 ```sh
 python -m pip install -r requirements.txt
@@ -29,6 +29,8 @@ python experiments/phi_genesis_002.py
 python experiments/phi_genesis_004.py --output results/phi_genesis_004_results.json
 python experiments/phi_genesis_005.py --output results/phi_genesis_005_results.json
 python experiments/phi_genesis_006.py --output results/phi_genesis_006_results.json
+python experiments/phi_genesis_007.py --output results/phi_genesis_007_results.json
+python experiments/phi_genesis_008.py --output results/phi_genesis_008_results.json
 python -m unittest discover -s tests -v
 ```
 

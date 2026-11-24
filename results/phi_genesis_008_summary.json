@@ -1,0 +1,46 @@
+{
+  "seeds_per_regime": 90,
+  "worlds": 360,
+  "train": 64,
+  "validation": 32,
+  "test": 160,
+  "familiar_correct_selection": 270,
+  "familiar_rejected": 1,
+  "novel_rejected": 90,
+  "familiar_mean_mse": {
+    "linear": 0.6389167056585555,
+    "quadratic": 0.3535963153022791,
+    "lookup": 0.575889267556749,
+    "selected": 0.014756893741028957,
+    "constant": 1.0634172614216901
+  },
+  "novel_mean_mse": {
+    "linear": 1.1702733523977198,
+    "quadratic": 2.624321727997534,
+    "lookup": 1.4410275217288047,
+    "selected": 1.196438924750137,
+    "constant": 1.0486508431050217
+  },
+  "selected_counts": {
+    "linear": {
+      "linear": 90,
+      "quadratic": 0,
+      "lookup": 0
+    },
+    "quadratic": {
+      "linear": 0,
+      "quadratic": 90,
+      "lookup": 0
+    },
+    "lookup": {
+      "linear": 0,
+      "quadratic": 0,
+      "lookup": 90
+    },
+    "novel": {
+      "linear": 80,
+      "quadratic": 0,
+      "lookup": 10
+    }
+  }
+}
