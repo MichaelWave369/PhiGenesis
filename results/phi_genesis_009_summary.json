@@ -1,0 +1,59 @@
+{
+  "seeds_per_regime": 90,
+  "worlds": 360,
+  "train": 112,
+  "validation": 48,
+  "test": 96,
+  "generated_library_size": 163,
+  "fixed_quadratic_library_size": 37,
+  "summary": {
+    "sparse_composed": {
+      "mean_test_mse": {
+        "generated_sparse": 0.0000941455590962389,
+        "fixed_quadratic_sparse": 0.6911094340636328,
+        "dense_library_ridge": 0.5907710272048493,
+        "constant": 1.0334027946538984
+      },
+      "generated_rejections": 0,
+      "exact_support": 90,
+      "contains_support": 90,
+      "mean_generated_terms": 3
+    },
+    "low_degree": {
+      "mean_test_mse": {
+        "generated_sparse": 0.00008989541584784408,
+        "fixed_quadratic_sparse": 0.00008989541584784408,
+        "dense_library_ridge": 0.5971704839613716,
+        "constant": 1.0281672881527022
+      },
+      "generated_rejections": 0,
+      "exact_support": 90,
+      "contains_support": 90,
+      "mean_generated_terms": 3
+    },
+    "unreachable": {
+      "mean_test_mse": {
+        "generated_sparse": 1.0219354726744263,
+        "fixed_quadratic_sparse": 1.0257480246193655,
+        "dense_library_ridge": 6.324666796274916,
+        "constant": 1.0187308326650542
+      },
+      "generated_rejections": 90,
+      "exact_support": 0,
+      "contains_support": 0,
+      "mean_generated_terms": 0.022222222222222223
+    },
+    "noise": {
+      "mean_test_mse": {
+        "generated_sparse": 1.0328032657679247,
+        "fixed_quadratic_sparse": 1.0374744223717218,
+        "dense_library_ridge": 2.599521063900592,
+        "constant": 1.016281085703336
+      },
+      "generated_rejections": 90,
+      "exact_support": 0,
+      "contains_support": 0,
+      "mean_generated_terms": 0.23333333333333334
+    }
+  }
+}
