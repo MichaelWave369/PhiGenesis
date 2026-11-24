@@ -1,0 +1,28 @@
+{
+  "seeds": 90,
+  "composites_per_seed": 9,
+  "totals": {
+    "composed": 23490,
+    "transferred": 23490,
+    "cold": 23490,
+    "unaligned": 812,
+    "nonlinear_detected": 810,
+    "corrupted_detected": 792,
+    "cases": 23490
+  },
+  "accuracy": {
+    "composed": 1,
+    "transferred": 1,
+    "cold": 1,
+    "unaligned": 0.0345679012345679
+  },
+  "detection": {
+    "nonlinear_detected": 1,
+    "corrupted_detected": 0.9777777777777777
+  },
+  "observations_per_seed": {
+    "sender_primitives": 6,
+    "bridge_pairs": 2,
+    "cold_composites": 18
+  }
+}
