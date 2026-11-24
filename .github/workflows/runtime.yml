@@ -1,0 +1,27 @@
+name: Genesis Field runtime
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  runtime:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node runtime/cli.mjs test
+      - name: Compare reproducible report
+        run: |
+          node runtime/cli.mjs report > "$RUNNER_TEMP/field-report.json"
+          node --input-type=module -e 'import fs from "node:fs"; import assert from "node:assert/strict"; assert.deepEqual(JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+"/field-report.json")),JSON.parse(fs.readFileSync("results/genesis_field_v01.json")))'
+      - name: Restart across separate processes
+        run: |
+          p="$RUNNER_TEMP/genesis-checkpoint.json"
+          node runtime/cli.mjs init "$p"
+          node runtime/cli.mjs step "$p"
+          node runtime/cli.mjs resume "$p" > "$RUNNER_TEMP/episode.json"
+          node --input-type=module -e 'import fs from "node:fs"; import assert from "node:assert/strict"; let e=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+"/episode.json")); assert.equal(e.status,"accepted"); assert.equal(e.candidate,37); assert.equal(e.used,14)'
+          node runtime/cli.mjs resume "$p" > "$RUNNER_TEMP/revisit.json"
+          node --input-type=module -e 'import fs from "node:fs"; import assert from "node:assert/strict"; let e=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+"/revisit.json")); assert.equal(e.status,"accepted"); assert.equal(e.candidate,37); assert.equal(e.used,8)'
