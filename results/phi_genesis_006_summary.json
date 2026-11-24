@@ -1,0 +1,23 @@
+{
+  "seeds": 90,
+  "steps": 6000,
+  "factorized": {
+    "seen_accuracy": 0.9916666666666667,
+    "unseen_accuracy": 0.9666666666666667,
+    "perfect_worlds": 87,
+    "unseen_successes": 87
+  },
+  "holistic": {
+    "seen_accuracy": 0.9638888888888889,
+    "unseen_accuracy": 0,
+    "perfect_worlds": 0,
+    "unseen_successes": 0
+  },
+  "random_message": {
+    "seen_accuracy": 0.11157407407407409,
+    "unseen_accuracy": 0.10740740740740742,
+    "perfect_worlds": 0,
+    "unseen_successes": 0
+  },
+  "uniform_guess_accuracy": 0.1111111111111111
+}
