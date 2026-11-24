@@ -1,0 +1,22 @@
+{
+  "experiment": "005",
+  "seeds": 90,
+  "round_trips": 540,
+  "mean_rules": 24,
+  "mean_control_rules": 0,
+  "mean_net_bit_savings": {
+    "familiar": {
+      "learned": 0.5008834350501968,
+      "shuffled_training": 0
+    },
+    "novel": {
+      "learned": -0.4799916180541176,
+      "shuffled_training": 0
+    },
+    "shuffled": {
+      "learned": -0.42257153779277834,
+      "shuffled_training": 0
+    }
+  },
+  "note": "Estimated fixed-width code length including header and dictionary, not actual packed bytes. Reproduce full per-seed results with the experiment."
+}
