@@ -18,6 +18,7 @@ An experimental research project into language-free relational computation and t
 | 008 | Bounded architecture selection ([Φ008](docs/phi008.md)) |
 | 009 | Bounded constructive discovery ([Φ009](docs/phi009.md)) |
 | 010 | Non-sovereign agency ([Φ010](docs/phi010.md)) |
+| 011 | Independent perception ([Φ011](docs/phi011.md)) |
 
 ## Run
 
@@ -34,6 +35,7 @@ python experiments/phi_genesis_007.py --output results/phi_genesis_007_results.j
 python experiments/phi_genesis_008.py --output results/phi_genesis_008_results.json
 python experiments/phi_genesis_009.py --output results/phi_genesis_009_results.json
 python experiments/phi_genesis_010.py --output results/phi_genesis_010_results.json
+python experiments/phi_genesis_011.py --output results/phi_genesis_011_results.json
 python -m unittest discover -s tests -v
 ```
 
