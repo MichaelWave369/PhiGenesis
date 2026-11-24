@@ -1,0 +1,33 @@
+name: Genesis Field v0.2
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  compositional-memory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node runtime/cli-v02.mjs test
+      - name: Compare all benchmark records
+        run: |
+          node runtime/cli-v02.mjs report > "$RUNNER_TEMP/v02-report.json"
+          node --input-type=module -e 'import fs from "node:fs"; import assert from "node:assert/strict"; assert.deepEqual(JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+"/v02-report.json")),JSON.parse(fs.readFileSync("results/genesis_field_v02.json")))'
+      - name: Cross-process compositional learning and provenance
+        run: |
+          p="$RUNNER_TEMP/v02.json"
+          node runtime/cli-v02.mjs init "$p" w1
+          node runtime/cli-v02.mjs step "$p"
+          node runtime/cli-v02.mjs resume "$p"
+          node runtime/cli-v02.mjs next "$p" w2
+          node runtime/cli-v02.mjs resume "$p"
+          node runtime/cli-v02.mjs next "$p" w3
+          node runtime/cli-v02.mjs resume "$p" > "$RUNNER_TEMP/v02-familiar.json"
+          node --input-type=module -e 'import fs from "node:fs"; import assert from "node:assert/strict"; let e=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+"/v02-familiar.json")); assert.equal(e.status,"accepted"); assert.equal(e.initialMode,"memory"); assert.equal(e.fallback,false); assert.deepEqual(e.candidate,{bias:1,terms:[3,6]})'
+          node runtime/cli-v02.mjs next "$p" w4
+          node runtime/cli-v02.mjs resume "$p"
+          node runtime/cli-v02.mjs inspect "$p" > "$RUNNER_TEMP/v02-state.json"
+          node --input-type=module -e 'import fs from "node:fs"; import assert from "node:assert/strict"; let s=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+"/v02-state.json")); assert.equal(s.episode.status,"accepted"); assert.equal(s.episode.fallback,true); assert.deepEqual(s.worlds.w4.rule,{bias:0,terms:[3,12]}); assert.equal(s.library[3].provenance.length,3); assert.equal(s.library[12].provenance.length,1)'
