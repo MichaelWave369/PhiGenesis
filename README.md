@@ -41,6 +41,10 @@ python -m unittest discover -s tests -v
 
 Two independently initialized tabular policies learn a signaling game from scalar success feedback. Their local attribute labels are independently permuted. One of nine attribute combinations is held out per trial. Both variants have nine possible messages: the factorized policy has two three-symbol slots, the holistic policy has one nine-symbol slot. Frozen greedy evaluation across 90 trials (one deterministic RNG stream) after 6,000 training rounds per trial yields 99.17% familiar and 96.67% held-out accuracy for the factorized policy; 96.39% and 0% for holistic; 11.16% and 10.74% for uniform random messages passed to the trained factorized receiver. Three factorized trials fail the held-out case. The factorization, reward and action space are supplied, not discovered; the two variants have different parameter counts and inductive biases. This tests compositional generalization to held-out combinations, not novel attributes, spontaneous syntax, or general intelligence. The holistic table has untrained rows for held-out inputs and never receives a reward for the held-out output. Stronger baselines and randomized factor assignments are future work. Summary is in results/phi_genesis_006_summary.json; full per-trial output can be regenerated.
 
+## Genesis Field v0.1
+
+First integrated runtime: `node runtime/cli.mjs test` or `node runtime/cli.mjs report` (Node 22). See [protocol, persistence and results](docs/genesis-field-v01.md). Integrates active discovery, audit, revisable memory and event replay; other capabilities are not yet integrated.
+
 ## Research constraints
 
 Experiments are CPU-local, seeded, finite, and isolated from external systems. No runtime network access, self-deployment, secret access, or automatic promotion of architectural modifications. Record failed experiments, resource budgets and evaluation leakage. Use separate training and held-out observations; do not claim discoveries beyond the tested hypothesis family. Human and AI design choices are explicit and revisable.
