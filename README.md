@@ -45,6 +45,10 @@ Two independently initialized tabular policies learn a signaling game from scala
 
 First integrated runtime: `node runtime/cli.mjs test` or `node runtime/cli.mjs report` (Node 22). See [protocol, persistence and results](docs/genesis-field-v01.md). Integrates active discovery, audit, revisable memory and event replay; other capabilities are not yet integrated.
 
+## Genesis Field v0.2
+
+Compositional memory with provenance, bounded executable relationships and expanded search on contradiction: `node runtime/cli-v02.mjs test` or `node runtime/cli-v02.mjs report`. See [protocol, results and initial failed audit](docs/genesis-field-v02.md). Schema 2 is separate from v0.1; use a fresh checkpoint.
+
 ## Research constraints
 
 Experiments are CPU-local, seeded, finite, and isolated from external systems. No runtime network access, self-deployment, secret access, or automatic promotion of architectural modifications. Record failed experiments, resource budgets and evaluation leakage. Use separate training and held-out observations; do not claim discoveries beyond the tested hypothesis family. Human and AI design choices are explicit and revisable.
