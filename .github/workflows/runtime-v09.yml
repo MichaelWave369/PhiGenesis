@@ -1,0 +1,26 @@
+name: Genesis Field v0.9 validation
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node runtime/cli-v09.mjs test
+      - name: Reproduce validation record
+        run: |
+          node runtime/cli-v09.mjs summary > "$RUNNER_TEMP/v09.json"
+          node --input-type=module -e 'import fs from "node:fs"; import assert from "node:assert/strict"; assert.deepEqual(JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+"/v09.json")),JSON.parse(fs.readFileSync("results/genesis_field_v09.json")))'
+      - name: Verify the release gate remains blocked
+        run: |
+          set +e
+          node runtime/cli-v09.mjs gate > "$RUNNER_TEMP/v09-gate.json"
+          status=$?
+          set -e
+          test "$status" -eq 1
+          node --input-type=module -e 'import fs from "node:fs"; import assert from "node:assert/strict"; const r=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+"/v09-gate.json")); assert.equal(r.releaseReady,false); assert.deepEqual(r.blockers,{sparseFaultFalseAccepts:9,unrecordedAborts:9,coherentAlternativeHistories:9})'

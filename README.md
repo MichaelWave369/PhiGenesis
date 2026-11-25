@@ -77,6 +77,10 @@ Bounded value-of-information heuristic with a probe budget: `node runtime/cli-v0
 
 Integrated bounded event-sourced runtime with three persistent in-process relational libraries, verified transfer and cost-aware inquiry: `node runtime/cli-v08.mjs test` or `node runtime/cli-v08.mjs summary`. See [shared protocol, integration benchmark and limitations](docs/genesis-field-v08.md). Source acquisition is charged in full; the adaptive mode remains more expensive than cold discovery in this test. Schema-8 checkpoints replay raw evidence at episode boundaries; earlier runtimes preserved.
 
+## Genesis Field v0.9
+
+Validation milestone for unchanged v0.8: `node runtime/cli-v09.mjs test`, `node runtime/cli-v09.mjs summary`, or `node runtime/cli-v09.mjs gate` (intentionally exits 1). See [validation, failure witnesses and readiness blockers](docs/genesis-field-v09.md). Supported rules recovered under coordinate drift, but sparse unseen errors can pass admission, aborted work is not ledgered, and replay is not authentication. Diagnostic CI success is not release readiness.
+
 ## Research constraints
 
 Experiments are CPU-local, seeded, finite, and isolated from external systems. No runtime network access, self-deployment, secret access, or automatic promotion of architectural modifications. Record failed experiments, resource budgets and evaluation leakage. Use separate training and held-out observations; do not claim discoveries beyond the tested hypothesis family. Human and AI design choices are explicit and revisable.
