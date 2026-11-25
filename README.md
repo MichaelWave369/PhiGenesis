@@ -57,6 +57,10 @@ Compositional memory with provenance, bounded executable relationships and expan
 
 Three-instance bounded peer exchange, coordinate calibration and independent auditing: `node runtime/cli-v03.mjs test` or `node runtime/cli-v03.mjs report`. See [protocol and full-cost results](docs/genesis-field-v03.md). Collaboration reduces target-only observation cost but increases total cost in this benchmark. Separate in-process histories; durable multi-instance integration remains future work.
 
+## Genesis Field v0.4
+
+Cost-aware batch strategy selection using the v0.3 learner and verified exchange: `node runtime/cli-v04.mjs test` or `node runtime/cli-v04.mjs summary`. See [calibration, held-out results and complete cost accounting](docs/genesis-field-v04.md). Adaptive selection reduced evaluation observations under the declared cost scope, but calibration and historical acquisition costs can outweigh that advantage. Offline fixed-context selector, not online metacognition.
+
 ## Research constraints
 
 Experiments are CPU-local, seeded, finite, and isolated from external systems. No runtime network access, self-deployment, secret access, or automatic promotion of architectural modifications. Record failed experiments, resource budgets and evaluation leakage. Use separate training and held-out observations; do not claim discoveries beyond the tested hypothesis family. Human and AI design choices are explicit and revisable.
