@@ -1,0 +1,18 @@
+name: Absent Architect E3.1
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  e31:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node experiments/absent-architect-e31.mjs test
+      - run: |
+          node experiments/absent-architect-e31.mjs report 90 > /tmp/e31-first.json
+          node experiments/absent-architect-e31.mjs report 90 > /tmp/e31-second.json
+          cmp /tmp/e31-first.json /tmp/e31-second.json
