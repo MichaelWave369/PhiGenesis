@@ -1,0 +1,5154 @@
+{
+  "seeds": 12,
+  "rounds": 144,
+  "halfLife": 12,
+  "probeGap": 12,
+  "epsilon": 0.12,
+  "streams": {
+    "stationary": {
+      "total": {
+        "cold": 151655,
+        "memory": 167265,
+        "peer": 115934,
+        "v05": 119969,
+        "decay": 119969,
+        "probe": 125276,
+        "combined": 125276,
+        "hindsight": 115702
+      },
+      "sources": {
+        "v05": 150369,
+        "decay": 150369,
+        "probe": 130845,
+        "combined": 130845
+      },
+      "probes": {
+        "v05": 0,
+        "decay": 0,
+        "probe": 220,
+        "combined": 220
+      },
+      "phases": [
+        {
+          "rounds": 576,
+          "total": {
+            "cold": 50622,
+            "memory": 55844,
+            "peer": 38652,
+            "v05": 40637,
+            "decay": 40637,
+            "probe": 42005,
+            "combined": 42005,
+            "hindsight": 38581
+          },
+          "peerChoices": {
+            "v05": 494,
+            "decay": 494,
+            "probe": 442,
+            "combined": 442
+          }
+        },
+        {
+          "rounds": 576,
+          "total": {
+            "cold": 50458,
+            "memory": 55735,
+            "peer": 38589,
+            "v05": 39520,
+            "decay": 39520,
+            "probe": 41523,
+            "combined": 41523,
+            "hindsight": 38512
+          },
+          "peerChoices": {
+            "v05": 536,
+            "decay": 536,
+            "probe": 459,
+            "combined": 459
+          }
+        },
+        {
+          "rounds": 576,
+          "total": {
+            "cold": 50575,
+            "memory": 55686,
+            "peer": 38693,
+            "v05": 39812,
+            "decay": 39812,
+            "probe": 41748,
+            "combined": 41748,
+            "hindsight": 38609
+          },
+          "peerChoices": {
+            "v05": 525,
+            "decay": 525,
+            "probe": 452,
+            "combined": 452
+          }
+        }
+      ],
+      "exact": 27648,
+      "heldout": 82944,
+      "replays": 36,
+      "trials": [
+        {
+          "seed": 1928303117,
+          "stream": "stationary",
+          "rounds": 144,
+          "total": {
+            "cold": 12632,
+            "memory": 13901,
+            "peer": 9625,
+            "v05": 9941,
+            "decay": 9941,
+            "probe": 10393,
+            "combined": 10393,
+            "hindsight": 9607
+          },
+          "sources": {
+            "v05": 12378,
+            "decay": 12378,
+            "probe": 10674,
+            "combined": 10674
+          },
+          "choices": {
+            "v05": {
+              "cold": 9,
+              "memory": 6,
+              "peer": 129
+            },
+            "decay": {
+              "cold": 9,
+              "memory": 6,
+              "peer": 129
+            },
+            "probe": {
+              "cold": 17,
+              "memory": 16,
+              "peer": 111
+            },
+            "combined": {
+              "cold": 17,
+              "memory": 16,
+              "peer": 111
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 18,
+            "combined": 18
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4217,
+                "memory": 4641,
+                "peer": 3329,
+                "v05": 3414,
+                "decay": 3414,
+                "probe": 3497,
+                "combined": 3497,
+                "hindsight": 3325
+              },
+              "peerChoices": {
+                "v05": 43,
+                "decay": 43,
+                "probe": 38,
+                "combined": 38
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4199,
+                "memory": 4655,
+                "peer": 3144,
+                "v05": 3236,
+                "decay": 3236,
+                "probe": 3428,
+                "combined": 3428,
+                "hindsight": 3140
+              },
+              "peerChoices": {
+                "v05": 43,
+                "decay": 43,
+                "probe": 36,
+                "combined": 36
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4216,
+                "memory": 4605,
+                "peer": 3152,
+                "v05": 3291,
+                "decay": 3291,
+                "probe": 3468,
+                "combined": 3468,
+                "hindsight": 3142
+              },
+              "peerChoices": {
+                "v05": 43,
+                "decay": 43,
+                "probe": 37,
+                "combined": 37
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928368654,
+          "stream": "stationary",
+          "rounds": 144,
+          "total": {
+            "cold": 12673,
+            "memory": 13881,
+            "peer": 9644,
+            "v05": 9985,
+            "decay": 9985,
+            "probe": 10476,
+            "combined": 10476,
+            "hindsight": 9620
+          },
+          "sources": {
+            "v05": 12770,
+            "decay": 12770,
+            "probe": 11042,
+            "combined": 11042
+          },
+          "choices": {
+            "v05": {
+              "cold": 6,
+              "memory": 6,
+              "peer": 132
+            },
+            "decay": {
+              "cold": 6,
+              "memory": 6,
+              "peer": 132
+            },
+            "probe": {
+              "cold": 15,
+              "memory": 15,
+              "peer": 114
+            },
+            "combined": {
+              "cold": 15,
+              "memory": 15,
+              "peer": 114
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 18,
+            "combined": 18
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4227,
+                "memory": 4617,
+                "peer": 3223,
+                "v05": 3395,
+                "decay": 3395,
+                "probe": 3535,
+                "combined": 3535,
+                "hindsight": 3220
+              },
+              "peerChoices": {
+                "v05": 41,
+                "decay": 41,
+                "probe": 37,
+                "combined": 37
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4203,
+                "memory": 4663,
+                "peer": 3198,
+                "v05": 3267,
+                "decay": 3267,
+                "probe": 3459,
+                "combined": 3459,
+                "hindsight": 3177
+              },
+              "peerChoices": {
+                "v05": 46,
+                "decay": 46,
+                "probe": 39,
+                "combined": 39
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4243,
+                "memory": 4601,
+                "peer": 3223,
+                "v05": 3323,
+                "decay": 3323,
+                "probe": 3482,
+                "combined": 3482,
+                "hindsight": 3223
+              },
+              "peerChoices": {
+                "v05": 45,
+                "decay": 45,
+                "probe": 38,
+                "combined": 38
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928434191,
+          "stream": "stationary",
+          "rounds": 144,
+          "total": {
+            "cold": 12608,
+            "memory": 14002,
+            "peer": 9680,
+            "v05": 10061,
+            "decay": 10061,
+            "probe": 10449,
+            "combined": 10449,
+            "hindsight": 9668
+          },
+          "sources": {
+            "v05": 12455,
+            "decay": 12455,
+            "probe": 10890,
+            "combined": 10890
+          },
+          "choices": {
+            "v05": {
+              "cold": 8,
+              "memory": 8,
+              "peer": 128
+            },
+            "decay": {
+              "cold": 8,
+              "memory": 8,
+              "peer": 128
+            },
+            "probe": {
+              "cold": 17,
+              "memory": 15,
+              "peer": 112
+            },
+            "combined": {
+              "cold": 17,
+              "memory": 15,
+              "peer": 112
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 17,
+            "combined": 17
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4198,
+                "memory": 4719,
+                "peer": 3266,
+                "v05": 3417,
+                "decay": 3417,
+                "probe": 3557,
+                "combined": 3557,
+                "hindsight": 3255
+              },
+              "peerChoices": {
+                "v05": 41,
+                "decay": 41,
+                "probe": 36,
+                "combined": 36
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4201,
+                "memory": 4618,
+                "peer": 3227,
+                "v05": 3317,
+                "decay": 3317,
+                "probe": 3446,
+                "combined": 3446,
+                "hindsight": 3226
+              },
+              "peerChoices": {
+                "v05": 44,
+                "decay": 44,
+                "probe": 38,
+                "combined": 38
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4209,
+                "memory": 4665,
+                "peer": 3187,
+                "v05": 3327,
+                "decay": 3327,
+                "probe": 3446,
+                "combined": 3446,
+                "hindsight": 3187
+              },
+              "peerChoices": {
+                "v05": 43,
+                "decay": 43,
+                "probe": 38,
+                "combined": 38
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928499728,
+          "stream": "stationary",
+          "rounds": 144,
+          "total": {
+            "cold": 12663,
+            "memory": 13990,
+            "peer": 9860,
+            "v05": 10463,
+            "decay": 10463,
+            "probe": 10703,
+            "combined": 10703,
+            "hindsight": 9809
+          },
+          "sources": {
+            "v05": 11190,
+            "decay": 11190,
+            "probe": 10254,
+            "combined": 10254
+          },
+          "choices": {
+            "v05": {
+              "cold": 20,
+              "memory": 8,
+              "peer": 116
+            },
+            "decay": {
+              "cold": 20,
+              "memory": 8,
+              "peer": 116
+            },
+            "probe": {
+              "cold": 22,
+              "memory": 16,
+              "peer": 106
+            },
+            "combined": {
+              "cold": 22,
+              "memory": 16,
+              "peer": 106
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 19,
+            "combined": 19
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4221,
+                "memory": 4621,
+                "peer": 3229,
+                "v05": 3700,
+                "decay": 3700,
+                "probe": 3664,
+                "combined": 3664,
+                "hindsight": 3206
+              },
+              "peerChoices": {
+                "v05": 28,
+                "decay": 28,
+                "probe": 30,
+                "combined": 30
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4216,
+                "memory": 4738,
+                "peer": 3360,
+                "v05": 3401,
+                "decay": 3401,
+                "probe": 3547,
+                "combined": 3547,
+                "hindsight": 3332
+              },
+              "peerChoices": {
+                "v05": 46,
+                "decay": 46,
+                "probe": 39,
+                "combined": 39
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4226,
+                "memory": 4631,
+                "peer": 3271,
+                "v05": 3362,
+                "decay": 3362,
+                "probe": 3492,
+                "combined": 3492,
+                "hindsight": 3271
+              },
+              "peerChoices": {
+                "v05": 42,
+                "decay": 42,
+                "probe": 37,
+                "combined": 37
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928565265,
+          "stream": "stationary",
+          "rounds": 144,
+          "total": {
+            "cold": 12589,
+            "memory": 13959,
+            "peer": 9698,
+            "v05": 10067,
+            "decay": 10067,
+            "probe": 10477,
+            "combined": 10477,
+            "hindsight": 9675
+          },
+          "sources": {
+            "v05": 12456,
+            "decay": 12456,
+            "probe": 10925,
+            "combined": 10925
+          },
+          "choices": {
+            "v05": {
+              "cold": 6,
+              "memory": 9,
+              "peer": 129
+            },
+            "decay": {
+              "cold": 6,
+              "memory": 9,
+              "peer": 129
+            },
+            "probe": {
+              "cold": 15,
+              "memory": 16,
+              "peer": 113
+            },
+            "combined": {
+              "cold": 15,
+              "memory": 16,
+              "peer": 113
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 17,
+            "combined": 17
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4202,
+                "memory": 4688,
+                "peer": 3217,
+                "v05": 3330,
+                "decay": 3330,
+                "probe": 3445,
+                "combined": 3445,
+                "hindsight": 3217
+              },
+              "peerChoices": {
+                "v05": 44,
+                "decay": 44,
+                "probe": 39,
+                "combined": 39
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4193,
+                "memory": 4634,
+                "peer": 3211,
+                "v05": 3323,
+                "decay": 3323,
+                "probe": 3448,
+                "combined": 3448,
+                "hindsight": 3207
+              },
+              "peerChoices": {
+                "v05": 43,
+                "decay": 43,
+                "probe": 38,
+                "combined": 38
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4194,
+                "memory": 4637,
+                "peer": 3270,
+                "v05": 3414,
+                "decay": 3414,
+                "probe": 3584,
+                "combined": 3584,
+                "hindsight": 3251
+              },
+              "peerChoices": {
+                "v05": 42,
+                "decay": 42,
+                "probe": 36,
+                "combined": 36
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928630802,
+          "stream": "stationary",
+          "rounds": 144,
+          "total": {
+            "cold": 12613,
+            "memory": 13910,
+            "peer": 9473,
+            "v05": 9793,
+            "decay": 9793,
+            "probe": 10223,
+            "combined": 10223,
+            "hindsight": 9463
+          },
+          "sources": {
+            "v05": 12603,
+            "decay": 12603,
+            "probe": 11027,
+            "combined": 11027
+          },
+          "choices": {
+            "v05": {
+              "cold": 8,
+              "memory": 6,
+              "peer": 130
+            },
+            "decay": {
+              "cold": 8,
+              "memory": 6,
+              "peer": 130
+            },
+            "probe": {
+              "cold": 15,
+              "memory": 15,
+              "peer": 114
+            },
+            "combined": {
+              "cold": 15,
+              "memory": 15,
+              "peer": 114
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 18,
+            "combined": 18
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4219,
+                "memory": 4656,
+                "peer": 3187,
+                "v05": 3365,
+                "decay": 3365,
+                "probe": 3453,
+                "combined": 3453,
+                "hindsight": 3187
+              },
+              "peerChoices": {
+                "v05": 40,
+                "decay": 40,
+                "probe": 37,
+                "combined": 37
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4172,
+                "memory": 4606,
+                "peer": 3109,
+                "v05": 3161,
+                "decay": 3161,
+                "probe": 3353,
+                "combined": 3353,
+                "hindsight": 3109
+              },
+              "peerChoices": {
+                "v05": 46,
+                "decay": 46,
+                "probe": 39,
+                "combined": 39
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4222,
+                "memory": 4648,
+                "peer": 3177,
+                "v05": 3267,
+                "decay": 3267,
+                "probe": 3417,
+                "combined": 3417,
+                "hindsight": 3167
+              },
+              "peerChoices": {
+                "v05": 44,
+                "decay": 44,
+                "probe": 38,
+                "combined": 38
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928696339,
+          "stream": "stationary",
+          "rounds": 144,
+          "total": {
+            "cold": 12663,
+            "memory": 13937,
+            "peer": 9701,
+            "v05": 10034,
+            "decay": 10034,
+            "probe": 10482,
+            "combined": 10482,
+            "hindsight": 9685
+          },
+          "sources": {
+            "v05": 12627,
+            "decay": 12627,
+            "probe": 10994,
+            "combined": 10994
+          },
+          "choices": {
+            "v05": {
+              "cold": 8,
+              "memory": 6,
+              "peer": 130
+            },
+            "decay": {
+              "cold": 8,
+              "memory": 6,
+              "peer": 130
+            },
+            "probe": {
+              "cold": 16,
+              "memory": 15,
+              "peer": 113
+            },
+            "combined": {
+              "cold": 16,
+              "memory": 15,
+              "peer": 113
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 18,
+            "combined": 18
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4208,
+                "memory": 4650,
+                "peer": 3216,
+                "v05": 3366,
+                "decay": 3366,
+                "probe": 3485,
+                "combined": 3485,
+                "hindsight": 3202
+              },
+              "peerChoices": {
+                "v05": 41,
+                "decay": 41,
+                "probe": 37,
+                "combined": 37
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4250,
+                "memory": 4693,
+                "peer": 3213,
+                "v05": 3358,
+                "decay": 3358,
+                "probe": 3532,
+                "combined": 3532,
+                "hindsight": 3213
+              },
+              "peerChoices": {
+                "v05": 43,
+                "decay": 43,
+                "probe": 37,
+                "combined": 37
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4205,
+                "memory": 4594,
+                "peer": 3272,
+                "v05": 3310,
+                "decay": 3310,
+                "probe": 3465,
+                "combined": 3465,
+                "hindsight": 3270
+              },
+              "peerChoices": {
+                "v05": 46,
+                "decay": 46,
+                "probe": 39,
+                "combined": 39
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928761876,
+          "stream": "stationary",
+          "rounds": 144,
+          "total": {
+            "cold": 12651,
+            "memory": 13879,
+            "peer": 9589,
+            "v05": 9925,
+            "decay": 9925,
+            "probe": 10311,
+            "combined": 10311,
+            "hindsight": 9577
+          },
+          "sources": {
+            "v05": 12454,
+            "decay": 12454,
+            "probe": 10802,
+            "combined": 10802
+          },
+          "choices": {
+            "v05": {
+              "cold": 12,
+              "memory": 4,
+              "peer": 128
+            },
+            "decay": {
+              "cold": 12,
+              "memory": 4,
+              "peer": 128
+            },
+            "probe": {
+              "cold": 19,
+              "memory": 14,
+              "peer": 111
+            },
+            "combined": {
+              "cold": 19,
+              "memory": 14,
+              "peer": 111
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 17,
+            "combined": 17
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4218,
+                "memory": 4611,
+                "peer": 3171,
+                "v05": 3319,
+                "decay": 3319,
+                "probe": 3462,
+                "combined": 3462,
+                "hindsight": 3166
+              },
+              "peerChoices": {
+                "v05": 42,
+                "decay": 42,
+                "probe": 36,
+                "combined": 36
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4218,
+                "memory": 4617,
+                "peer": 3238,
+                "v05": 3344,
+                "decay": 3344,
+                "probe": 3426,
+                "combined": 3426,
+                "hindsight": 3233
+              },
+              "peerChoices": {
+                "v05": 42,
+                "decay": 42,
+                "probe": 37,
+                "combined": 37
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4215,
+                "memory": 4651,
+                "peer": 3180,
+                "v05": 3262,
+                "decay": 3262,
+                "probe": 3423,
+                "combined": 3423,
+                "hindsight": 3178
+              },
+              "peerChoices": {
+                "v05": 44,
+                "decay": 44,
+                "probe": 38,
+                "combined": 38
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928827413,
+          "stream": "stationary",
+          "rounds": 144,
+          "total": {
+            "cold": 12635,
+            "memory": 13964,
+            "peer": 9713,
+            "v05": 10038,
+            "decay": 10038,
+            "probe": 10524,
+            "combined": 10524,
+            "hindsight": 9694
+          },
+          "sources": {
+            "v05": 12422,
+            "decay": 12422,
+            "probe": 10819,
+            "combined": 10819
+          },
+          "choices": {
+            "v05": {
+              "cold": 8,
+              "memory": 7,
+              "peer": 129
+            },
+            "decay": {
+              "cold": 8,
+              "memory": 7,
+              "peer": 129
+            },
+            "probe": {
+              "cold": 16,
+              "memory": 16,
+              "peer": 112
+            },
+            "combined": {
+              "cold": 16,
+              "memory": 16,
+              "peer": 112
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 18,
+            "combined": 18
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4192,
+                "memory": 4636,
+                "peer": 3225,
+                "v05": 3356,
+                "decay": 3356,
+                "probe": 3485,
+                "combined": 3485,
+                "hindsight": 3225
+              },
+              "peerChoices": {
+                "v05": 43,
+                "decay": 43,
+                "probe": 38,
+                "combined": 38
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4233,
+                "memory": 4651,
+                "peer": 3228,
+                "v05": 3328,
+                "decay": 3328,
+                "probe": 3555,
+                "combined": 3555,
+                "hindsight": 3219
+              },
+              "peerChoices": {
+                "v05": 44,
+                "decay": 44,
+                "probe": 37,
+                "combined": 37
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4210,
+                "memory": 4677,
+                "peer": 3260,
+                "v05": 3354,
+                "decay": 3354,
+                "probe": 3484,
+                "combined": 3484,
+                "hindsight": 3250
+              },
+              "peerChoices": {
+                "v05": 42,
+                "decay": 42,
+                "probe": 37,
+                "combined": 37
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928892950,
+          "stream": "stationary",
+          "rounds": 144,
+          "total": {
+            "cold": 12625,
+            "memory": 13948,
+            "peer": 9733,
+            "v05": 10026,
+            "decay": 10026,
+            "probe": 10555,
+            "combined": 10555,
+            "hindsight": 9697
+          },
+          "sources": {
+            "v05": 12677,
+            "decay": 12677,
+            "probe": 10887,
+            "combined": 10887
+          },
+          "choices": {
+            "v05": {
+              "cold": 9,
+              "memory": 4,
+              "peer": 131
+            },
+            "decay": {
+              "cold": 9,
+              "memory": 4,
+              "peer": 131
+            },
+            "probe": {
+              "cold": 17,
+              "memory": 14,
+              "peer": 113
+            },
+            "combined": {
+              "cold": 17,
+              "memory": 14,
+              "peer": 113
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 20,
+            "combined": 20
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4249,
+                "memory": 4640,
+                "peer": 3207,
+                "v05": 3369,
+                "decay": 3369,
+                "probe": 3518,
+                "combined": 3518,
+                "hindsight": 3196
+              },
+              "peerChoices": {
+                "v05": 42,
+                "decay": 42,
+                "probe": 36,
+                "combined": 36
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4173,
+                "memory": 4659,
+                "peer": 3246,
+                "v05": 3272,
+                "decay": 3272,
+                "probe": 3473,
+                "combined": 3473,
+                "hindsight": 3241
+              },
+              "peerChoices": {
+                "v05": 47,
+                "decay": 47,
+                "probe": 40,
+                "combined": 40
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4203,
+                "memory": 4649,
+                "peer": 3280,
+                "v05": 3385,
+                "decay": 3385,
+                "probe": 3564,
+                "combined": 3564,
+                "hindsight": 3260
+              },
+              "peerChoices": {
+                "v05": 42,
+                "decay": 42,
+                "probe": 37,
+                "combined": 37
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928958487,
+          "stream": "stationary",
+          "rounds": 144,
+          "total": {
+            "cold": 12654,
+            "memory": 13920,
+            "peer": 9722,
+            "v05": 10007,
+            "decay": 10007,
+            "probe": 10415,
+            "combined": 10415,
+            "hindsight": 9722
+          },
+          "sources": {
+            "v05": 12822,
+            "decay": 12822,
+            "probe": 11173,
+            "combined": 11173
+          },
+          "choices": {
+            "v05": {
+              "cold": 5,
+              "memory": 6,
+              "peer": 133
+            },
+            "decay": {
+              "cold": 5,
+              "memory": 6,
+              "peer": 133
+            },
+            "probe": {
+              "cold": 14,
+              "memory": 14,
+              "peer": 116
+            },
+            "combined": {
+              "cold": 14,
+              "memory": 14,
+              "peer": 116
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 18,
+            "combined": 18
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4212,
+                "memory": 4651,
+                "peer": 3238,
+                "v05": 3403,
+                "decay": 3403,
+                "probe": 3507,
+                "combined": 3507,
+                "hindsight": 3238
+              },
+              "peerChoices": {
+                "v05": 43,
+                "decay": 43,
+                "probe": 38,
+                "combined": 38
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4221,
+                "memory": 4621,
+                "peer": 3223,
+                "v05": 3321,
+                "decay": 3321,
+                "probe": 3425,
+                "combined": 3425,
+                "hindsight": 3223
+              },
+              "peerChoices": {
+                "v05": 44,
+                "decay": 44,
+                "probe": 39,
+                "combined": 39
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4221,
+                "memory": 4648,
+                "peer": 3261,
+                "v05": 3283,
+                "decay": 3283,
+                "probe": 3483,
+                "combined": 3483,
+                "hindsight": 3261
+              },
+              "peerChoices": {
+                "v05": 46,
+                "decay": 46,
+                "probe": 39,
+                "combined": 39
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1929024024,
+          "stream": "stationary",
+          "rounds": 144,
+          "total": {
+            "cold": 12649,
+            "memory": 13974,
+            "peer": 9496,
+            "v05": 9629,
+            "decay": 9629,
+            "probe": 10268,
+            "combined": 10268,
+            "hindsight": 9485
+          },
+          "sources": {
+            "v05": 13515,
+            "decay": 13515,
+            "probe": 11358,
+            "combined": 11358
+          },
+          "choices": {
+            "v05": {
+              "cold": 2,
+              "memory": 2,
+              "peer": 140
+            },
+            "decay": {
+              "cold": 2,
+              "memory": 2,
+              "peer": 140
+            },
+            "probe": {
+              "cold": 13,
+              "memory": 13,
+              "peer": 118
+            },
+            "combined": {
+              "cold": 13,
+              "memory": 13,
+              "peer": 118
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 22,
+            "combined": 22
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4259,
+                "memory": 4714,
+                "peer": 3144,
+                "v05": 3203,
+                "decay": 3203,
+                "probe": 3397,
+                "combined": 3397,
+                "hindsight": 3144
+              },
+              "peerChoices": {
+                "v05": 46,
+                "decay": 46,
+                "probe": 40,
+                "combined": 40
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4179,
+                "memory": 4580,
+                "peer": 3192,
+                "v05": 3192,
+                "decay": 3192,
+                "probe": 3431,
+                "combined": 3431,
+                "hindsight": 3192
+              },
+              "peerChoices": {
+                "v05": 48,
+                "decay": 48,
+                "probe": 40,
+                "combined": 40
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4211,
+                "memory": 4680,
+                "peer": 3160,
+                "v05": 3234,
+                "decay": 3234,
+                "probe": 3440,
+                "combined": 3440,
+                "hindsight": 3149
+              },
+              "peerChoices": {
+                "v05": 46,
+                "decay": 46,
+                "probe": 38,
+                "combined": 38
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        }
+      ]
+    },
+    "abrupt": {
+      "total": {
+        "cold": 151655,
+        "memory": 167265,
+        "peer": 137145,
+        "v05": 141936,
+        "decay": 139423,
+        "probe": 143121,
+        "combined": 138575,
+        "hindsight": 125993
+      },
+      "sources": {
+        "v05": 61986,
+        "decay": 86966,
+        "probe": 65676,
+        "combined": 94925
+      },
+      "probes": {
+        "v05": 0,
+        "decay": 0,
+        "probe": 216,
+        "combined": 215
+      },
+      "phases": [
+        {
+          "rounds": 576,
+          "total": {
+            "cold": 50622,
+            "memory": 55844,
+            "peer": 37126,
+            "v05": 38871,
+            "decay": 38871,
+            "probe": 40655,
+            "combined": 40655,
+            "hindsight": 37112
+          },
+          "peerChoices": {
+            "v05": 513,
+            "decay": 513,
+            "probe": 453,
+            "combined": 453
+          }
+        },
+        {
+          "rounds": 576,
+          "total": {
+            "cold": 50458,
+            "memory": 55735,
+            "peer": 61326,
+            "v05": 52704,
+            "decay": 54102,
+            "probe": 53444,
+            "combined": 54307,
+            "hindsight": 50272
+          },
+          "peerChoices": {
+            "v05": 108,
+            "decay": 182,
+            "probe": 128,
+            "combined": 171
+          }
+        },
+        {
+          "rounds": 576,
+          "total": {
+            "cold": 50575,
+            "memory": 55686,
+            "peer": 38693,
+            "v05": 50361,
+            "decay": 46450,
+            "probe": 49022,
+            "combined": 43613,
+            "hindsight": 38609
+          },
+          "peerChoices": {
+            "v05": 20,
+            "decay": 205,
+            "probe": 99,
+            "combined": 358
+          }
+        }
+      ],
+      "exact": 27648,
+      "heldout": 82944,
+      "replays": 36,
+      "trials": [
+        {
+          "seed": 1928303117,
+          "stream": "abrupt",
+          "rounds": 144,
+          "total": {
+            "cold": 12632,
+            "memory": 13901,
+            "peer": 11410,
+            "v05": 11843,
+            "decay": 11543,
+            "probe": 11989,
+            "combined": 11406,
+            "hindsight": 10466
+          },
+          "sources": {
+            "v05": 5151,
+            "decay": 7333,
+            "probe": 4963,
+            "combined": 8146
+          },
+          "choices": {
+            "v05": {
+              "cold": 84,
+              "memory": 6,
+              "peer": 54
+            },
+            "decay": {
+              "cold": 61,
+              "memory": 6,
+              "peer": 77
+            },
+            "probe": {
+              "cold": 76,
+              "memory": 16,
+              "peer": 52
+            },
+            "combined": {
+              "cold": 43,
+              "memory": 16,
+              "peer": 85
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 19,
+            "combined": 18
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4217,
+                "memory": 4641,
+                "peer": 3139,
+                "v05": 3272,
+                "decay": 3272,
+                "probe": 3381,
+                "combined": 3381,
+                "hindsight": 3139
+              },
+              "peerChoices": {
+                "v05": 43,
+                "decay": 43,
+                "probe": 38,
+                "combined": 38
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4199,
+                "memory": 4655,
+                "peer": 5119,
+                "v05": 4349,
+                "decay": 4461,
+                "probe": 4405,
+                "combined": 4502,
+                "hindsight": 4185
+              },
+              "peerChoices": {
+                "v05": 9,
+                "decay": 15,
+                "probe": 10,
+                "combined": 14
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4216,
+                "memory": 4605,
+                "peer": 3152,
+                "v05": 4222,
+                "decay": 3810,
+                "probe": 4203,
+                "combined": 3523,
+                "hindsight": 3142
+              },
+              "peerChoices": {
+                "v05": 2,
+                "decay": 19,
+                "probe": 4,
+                "combined": 33
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928368654,
+          "stream": "abrupt",
+          "rounds": 144,
+          "total": {
+            "cold": 12673,
+            "memory": 13881,
+            "peer": 11451,
+            "v05": 11815,
+            "decay": 11415,
+            "probe": 11832,
+            "combined": 11427,
+            "hindsight": 10511
+          },
+          "sources": {
+            "v05": 5162,
+            "decay": 8355,
+            "probe": 6034,
+            "combined": 8521
+          },
+          "choices": {
+            "v05": {
+              "cold": 85,
+              "memory": 6,
+              "peer": 53
+            },
+            "decay": {
+              "cold": 52,
+              "memory": 6,
+              "peer": 86
+            },
+            "probe": {
+              "cold": 67,
+              "memory": 15,
+              "peer": 62
+            },
+            "combined": {
+              "cold": 41,
+              "memory": 15,
+              "peer": 88
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 16,
+            "combined": 17
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4227,
+                "memory": 4617,
+                "peer": 3095,
+                "v05": 3278,
+                "decay": 3278,
+                "probe": 3418,
+                "combined": 3418,
+                "hindsight": 3092
+              },
+              "peerChoices": {
+                "v05": 41,
+                "decay": 41,
+                "probe": 37,
+                "combined": 37
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4203,
+                "memory": 4663,
+                "peer": 5133,
+                "v05": 4353,
+                "decay": 4497,
+                "probe": 4454,
+                "combined": 4524,
+                "hindsight": 4196
+              },
+              "peerChoices": {
+                "v05": 9,
+                "decay": 16,
+                "probe": 11,
+                "combined": 14
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4243,
+                "memory": 4601,
+                "peer": 3223,
+                "v05": 4184,
+                "decay": 3640,
+                "probe": 3960,
+                "combined": 3485,
+                "hindsight": 3223
+              },
+              "peerChoices": {
+                "v05": 3,
+                "decay": 29,
+                "probe": 14,
+                "combined": 37
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928434191,
+          "stream": "abrupt",
+          "rounds": 144,
+          "total": {
+            "cold": 12608,
+            "memory": 14002,
+            "peer": 11444,
+            "v05": 11931,
+            "decay": 11599,
+            "probe": 12078,
+            "combined": 11770,
+            "hindsight": 10520
+          },
+          "sources": {
+            "v05": 4906,
+            "decay": 8003,
+            "probe": 4964,
+            "combined": 7500
+          },
+          "choices": {
+            "v05": {
+              "cold": 86,
+              "memory": 8,
+              "peer": 50
+            },
+            "decay": {
+              "cold": 54,
+              "memory": 8,
+              "peer": 82
+            },
+            "probe": {
+              "cold": 78,
+              "memory": 15,
+              "peer": 51
+            },
+            "combined": {
+              "cold": 52,
+              "memory": 15,
+              "peer": 77
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 17,
+            "combined": 17
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4198,
+                "memory": 4719,
+                "peer": 3150,
+                "v05": 3311,
+                "decay": 3311,
+                "probe": 3460,
+                "combined": 3460,
+                "hindsight": 3150
+              },
+              "peerChoices": {
+                "v05": 41,
+                "decay": 41,
+                "probe": 36,
+                "combined": 36
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4201,
+                "memory": 4618,
+                "peer": 5107,
+                "v05": 4416,
+                "decay": 4571,
+                "probe": 4480,
+                "combined": 4587,
+                "hindsight": 4183
+              },
+              "peerChoices": {
+                "v05": 8,
+                "decay": 17,
+                "probe": 10,
+                "combined": 16
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4209,
+                "memory": 4665,
+                "peer": 3187,
+                "v05": 4204,
+                "decay": 3717,
+                "probe": 4138,
+                "combined": 3723,
+                "hindsight": 3187
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 24,
+                "probe": 5,
+                "combined": 25
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928499728,
+          "stream": "abrupt",
+          "rounds": 144,
+          "total": {
+            "cold": 12663,
+            "memory": 13990,
+            "peer": 11545,
+            "v05": 11818,
+            "decay": 11505,
+            "probe": 12032,
+            "combined": 11362,
+            "hindsight": 10571
+          },
+          "sources": {
+            "v05": 5196,
+            "decay": 7788,
+            "probe": 5221,
+            "combined": 8698
+          },
+          "choices": {
+            "v05": {
+              "cold": 82,
+              "memory": 8,
+              "peer": 54
+            },
+            "decay": {
+              "cold": 55,
+              "memory": 8,
+              "peer": 81
+            },
+            "probe": {
+              "cold": 76,
+              "memory": 14,
+              "peer": 54
+            },
+            "combined": {
+              "cold": 40,
+              "memory": 14,
+              "peer": 90
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 20,
+            "combined": 20
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4221,
+                "memory": 4621,
+                "peer": 3104,
+                "v05": 3198,
+                "decay": 3198,
+                "probe": 3396,
+                "combined": 3396,
+                "hindsight": 3093
+              },
+              "peerChoices": {
+                "v05": 45,
+                "decay": 45,
+                "probe": 39,
+                "combined": 39
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4216,
+                "memory": 4738,
+                "peer": 5170,
+                "v05": 4402,
+                "decay": 4523,
+                "probe": 4497,
+                "combined": 4487,
+                "hindsight": 4207
+              },
+              "peerChoices": {
+                "v05": 8,
+                "decay": 14,
+                "probe": 10,
+                "combined": 13
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4226,
+                "memory": 4631,
+                "peer": 3271,
+                "v05": 4218,
+                "decay": 3784,
+                "probe": 4139,
+                "combined": 3479,
+                "hindsight": 3271
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 22,
+                "probe": 5,
+                "combined": 38
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928565265,
+          "stream": "abrupt",
+          "rounds": 144,
+          "total": {
+            "cold": 12589,
+            "memory": 13959,
+            "peer": 11420,
+            "v05": 11841,
+            "decay": 11987,
+            "probe": 12000,
+            "combined": 11564,
+            "hindsight": 10523
+          },
+          "sources": {
+            "v05": 5447,
+            "decay": 6041,
+            "probe": 5371,
+            "combined": 8433
+          },
+          "choices": {
+            "v05": {
+              "cold": 79,
+              "memory": 9,
+              "peer": 56
+            },
+            "decay": {
+              "cold": 73,
+              "memory": 9,
+              "peer": 62
+            },
+            "probe": {
+              "cold": 74,
+              "memory": 15,
+              "peer": 55
+            },
+            "combined": {
+              "cold": 41,
+              "memory": 16,
+              "peer": 87
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 15,
+            "combined": 15
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4202,
+                "memory": 4688,
+                "peer": 3096,
+                "v05": 3223,
+                "decay": 3223,
+                "probe": 3369,
+                "combined": 3369,
+                "hindsight": 3096
+              },
+              "peerChoices": {
+                "v05": 44,
+                "decay": 44,
+                "probe": 39,
+                "combined": 39
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4193,
+                "memory": 4634,
+                "peer": 5054,
+                "v05": 4389,
+                "decay": 4535,
+                "probe": 4401,
+                "combined": 4513,
+                "hindsight": 4176
+              },
+              "peerChoices": {
+                "v05": 12,
+                "decay": 18,
+                "probe": 12,
+                "combined": 17
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4194,
+                "memory": 4637,
+                "peer": 3270,
+                "v05": 4229,
+                "decay": 4229,
+                "probe": 4230,
+                "combined": 3682,
+                "hindsight": 3251
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 0,
+                "probe": 4,
+                "combined": 31
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928630802,
+          "stream": "abrupt",
+          "rounds": 144,
+          "total": {
+            "cold": 12613,
+            "memory": 13910,
+            "peer": 11210,
+            "v05": 11890,
+            "decay": 11984,
+            "probe": 11984,
+            "combined": 11562,
+            "hindsight": 10398
+          },
+          "sources": {
+            "v05": 4750,
+            "decay": 5317,
+            "probe": 5018,
+            "combined": 7539
+          },
+          "choices": {
+            "v05": {
+              "cold": 89,
+              "memory": 6,
+              "peer": 49
+            },
+            "decay": {
+              "cold": 83,
+              "memory": 6,
+              "peer": 55
+            },
+            "probe": {
+              "cold": 77,
+              "memory": 15,
+              "peer": 52
+            },
+            "combined": {
+              "cold": 51,
+              "memory": 15,
+              "peer": 78
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 18,
+            "combined": 17
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4219,
+                "memory": 4656,
+                "peer": 3082,
+                "v05": 3284,
+                "decay": 3284,
+                "probe": 3381,
+                "combined": 3381,
+                "hindsight": 3082
+              },
+              "peerChoices": {
+                "v05": 40,
+                "decay": 40,
+                "probe": 37,
+                "combined": 37
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4172,
+                "memory": 4606,
+                "peer": 4951,
+                "v05": 4355,
+                "decay": 4449,
+                "probe": 4431,
+                "combined": 4481,
+                "hindsight": 4149
+              },
+              "peerChoices": {
+                "v05": 9,
+                "decay": 15,
+                "probe": 11,
+                "combined": 14
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4222,
+                "memory": 4648,
+                "peer": 3177,
+                "v05": 4251,
+                "decay": 4251,
+                "probe": 4172,
+                "combined": 3700,
+                "hindsight": 3167
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 0,
+                "probe": 4,
+                "combined": 27
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928696339,
+          "stream": "abrupt",
+          "rounds": 144,
+          "total": {
+            "cold": 12663,
+            "memory": 13937,
+            "peer": 11549,
+            "v05": 11881,
+            "decay": 11994,
+            "probe": 12077,
+            "combined": 11703,
+            "hindsight": 10565
+          },
+          "sources": {
+            "v05": 4850,
+            "decay": 5352,
+            "probe": 5052,
+            "combined": 7414
+          },
+          "choices": {
+            "v05": {
+              "cold": 88,
+              "memory": 6,
+              "peer": 50
+            },
+            "decay": {
+              "cold": 83,
+              "memory": 6,
+              "peer": 55
+            },
+            "probe": {
+              "cold": 77,
+              "memory": 15,
+              "peer": 52
+            },
+            "combined": {
+              "cold": 53,
+              "memory": 15,
+              "peer": 76
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 18,
+            "combined": 16
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4208,
+                "memory": 4650,
+                "peer": 3064,
+                "v05": 3233,
+                "decay": 3233,
+                "probe": 3363,
+                "combined": 3363,
+                "hindsight": 3064
+              },
+              "peerChoices": {
+                "v05": 41,
+                "decay": 41,
+                "probe": 37,
+                "combined": 37
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4250,
+                "memory": 4693,
+                "peer": 5213,
+                "v05": 4447,
+                "decay": 4560,
+                "probe": 4563,
+                "combined": 4596,
+                "hindsight": 4231
+              },
+              "peerChoices": {
+                "v05": 8,
+                "decay": 13,
+                "probe": 11,
+                "combined": 13
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4205,
+                "memory": 4594,
+                "peer": 3272,
+                "v05": 4201,
+                "decay": 4201,
+                "probe": 4151,
+                "combined": 3744,
+                "hindsight": 3270
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 1,
+                "probe": 4,
+                "combined": 26
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928761876,
+          "stream": "abrupt",
+          "rounds": 144,
+          "total": {
+            "cold": 12651,
+            "memory": 13879,
+            "peer": 11399,
+            "v05": 11857,
+            "decay": 11910,
+            "probe": 12025,
+            "combined": 11539,
+            "hindsight": 10447
+          },
+          "sources": {
+            "v05": 4787,
+            "decay": 5354,
+            "probe": 4872,
+            "combined": 7587
+          },
+          "choices": {
+            "v05": {
+              "cold": 91,
+              "memory": 4,
+              "peer": 49
+            },
+            "decay": {
+              "cold": 85,
+              "memory": 4,
+              "peer": 55
+            },
+            "probe": {
+              "cold": 80,
+              "memory": 14,
+              "peer": 50
+            },
+            "combined": {
+              "cold": 52,
+              "memory": 14,
+              "peer": 78
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 20,
+            "combined": 19
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4218,
+                "memory": 4611,
+                "peer": 3075,
+                "v05": 3241,
+                "decay": 3241,
+                "probe": 3424,
+                "combined": 3424,
+                "hindsight": 3075
+              },
+              "peerChoices": {
+                "v05": 42,
+                "decay": 42,
+                "probe": 36,
+                "combined": 36
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4218,
+                "memory": 4617,
+                "peer": 5144,
+                "v05": 4401,
+                "decay": 4454,
+                "probe": 4441,
+                "combined": 4501,
+                "hindsight": 4194
+              },
+              "peerChoices": {
+                "v05": 7,
+                "decay": 13,
+                "probe": 10,
+                "combined": 13
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4215,
+                "memory": 4651,
+                "peer": 3180,
+                "v05": 4215,
+                "decay": 4215,
+                "probe": 4160,
+                "combined": 3614,
+                "hindsight": 3178
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 0,
+                "probe": 4,
+                "combined": 29
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928827413,
+          "stream": "abrupt",
+          "rounds": 144,
+          "total": {
+            "cold": 12635,
+            "memory": 13964,
+            "peer": 11572,
+            "v05": 11888,
+            "decay": 11593,
+            "probe": 12030,
+            "combined": 11671,
+            "hindsight": 10571
+          },
+          "sources": {
+            "v05": 5166,
+            "decay": 7007,
+            "probe": 4998,
+            "combined": 7133
+          },
+          "choices": {
+            "v05": {
+              "cold": 83,
+              "memory": 7,
+              "peer": 54
+            },
+            "decay": {
+              "cold": 64,
+              "memory": 7,
+              "peer": 73
+            },
+            "probe": {
+              "cold": 76,
+              "memory": 16,
+              "peer": 52
+            },
+            "combined": {
+              "cold": 54,
+              "memory": 16,
+              "peer": 74
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 18,
+            "combined": 18
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4192,
+                "memory": 4636,
+                "peer": 3104,
+                "v05": 3262,
+                "decay": 3262,
+                "probe": 3402,
+                "combined": 3402,
+                "hindsight": 3104
+              },
+              "peerChoices": {
+                "v05": 43,
+                "decay": 43,
+                "probe": 38,
+                "combined": 38
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4233,
+                "memory": 4651,
+                "peer": 5208,
+                "v05": 4445,
+                "decay": 4514,
+                "probe": 4502,
+                "combined": 4557,
+                "hindsight": 4217
+              },
+              "peerChoices": {
+                "v05": 9,
+                "decay": 12,
+                "probe": 9,
+                "combined": 12
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4210,
+                "memory": 4677,
+                "peer": 3260,
+                "v05": 4181,
+                "decay": 3817,
+                "probe": 4126,
+                "combined": 3712,
+                "hindsight": 3250
+              },
+              "peerChoices": {
+                "v05": 2,
+                "decay": 18,
+                "probe": 5,
+                "combined": 24
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928892950,
+          "stream": "abrupt",
+          "rounds": 144,
+          "total": {
+            "cold": 12625,
+            "memory": 13948,
+            "peer": 11488,
+            "v05": 11737,
+            "decay": 11761,
+            "probe": 11951,
+            "combined": 11704,
+            "hindsight": 10498
+          },
+          "sources": {
+            "v05": 5088,
+            "decay": 6580,
+            "probe": 5059,
+            "combined": 7311
+          },
+          "choices": {
+            "v05": {
+              "cold": 87,
+              "memory": 4,
+              "peer": 53
+            },
+            "decay": {
+              "cold": 72,
+              "memory": 4,
+              "peer": 68
+            },
+            "probe": {
+              "cold": 77,
+              "memory": 14,
+              "peer": 53
+            },
+            "combined": {
+              "cold": 54,
+              "memory": 14,
+              "peer": 76
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 19,
+            "combined": 19
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4249,
+                "memory": 4640,
+                "peer": 3073,
+                "v05": 3201,
+                "decay": 3201,
+                "probe": 3368,
+                "combined": 3368,
+                "hindsight": 3073
+              },
+              "peerChoices": {
+                "v05": 44,
+                "decay": 44,
+                "probe": 38,
+                "combined": 38
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4173,
+                "memory": 4659,
+                "peer": 5135,
+                "v05": 4343,
+                "decay": 4493,
+                "probe": 4433,
+                "combined": 4549,
+                "hindsight": 4165
+              },
+              "peerChoices": {
+                "v05": 8,
+                "decay": 16,
+                "probe": 11,
+                "combined": 15
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4203,
+                "memory": 4649,
+                "peer": 3280,
+                "v05": 4193,
+                "decay": 4067,
+                "probe": 4150,
+                "combined": 3787,
+                "hindsight": 3260
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 8,
+                "probe": 4,
+                "combined": 23
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928958487,
+          "stream": "abrupt",
+          "rounds": 144,
+          "total": {
+            "cold": 12654,
+            "memory": 13920,
+            "peer": 11418,
+            "v05": 11826,
+            "decay": 11103,
+            "probe": 11594,
+            "combined": 11553,
+            "hindsight": 10559
+          },
+          "sources": {
+            "v05": 5504,
+            "decay": 9905,
+            "probe": 7022,
+            "combined": 7997
+          },
+          "choices": {
+            "v05": {
+              "cold": 81,
+              "memory": 6,
+              "peer": 57
+            },
+            "decay": {
+              "cold": 35,
+              "memory": 6,
+              "peer": 103
+            },
+            "probe": {
+              "cold": 57,
+              "memory": 14,
+              "peer": 73
+            },
+            "combined": {
+              "cold": 47,
+              "memory": 14,
+              "peer": 83
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 16,
+            "combined": 17
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4212,
+                "memory": 4651,
+                "peer": 3093,
+                "v05": 3258,
+                "decay": 3258,
+                "probe": 3374,
+                "combined": 3374,
+                "hindsight": 3093
+              },
+              "peerChoices": {
+                "v05": 43,
+                "decay": 43,
+                "probe": 38,
+                "combined": 38
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4221,
+                "memory": 4621,
+                "peer": 5064,
+                "v05": 4426,
+                "decay": 4532,
+                "probe": 4441,
+                "combined": 4539,
+                "hindsight": 4205
+              },
+              "peerChoices": {
+                "v05": 10,
+                "decay": 15,
+                "probe": 12,
+                "combined": 15
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4221,
+                "memory": 4648,
+                "peer": 3261,
+                "v05": 4142,
+                "decay": 3313,
+                "probe": 3779,
+                "combined": 3640,
+                "hindsight": 3261
+              },
+              "peerChoices": {
+                "v05": 4,
+                "decay": 45,
+                "probe": 23,
+                "combined": 30
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1929024024,
+          "stream": "abrupt",
+          "rounds": 144,
+          "total": {
+            "cold": 12649,
+            "memory": 13974,
+            "peer": 11239,
+            "v05": 11609,
+            "decay": 11029,
+            "probe": 11529,
+            "combined": 11314,
+            "hindsight": 10364
+          },
+          "sources": {
+            "v05": 5979,
+            "decay": 9931,
+            "probe": 7102,
+            "combined": 8646
+          },
+          "choices": {
+            "v05": {
+              "cold": 80,
+              "memory": 2,
+              "peer": 62
+            },
+            "decay": {
+              "cold": 39,
+              "memory": 2,
+              "peer": 103
+            },
+            "probe": {
+              "cold": 57,
+              "memory": 13,
+              "peer": 74
+            },
+            "combined": {
+              "cold": 41,
+              "memory": 13,
+              "peer": 90
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 20,
+            "combined": 22
+          },
+          "phases": [
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4259,
+                "memory": 4714,
+                "peer": 3051,
+                "v05": 3110,
+                "decay": 3110,
+                "probe": 3319,
+                "combined": 3319,
+                "hindsight": 3051
+              },
+              "peerChoices": {
+                "v05": 46,
+                "decay": 46,
+                "probe": 40,
+                "combined": 40
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4179,
+                "memory": 4580,
+                "peer": 5028,
+                "v05": 4378,
+                "decay": 4513,
+                "probe": 4396,
+                "combined": 4471,
+                "hindsight": 4164
+              },
+              "peerChoices": {
+                "v05": 11,
+                "decay": 18,
+                "probe": 11,
+                "combined": 15
+              }
+            },
+            {
+              "rounds": 48,
+              "total": {
+                "cold": 4211,
+                "memory": 4680,
+                "peer": 3160,
+                "v05": 4121,
+                "decay": 3406,
+                "probe": 3814,
+                "combined": 3524,
+                "hindsight": 3149
+              },
+              "peerChoices": {
+                "v05": 5,
+                "decay": 39,
+                "probe": 23,
+                "combined": 35
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        }
+      ]
+    },
+    "alternating": {
+      "total": {
+        "cold": 151655,
+        "memory": 167265,
+        "peer": 143071,
+        "v05": 147636,
+        "decay": 147672,
+        "probe": 148500,
+        "combined": 145138,
+        "hindsight": 130750
+      },
+      "sources": {
+        "v05": 39164,
+        "decay": 68004,
+        "probe": 52078,
+        "combined": 101458
+      },
+      "probes": {
+        "v05": 0,
+        "decay": 0,
+        "probe": 214,
+        "combined": 202
+      },
+      "phases": [
+        {
+          "rounds": 288,
+          "total": {
+            "cold": 25334,
+            "memory": 27936,
+            "peer": 18497,
+            "v05": 19579,
+            "decay": 19579,
+            "probe": 20299,
+            "combined": 20299,
+            "hindsight": 18494
+          },
+          "peerChoices": {
+            "v05": 250,
+            "decay": 250,
+            "probe": 228,
+            "combined": 228
+          }
+        },
+        {
+          "rounds": 288,
+          "total": {
+            "cold": 25288,
+            "memory": 27908,
+            "peer": 29004,
+            "v05": 26793,
+            "decay": 27959,
+            "probe": 27024,
+            "combined": 27570,
+            "hindsight": 25074
+          },
+          "peerChoices": {
+            "v05": 107,
+            "decay": 193,
+            "probe": 114,
+            "combined": 161
+          }
+        },
+        {
+          "rounds": 288,
+          "total": {
+            "cold": 25222,
+            "memory": 27926,
+            "peer": 18511,
+            "v05": 25105,
+            "decay": 23414,
+            "probe": 24783,
+            "combined": 21127,
+            "hindsight": 18487
+          },
+          "peerChoices": {
+            "v05": 10,
+            "decay": 85,
+            "probe": 30,
+            "combined": 187
+          }
+        },
+        {
+          "rounds": 288,
+          "total": {
+            "cold": 25236,
+            "memory": 27809,
+            "peer": 29167,
+            "v05": 25483,
+            "decay": 26446,
+            "probe": 26136,
+            "combined": 27459,
+            "hindsight": 24914
+          },
+          "peerChoices": {
+            "v05": 14,
+            "decay": 80,
+            "probe": 37,
+            "combined": 151
+          }
+        },
+        {
+          "rounds": 288,
+          "total": {
+            "cold": 25321,
+            "memory": 27969,
+            "peer": 18822,
+            "v05": 25178,
+            "decay": 24366,
+            "probe": 24021,
+            "combined": 21350,
+            "hindsight": 18791
+          },
+          "peerChoices": {
+            "v05": 11,
+            "decay": 49,
+            "probe": 69,
+            "combined": 187
+          }
+        },
+        {
+          "rounds": 288,
+          "total": {
+            "cold": 25254,
+            "memory": 27717,
+            "peer": 29070,
+            "v05": 25498,
+            "decay": 25908,
+            "probe": 26237,
+            "combined": 27333,
+            "hindsight": 24990
+          },
+          "peerChoices": {
+            "v05": 13,
+            "decay": 48,
+            "probe": 62,
+            "combined": 135
+          }
+        }
+      ],
+      "exact": 27648,
+      "heldout": 82944,
+      "replays": 36,
+      "trials": [
+        {
+          "seed": 1928303117,
+          "stream": "alternating",
+          "rounds": 144,
+          "total": {
+            "cold": 12632,
+            "memory": 13901,
+            "peer": 12017,
+            "v05": 12331,
+            "decay": 12324,
+            "probe": 12183,
+            "combined": 12084,
+            "hindsight": 10949
+          },
+          "sources": {
+            "v05": 3288,
+            "decay": 6767,
+            "probe": 5510,
+            "combined": 8415
+          },
+          "choices": {
+            "v05": {
+              "cold": 103,
+              "memory": 6,
+              "peer": 35
+            },
+            "decay": {
+              "cold": 67,
+              "memory": 6,
+              "peer": 71
+            },
+            "probe": {
+              "cold": 70,
+              "memory": 16,
+              "peer": 58
+            },
+            "combined": {
+              "cold": 40,
+              "memory": 16,
+              "peer": 88
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 17,
+            "combined": 17
+          },
+          "phases": [
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2121,
+                "memory": 2333,
+                "peer": 1595,
+                "v05": 1699,
+                "decay": 1699,
+                "probe": 1753,
+                "combined": 1753,
+                "hindsight": 1595
+              },
+              "peerChoices": {
+                "v05": 20,
+                "decay": 20,
+                "probe": 18,
+                "combined": 18
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2096,
+                "memory": 2308,
+                "peer": 2415,
+                "v05": 2182,
+                "decay": 2315,
+                "probe": 2196,
+                "combined": 2236,
+                "hindsight": 2076
+              },
+              "peerChoices": {
+                "v05": 10,
+                "decay": 17,
+                "probe": 10,
+                "combined": 12
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2094,
+                "memory": 2359,
+                "peer": 1569,
+                "v05": 2042,
+                "decay": 1734,
+                "probe": 2058,
+                "combined": 1771,
+                "hindsight": 1565
+              },
+              "peerChoices": {
+                "v05": 2,
+                "decay": 17,
+                "probe": 3,
+                "combined": 17
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2105,
+                "memory": 2296,
+                "peer": 2425,
+                "v05": 2124,
+                "decay": 2292,
+                "probe": 2158,
+                "combined": 2283,
+                "hindsight": 2066
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 15,
+                "probe": 2,
+                "combined": 14
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2116,
+                "memory": 2312,
+                "peer": 1564,
+                "v05": 2116,
+                "decay": 2116,
+                "probe": 1730,
+                "combined": 1730,
+                "hindsight": 1558
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 0,
+                "probe": 16,
+                "combined": 16
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2100,
+                "memory": 2293,
+                "peer": 2449,
+                "v05": 2168,
+                "decay": 2168,
+                "probe": 2288,
+                "combined": 2311,
+                "hindsight": 2089
+              },
+              "peerChoices": {
+                "v05": 2,
+                "decay": 2,
+                "probe": 9,
+                "combined": 11
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928368654,
+          "stream": "alternating",
+          "rounds": 144,
+          "total": {
+            "cold": 12673,
+            "memory": 13881,
+            "peer": 11798,
+            "v05": 12320,
+            "decay": 12453,
+            "probe": 12373,
+            "combined": 12017,
+            "hindsight": 10856
+          },
+          "sources": {
+            "v05": 3225,
+            "decay": 5043,
+            "probe": 4854,
+            "combined": 9111
+          },
+          "choices": {
+            "v05": {
+              "cold": 105,
+              "memory": 6,
+              "peer": 33
+            },
+            "decay": {
+              "cold": 85,
+              "memory": 7,
+              "peer": 52
+            },
+            "probe": {
+              "cold": 79,
+              "memory": 15,
+              "peer": 50
+            },
+            "combined": {
+              "cold": 35,
+              "memory": 15,
+              "peer": 94
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 17,
+            "combined": 16
+          },
+          "phases": [
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2112,
+                "memory": 2318,
+                "peer": 1568,
+                "v05": 1682,
+                "decay": 1682,
+                "probe": 1725,
+                "combined": 1725,
+                "hindsight": 1565
+              },
+              "peerChoices": {
+                "v05": 20,
+                "decay": 20,
+                "probe": 19,
+                "combined": 19
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2115,
+                "memory": 2299,
+                "peer": 2360,
+                "v05": 2205,
+                "decay": 2328,
+                "probe": 2223,
+                "combined": 2282,
+                "hindsight": 2091
+              },
+              "peerChoices": {
+                "v05": 9,
+                "decay": 17,
+                "probe": 9,
+                "combined": 14
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2124,
+                "memory": 2376,
+                "peer": 1528,
+                "v05": 2139,
+                "decay": 2139,
+                "probe": 2096,
+                "combined": 1742,
+                "hindsight": 1516
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 0,
+                "probe": 2,
+                "combined": 17
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2079,
+                "memory": 2287,
+                "peer": 2421,
+                "v05": 2091,
+                "decay": 2091,
+                "probe": 2156,
+                "combined": 2297,
+                "hindsight": 2042
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 1,
+                "probe": 3,
+                "combined": 11
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2117,
+                "memory": 2322,
+                "peer": 1546,
+                "v05": 2089,
+                "decay": 2011,
+                "probe": 1971,
+                "combined": 1691,
+                "hindsight": 1546
+              },
+              "peerChoices": {
+                "v05": 2,
+                "decay": 5,
+                "probe": 7,
+                "combined": 19
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2126,
+                "memory": 2279,
+                "peer": 2375,
+                "v05": 2114,
+                "decay": 2202,
+                "probe": 2202,
+                "combined": 2280,
+                "hindsight": 2096
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 9,
+                "probe": 10,
+                "combined": 14
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928434191,
+          "stream": "alternating",
+          "rounds": 144,
+          "total": {
+            "cold": 12608,
+            "memory": 14002,
+            "peer": 12116,
+            "v05": 12318,
+            "decay": 12393,
+            "probe": 12463,
+            "combined": 12116,
+            "hindsight": 10957
+          },
+          "sources": {
+            "v05": 2961,
+            "decay": 4798,
+            "probe": 3404,
+            "combined": 7994
+          },
+          "choices": {
+            "v05": {
+              "cold": 106,
+              "memory": 8,
+              "peer": 30
+            },
+            "decay": {
+              "cold": 87,
+              "memory": 8,
+              "peer": 49
+            },
+            "probe": {
+              "cold": 94,
+              "memory": 15,
+              "peer": 35
+            },
+            "combined": {
+              "cold": 46,
+              "memory": 16,
+              "peer": 82
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 17,
+            "combined": 15
+          },
+          "phases": [
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2085,
+                "memory": 2381,
+                "peer": 1563,
+                "v05": 1662,
+                "decay": 1662,
+                "probe": 1720,
+                "combined": 1720,
+                "hindsight": 1563
+              },
+              "peerChoices": {
+                "v05": 20,
+                "decay": 20,
+                "probe": 18,
+                "combined": 18
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2113,
+                "memory": 2338,
+                "peer": 2463,
+                "v05": 2236,
+                "decay": 2289,
+                "probe": 2275,
+                "combined": 2275,
+                "hindsight": 2102
+              },
+              "peerChoices": {
+                "v05": 7,
+                "decay": 9,
+                "probe": 7,
+                "combined": 8
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2085,
+                "memory": 2313,
+                "peer": 1545,
+                "v05": 2072,
+                "decay": 1967,
+                "probe": 2057,
+                "combined": 1700,
+                "hindsight": 1545
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 7,
+                "probe": 2,
+                "combined": 18
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2116,
+                "memory": 2305,
+                "peer": 2442,
+                "v05": 2144,
+                "decay": 2234,
+                "probe": 2206,
+                "combined": 2267,
+                "hindsight": 2081
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 11,
+                "probe": 3,
+                "combined": 14
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2116,
+                "memory": 2346,
+                "peer": 1573,
+                "v05": 2107,
+                "decay": 2107,
+                "probe": 2061,
+                "combined": 1862,
+                "hindsight": 1573
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 1,
+                "probe": 3,
+                "combined": 13
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2093,
+                "memory": 2319,
+                "peer": 2530,
+                "v05": 2097,
+                "decay": 2134,
+                "probe": 2144,
+                "combined": 2292,
+                "hindsight": 2093
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 1,
+                "probe": 2,
+                "combined": 11
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928499728,
+          "stream": "alternating",
+          "rounds": 144,
+          "total": {
+            "cold": 12663,
+            "memory": 13990,
+            "peer": 11984,
+            "v05": 12280,
+            "decay": 12435,
+            "probe": 12484,
+            "combined": 12300,
+            "hindsight": 10953
+          },
+          "sources": {
+            "v05": 3012,
+            "decay": 4606,
+            "probe": 3691,
+            "combined": 7745
+          },
+          "choices": {
+            "v05": {
+              "cold": 105,
+              "memory": 8,
+              "peer": 31
+            },
+            "decay": {
+              "cold": 88,
+              "memory": 8,
+              "peer": 48
+            },
+            "probe": {
+              "cold": 90,
+              "memory": 16,
+              "peer": 38
+            },
+            "combined": {
+              "cold": 48,
+              "memory": 16,
+              "peer": 80
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 19,
+            "combined": 17
+          },
+          "phases": [
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2114,
+                "memory": 2316,
+                "peer": 1534,
+                "v05": 1628,
+                "decay": 1628,
+                "probe": 1702,
+                "combined": 1702,
+                "hindsight": 1534
+              },
+              "peerChoices": {
+                "v05": 21,
+                "decay": 21,
+                "probe": 19,
+                "combined": 19
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2107,
+                "memory": 2305,
+                "peer": 2443,
+                "v05": 2221,
+                "decay": 2339,
+                "probe": 2316,
+                "combined": 2341,
+                "hindsight": 2073
+              },
+              "peerChoices": {
+                "v05": 8,
+                "decay": 17,
+                "probe": 10,
+                "combined": 15
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2106,
+                "memory": 2360,
+                "peer": 1608,
+                "v05": 2113,
+                "decay": 2113,
+                "probe": 2095,
+                "combined": 1924,
+                "hindsight": 1605
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 1,
+                "probe": 2,
+                "combined": 9
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2110,
+                "memory": 2378,
+                "peer": 2424,
+                "v05": 2110,
+                "decay": 2110,
+                "probe": 2169,
+                "combined": 2265,
+                "hindsight": 2087
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 0,
+                "probe": 2,
+                "combined": 11
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2122,
+                "memory": 2331,
+                "peer": 1585,
+                "v05": 2097,
+                "decay": 2067,
+                "probe": 2075,
+                "combined": 1836,
+                "hindsight": 1585
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 3,
+                "probe": 3,
+                "combined": 15
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2104,
+                "memory": 2300,
+                "peer": 2390,
+                "v05": 2111,
+                "decay": 2178,
+                "probe": 2127,
+                "combined": 2232,
+                "hindsight": 2069
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 6,
+                "probe": 2,
+                "combined": 11
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928565265,
+          "stream": "alternating",
+          "rounds": 144,
+          "total": {
+            "cold": 12589,
+            "memory": 13959,
+            "peer": 11828,
+            "v05": 12286,
+            "decay": 12313,
+            "probe": 12387,
+            "combined": 12020,
+            "hindsight": 10815
+          },
+          "sources": {
+            "v05": 3433,
+            "decay": 5466,
+            "probe": 3842,
+            "combined": 8258
+          },
+          "choices": {
+            "v05": {
+              "cold": 100,
+              "memory": 9,
+              "peer": 35
+            },
+            "decay": {
+              "cold": 79,
+              "memory": 9,
+              "peer": 56
+            },
+            "probe": {
+              "cold": 90,
+              "memory": 15,
+              "peer": 39
+            },
+            "combined": {
+              "cold": 43,
+              "memory": 16,
+              "peer": 85
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 16,
+            "combined": 16
+          },
+          "phases": [
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2104,
+                "memory": 2319,
+                "peer": 1511,
+                "v05": 1571,
+                "decay": 1571,
+                "probe": 1637,
+                "combined": 1637,
+                "hindsight": 1511
+              },
+              "peerChoices": {
+                "v05": 22,
+                "decay": 22,
+                "probe": 20,
+                "combined": 20
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2098,
+                "memory": 2369,
+                "peer": 2445,
+                "v05": 2289,
+                "decay": 2395,
+                "probe": 2289,
+                "combined": 2324,
+                "hindsight": 2086
+              },
+              "peerChoices": {
+                "v05": 9,
+                "decay": 15,
+                "probe": 10,
+                "combined": 12
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2088,
+                "memory": 2353,
+                "peer": 1499,
+                "v05": 2081,
+                "decay": 1897,
+                "probe": 2068,
+                "combined": 1697,
+                "hindsight": 1499
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 8,
+                "probe": 2,
+                "combined": 17
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2105,
+                "memory": 2281,
+                "peer": 2356,
+                "v05": 2116,
+                "decay": 2221,
+                "probe": 2117,
+                "combined": 2255,
+                "hindsight": 2077
+              },
+              "peerChoices": {
+                "v05": 3,
+                "decay": 11,
+                "probe": 3,
+                "combined": 15
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2097,
+                "memory": 2330,
+                "peer": 1553,
+                "v05": 2109,
+                "decay": 2109,
+                "probe": 2107,
+                "combined": 1812,
+                "hindsight": 1553
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 0,
+                "probe": 2,
+                "combined": 14
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2097,
+                "memory": 2307,
+                "peer": 2464,
+                "v05": 2120,
+                "decay": 2120,
+                "probe": 2169,
+                "combined": 2295,
+                "hindsight": 2089
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 0,
+                "probe": 2,
+                "combined": 7
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928630802,
+          "stream": "alternating",
+          "rounds": 144,
+          "total": {
+            "cold": 12613,
+            "memory": 13910,
+            "peer": 11852,
+            "v05": 12387,
+            "decay": 12443,
+            "probe": 12396,
+            "combined": 11912,
+            "hindsight": 10848
+          },
+          "sources": {
+            "v05": 2891,
+            "decay": 3374,
+            "probe": 3544,
+            "combined": 9586
+          },
+          "choices": {
+            "v05": {
+              "cold": 107,
+              "memory": 7,
+              "peer": 30
+            },
+            "decay": {
+              "cold": 103,
+              "memory": 6,
+              "peer": 35
+            },
+            "probe": {
+              "cold": 92,
+              "memory": 15,
+              "peer": 37
+            },
+            "combined": {
+              "cold": 29,
+              "memory": 16,
+              "peer": 99
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 16,
+            "combined": 16
+          },
+          "phases": [
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2096,
+                "memory": 2295,
+                "peer": 1547,
+                "v05": 1663,
+                "decay": 1663,
+                "probe": 1700,
+                "combined": 1700,
+                "hindsight": 1547
+              },
+              "peerChoices": {
+                "v05": 19,
+                "decay": 19,
+                "probe": 18,
+                "combined": 18
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2123,
+                "memory": 2361,
+                "peer": 2465,
+                "v05": 2256,
+                "decay": 2312,
+                "probe": 2236,
+                "combined": 2299,
+                "hindsight": 2108
+              },
+              "peerChoices": {
+                "v05": 9,
+                "decay": 14,
+                "probe": 10,
+                "combined": 13
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2083,
+                "memory": 2295,
+                "peer": 1500,
+                "v05": 2087,
+                "decay": 2087,
+                "probe": 2040,
+                "combined": 1647,
+                "hindsight": 1500
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 0,
+                "probe": 2,
+                "combined": 18
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2089,
+                "memory": 2311,
+                "peer": 2337,
+                "v05": 2130,
+                "decay": 2130,
+                "probe": 2152,
+                "combined": 2263,
+                "hindsight": 2058
+              },
+              "peerChoices": {
+                "v05": 2,
+                "decay": 2,
+                "probe": 2,
+                "combined": 19
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2098,
+                "memory": 2329,
+                "peer": 1540,
+                "v05": 2129,
+                "decay": 2129,
+                "probe": 2091,
+                "combined": 1685,
+                "hindsight": 1540
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 0,
+                "probe": 2,
+                "combined": 19
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2124,
+                "memory": 2319,
+                "peer": 2463,
+                "v05": 2122,
+                "decay": 2122,
+                "probe": 2177,
+                "combined": 2318,
+                "hindsight": 2095
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 0,
+                "probe": 3,
+                "combined": 12
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928696339,
+          "stream": "alternating",
+          "rounds": 144,
+          "total": {
+            "cold": 12663,
+            "memory": 13937,
+            "peer": 11907,
+            "v05": 12270,
+            "decay": 12385,
+            "probe": 12398,
+            "combined": 12021,
+            "hindsight": 10880
+          },
+          "sources": {
+            "v05": 3224,
+            "decay": 3874,
+            "probe": 3705,
+            "combined": 8737
+          },
+          "choices": {
+            "v05": {
+              "cold": 105,
+              "memory": 6,
+              "peer": 33
+            },
+            "decay": {
+              "cold": 98,
+              "memory": 6,
+              "peer": 40
+            },
+            "probe": {
+              "cold": 91,
+              "memory": 15,
+              "peer": 38
+            },
+            "combined": {
+              "cold": 39,
+              "memory": 15,
+              "peer": 90
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 18,
+            "combined": 18
+          },
+          "phases": [
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2110,
+                "memory": 2348,
+                "peer": 1500,
+                "v05": 1561,
+                "decay": 1561,
+                "probe": 1630,
+                "combined": 1630,
+                "hindsight": 1500
+              },
+              "peerChoices": {
+                "v05": 22,
+                "decay": 22,
+                "probe": 20,
+                "combined": 20
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2098,
+                "memory": 2302,
+                "peer": 2437,
+                "v05": 2198,
+                "decay": 2313,
+                "probe": 2219,
+                "combined": 2290,
+                "hindsight": 2089
+              },
+              "peerChoices": {
+                "v05": 9,
+                "decay": 16,
+                "probe": 9,
+                "combined": 14
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2130,
+                "memory": 2366,
+                "peer": 1536,
+                "v05": 2162,
+                "decay": 2162,
+                "probe": 2131,
+                "combined": 1843,
+                "hindsight": 1536
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 0,
+                "probe": 2,
+                "combined": 13
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2120,
+                "memory": 2327,
+                "peer": 2490,
+                "v05": 2148,
+                "decay": 2148,
+                "probe": 2209,
+                "combined": 2307,
+                "hindsight": 2120
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 1,
+                "probe": 3,
+                "combined": 10
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2120,
+                "memory": 2316,
+                "peer": 1564,
+                "v05": 2116,
+                "decay": 2116,
+                "probe": 2099,
+                "combined": 1667,
+                "hindsight": 1564
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 1,
+                "probe": 2,
+                "combined": 20
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2085,
+                "memory": 2278,
+                "peer": 2380,
+                "v05": 2085,
+                "decay": 2085,
+                "probe": 2110,
+                "combined": 2284,
+                "hindsight": 2071
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 0,
+                "probe": 2,
+                "combined": 13
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928761876,
+          "stream": "alternating",
+          "rounds": 144,
+          "total": {
+            "cold": 12651,
+            "memory": 13879,
+            "peer": 11895,
+            "v05": 12311,
+            "decay": 12288,
+            "probe": 12258,
+            "combined": 12134,
+            "hindsight": 10936
+          },
+          "sources": {
+            "v05": 3049,
+            "decay": 6151,
+            "probe": 5653,
+            "combined": 8489
+          },
+          "choices": {
+            "v05": {
+              "cold": 109,
+              "memory": 4,
+              "peer": 31
+            },
+            "decay": {
+              "cold": 77,
+              "memory": 4,
+              "peer": 63
+            },
+            "probe": {
+              "cold": 72,
+              "memory": 14,
+              "peer": 58
+            },
+            "combined": {
+              "cold": 43,
+              "memory": 14,
+              "peer": 87
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 18,
+            "combined": 17
+          },
+          "phases": [
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2105,
+                "memory": 2326,
+                "peer": 1549,
+                "v05": 1657,
+                "decay": 1657,
+                "probe": 1725,
+                "combined": 1725,
+                "hindsight": 1549
+              },
+              "peerChoices": {
+                "v05": 20,
+                "decay": 20,
+                "probe": 18,
+                "combined": 18
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2113,
+                "memory": 2285,
+                "peer": 2383,
+                "v05": 2241,
+                "decay": 2325,
+                "probe": 2238,
+                "combined": 2294,
+                "hindsight": 2103
+              },
+              "peerChoices": {
+                "v05": 10,
+                "decay": 19,
+                "probe": 10,
+                "combined": 17
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2119,
+                "memory": 2306,
+                "peer": 1548,
+                "v05": 2099,
+                "decay": 1815,
+                "probe": 2055,
+                "combined": 1788,
+                "hindsight": 1548
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 13,
+                "probe": 3,
+                "combined": 14
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2099,
+                "memory": 2311,
+                "peer": 2492,
+                "v05": 2099,
+                "decay": 2276,
+                "probe": 2166,
+                "combined": 2288,
+                "hindsight": 2093
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 11,
+                "probe": 3,
+                "combined": 10
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2106,
+                "memory": 2315,
+                "peer": 1566,
+                "v05": 2106,
+                "decay": 2106,
+                "probe": 1806,
+                "combined": 1739,
+                "hindsight": 1566
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 0,
+                "probe": 14,
+                "combined": 17
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2109,
+                "memory": 2336,
+                "peer": 2357,
+                "v05": 2109,
+                "decay": 2109,
+                "probe": 2268,
+                "combined": 2300,
+                "hindsight": 2077
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 0,
+                "probe": 10,
+                "combined": 11
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928827413,
+          "stream": "alternating",
+          "rounds": 144,
+          "total": {
+            "cold": 12635,
+            "memory": 13964,
+            "peer": 11906,
+            "v05": 12279,
+            "decay": 12208,
+            "probe": 12441,
+            "combined": 12101,
+            "hindsight": 10901
+          },
+          "sources": {
+            "v05": 3442,
+            "decay": 6865,
+            "probe": 4727,
+            "combined": 8651
+          },
+          "choices": {
+            "v05": {
+              "cold": 101,
+              "memory": 7,
+              "peer": 36
+            },
+            "decay": {
+              "cold": 65,
+              "memory": 7,
+              "peer": 72
+            },
+            "probe": {
+              "cold": 79,
+              "memory": 16,
+              "peer": 49
+            },
+            "combined": {
+              "cold": 38,
+              "memory": 16,
+              "peer": 90
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 18,
+            "combined": 17
+          },
+          "phases": [
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2106,
+                "memory": 2301,
+                "peer": 1552,
+                "v05": 1653,
+                "decay": 1653,
+                "probe": 1711,
+                "combined": 1711,
+                "hindsight": 1552
+              },
+              "peerChoices": {
+                "v05": 21,
+                "decay": 21,
+                "probe": 19,
+                "combined": 19
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2086,
+                "memory": 2335,
+                "peer": 2366,
+                "v05": 2213,
+                "decay": 2308,
+                "probe": 2216,
+                "combined": 2265,
+                "hindsight": 2076
+              },
+              "peerChoices": {
+                "v05": 9,
+                "decay": 17,
+                "probe": 10,
+                "combined": 15
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2121,
+                "memory": 2340,
+                "peer": 1544,
+                "v05": 2043,
+                "decay": 1662,
+                "probe": 1991,
+                "combined": 1742,
+                "hindsight": 1539
+              },
+              "peerChoices": {
+                "v05": 3,
+                "decay": 19,
+                "probe": 6,
+                "combined": 17
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2112,
+                "memory": 2311,
+                "peer": 2495,
+                "v05": 2130,
+                "decay": 2345,
+                "probe": 2291,
+                "combined": 2342,
+                "hindsight": 2089
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 13,
+                "probe": 9,
+                "combined": 11
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2109,
+                "memory": 2362,
+                "peer": 1585,
+                "v05": 2109,
+                "decay": 2109,
+                "probe": 2084,
+                "combined": 1776,
+                "hindsight": 1585
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 0,
+                "probe": 2,
+                "combined": 15
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2101,
+                "memory": 2315,
+                "peer": 2364,
+                "v05": 2131,
+                "decay": 2131,
+                "probe": 2148,
+                "combined": 2265,
+                "hindsight": 2060
+              },
+              "peerChoices": {
+                "v05": 2,
+                "decay": 2,
+                "probe": 3,
+                "combined": 13
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928892950,
+          "stream": "alternating",
+          "rounds": 144,
+          "total": {
+            "cold": 12625,
+            "memory": 13948,
+            "peer": 11944,
+            "v05": 12273,
+            "decay": 12386,
+            "probe": 12386,
+            "combined": 12163,
+            "hindsight": 10847
+          },
+          "sources": {
+            "v05": 3055,
+            "decay": 3825,
+            "probe": 3531,
+            "combined": 7965
+          },
+          "choices": {
+            "v05": {
+              "cold": 108,
+              "memory": 4,
+              "peer": 32
+            },
+            "decay": {
+              "cold": 100,
+              "memory": 4,
+              "peer": 40
+            },
+            "probe": {
+              "cold": 93,
+              "memory": 14,
+              "peer": 37
+            },
+            "combined": {
+              "cold": 47,
+              "memory": 14,
+              "peer": 83
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 19,
+            "combined": 18
+          },
+          "phases": [
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2140,
+                "memory": 2315,
+                "peer": 1530,
+                "v05": 1593,
+                "decay": 1593,
+                "probe": 1648,
+                "combined": 1648,
+                "hindsight": 1530
+              },
+              "peerChoices": {
+                "v05": 22,
+                "decay": 22,
+                "probe": 20,
+                "combined": 20
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2109,
+                "memory": 2325,
+                "peer": 2443,
+                "v05": 2248,
+                "decay": 2361,
+                "probe": 2283,
+                "combined": 2336,
+                "hindsight": 2094
+              },
+              "peerChoices": {
+                "v05": 8,
+                "decay": 16,
+                "probe": 9,
+                "combined": 13
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2086,
+                "memory": 2269,
+                "peer": 1528,
+                "v05": 2086,
+                "decay": 2086,
+                "probe": 2061,
+                "combined": 1717,
+                "hindsight": 1528
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 0,
+                "probe": 2,
+                "combined": 17
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2087,
+                "memory": 2390,
+                "peer": 2428,
+                "v05": 2125,
+                "decay": 2125,
+                "probe": 2177,
+                "combined": 2303,
+                "hindsight": 2039
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 1,
+                "probe": 2,
+                "combined": 14
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2111,
+                "memory": 2366,
+                "peer": 1584,
+                "v05": 2122,
+                "decay": 2122,
+                "probe": 2088,
+                "combined": 1937,
+                "hindsight": 1570
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 0,
+                "probe": 2,
+                "combined": 10
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2092,
+                "memory": 2283,
+                "peer": 2431,
+                "v05": 2099,
+                "decay": 2099,
+                "probe": 2129,
+                "combined": 2222,
+                "hindsight": 2086
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 1,
+                "probe": 2,
+                "combined": 9
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1928958487,
+          "stream": "alternating",
+          "rounds": 144,
+          "total": {
+            "cold": 12654,
+            "memory": 13920,
+            "peer": 11923,
+            "v05": 12285,
+            "decay": 12105,
+            "probe": 12297,
+            "combined": 12029,
+            "hindsight": 10961
+          },
+          "sources": {
+            "v05": 3847,
+            "decay": 7264,
+            "probe": 4850,
+            "combined": 8556
+          },
+          "choices": {
+            "v05": {
+              "cold": 98,
+              "memory": 6,
+              "peer": 40
+            },
+            "decay": {
+              "cold": 62,
+              "memory": 6,
+              "peer": 76
+            },
+            "probe": {
+              "cold": 79,
+              "memory": 14,
+              "peer": 51
+            },
+            "combined": {
+              "cold": 41,
+              "memory": 14,
+              "peer": 89
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 19,
+            "combined": 17
+          },
+          "phases": [
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2117,
+                "memory": 2333,
+                "peer": 1506,
+                "v05": 1609,
+                "decay": 1609,
+                "probe": 1668,
+                "combined": 1668,
+                "hindsight": 1506
+              },
+              "peerChoices": {
+                "v05": 21,
+                "decay": 21,
+                "probe": 19,
+                "combined": 19
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2095,
+                "memory": 2318,
+                "peer": 2367,
+                "v05": 2208,
+                "decay": 2293,
+                "probe": 2217,
+                "combined": 2264,
+                "hindsight": 2081
+              },
+              "peerChoices": {
+                "v05": 9,
+                "decay": 17,
+                "probe": 10,
+                "combined": 16
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2101,
+                "memory": 2305,
+                "peer": 1569,
+                "v05": 2121,
+                "decay": 2121,
+                "probe": 2074,
+                "combined": 1849,
+                "hindsight": 1569
+              },
+              "peerChoices": {
+                "v05": 0,
+                "decay": 0,
+                "probe": 2,
+                "combined": 12
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2120,
+                "memory": 2316,
+                "peer": 2434,
+                "v05": 2156,
+                "decay": 2156,
+                "probe": 2187,
+                "combined": 2265,
+                "hindsight": 2094
+              },
+              "peerChoices": {
+                "v05": 2,
+                "decay": 2,
+                "probe": 2,
+                "combined": 11
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2097,
+                "memory": 2289,
+                "peer": 1613,
+                "v05": 2010,
+                "decay": 1653,
+                "probe": 1914,
+                "combined": 1724,
+                "hindsight": 1613
+              },
+              "peerChoices": {
+                "v05": 4,
+                "decay": 22,
+                "probe": 10,
+                "combined": 19
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2124,
+                "memory": 2359,
+                "peer": 2434,
+                "v05": 2181,
+                "decay": 2273,
+                "probe": 2237,
+                "combined": 2259,
+                "hindsight": 2098
+              },
+              "peerChoices": {
+                "v05": 4,
+                "decay": 14,
+                "probe": 8,
+                "combined": 12
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        },
+        {
+          "seed": 1929024024,
+          "stream": "alternating",
+          "rounds": 144,
+          "total": {
+            "cold": 12649,
+            "memory": 13974,
+            "peer": 11901,
+            "v05": 12296,
+            "decay": 11939,
+            "probe": 12434,
+            "combined": 12241,
+            "hindsight": 10847
+          },
+          "sources": {
+            "v05": 3737,
+            "decay": 9971,
+            "probe": 4767,
+            "combined": 7951
+          },
+          "choices": {
+            "v05": {
+              "cold": 103,
+              "memory": 2,
+              "peer": 39
+            },
+            "decay": {
+              "cold": 39,
+              "memory": 2,
+              "peer": 103
+            },
+            "probe": {
+              "cold": 81,
+              "memory": 13,
+              "peer": 50
+            },
+            "combined": {
+              "cold": 49,
+              "memory": 13,
+              "peer": 82
+            }
+          },
+          "probes": {
+            "v05": 0,
+            "decay": 0,
+            "probe": 20,
+            "combined": 18
+          },
+          "phases": [
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2124,
+                "memory": 2351,
+                "peer": 1542,
+                "v05": 1601,
+                "decay": 1601,
+                "probe": 1680,
+                "combined": 1680,
+                "hindsight": 1542
+              },
+              "peerChoices": {
+                "v05": 22,
+                "decay": 22,
+                "probe": 20,
+                "combined": 20
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2135,
+                "memory": 2363,
+                "peer": 2417,
+                "v05": 2296,
+                "decay": 2381,
+                "probe": 2316,
+                "combined": 2364,
+                "hindsight": 2095
+              },
+              "peerChoices": {
+                "v05": 10,
+                "decay": 19,
+                "probe": 10,
+                "combined": 12
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2085,
+                "memory": 2284,
+                "peer": 1537,
+                "v05": 2060,
+                "decay": 1631,
+                "probe": 2057,
+                "combined": 1707,
+                "hindsight": 1537
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 20,
+                "probe": 2,
+                "combined": 18
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2094,
+                "memory": 2296,
+                "peer": 2423,
+                "v05": 2110,
+                "decay": 2318,
+                "probe": 2148,
+                "combined": 2324,
+                "hindsight": 2068
+              },
+              "peerChoices": {
+                "v05": 1,
+                "decay": 12,
+                "probe": 3,
+                "combined": 11
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2112,
+                "memory": 2351,
+                "peer": 1549,
+                "v05": 2068,
+                "decay": 1721,
+                "probe": 1995,
+                "combined": 1891,
+                "hindsight": 1538
+              },
+              "peerChoices": {
+                "v05": 2,
+                "decay": 17,
+                "probe": 6,
+                "combined": 10
+              }
+            },
+            {
+              "rounds": 24,
+              "total": {
+                "cold": 2099,
+                "memory": 2329,
+                "peer": 2433,
+                "v05": 2161,
+                "decay": 2287,
+                "probe": 2238,
+                "combined": 2275,
+                "hindsight": 2067
+              },
+              "peerChoices": {
+                "v05": 3,
+                "decay": 13,
+                "probe": 9,
+                "combined": 11
+              }
+            }
+          ],
+          "replay": {
+            "decay": 1,
+            "probe": 1,
+            "combined": 1
+          },
+          "exact": 2304,
+          "heldout": 6912
+        }
+      ]
+    }
+  }
+}
