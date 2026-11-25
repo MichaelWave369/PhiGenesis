@@ -61,6 +61,10 @@ Three-instance bounded peer exchange, coordinate calibration and independent aud
 
 Cost-aware batch strategy selection using the v0.3 learner and verified exchange: `node runtime/cli-v04.mjs test` or `node runtime/cli-v04.mjs summary`. See [calibration, held-out results and complete cost accounting](docs/genesis-field-v04.md). Adaptive selection reduced evaluation observations under the declared cost scope, but calibration and historical acquisition costs can outweigh that advantage. Offline fixed-context selector, not online metacognition.
 
+## Genesis Field v0.5
+
+Bounded online strategy learning with replayable selected-outcome history: `node runtime/cli-v05.mjs test` or `node runtime/cli-v05.mjs summary`. See [adaptive continuity and drift failure analysis](docs/genesis-field-v05.md). The tested selector adapts away from degraded peer communication but fails to reacquire improved reliability quickly, losing to the best fixed policy overall. Earlier runtimes remain intact.
+
 ## Research constraints
 
 Experiments are CPU-local, seeded, finite, and isolated from external systems. No runtime network access, self-deployment, secret access, or automatic promotion of architectural modifications. Record failed experiments, resource budgets and evaluation leakage. Use separate training and held-out observations; do not claim discoveries beyond the tested hypothesis family. Human and AI design choices are explicit and revisable.
