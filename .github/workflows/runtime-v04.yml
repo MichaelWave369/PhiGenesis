@@ -1,0 +1,18 @@
+name: Genesis Field v0.4
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  strategy-selection:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node runtime/cli-v04.mjs test
+      - name: Verify seeded summary
+        run: |
+          node runtime/cli-v04.mjs summary > "$RUNNER_TEMP/v04-summary.json"
+          node --input-type=module -e 'import fs from "node:fs"; import assert from "node:assert/strict"; assert.deepEqual(JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+"/v04-summary.json")),JSON.parse(fs.readFileSync("results/genesis_field_v04_summary.json")))'
