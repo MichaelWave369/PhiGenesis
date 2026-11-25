@@ -1,0 +1,221 @@
+{
+  "nTrain": 18,
+  "nTest": 30,
+  "calibrationBatches": 216,
+  "evaluationBatches": 360,
+  "targetCount": 1680,
+  "policy": {
+    "1:clean:existing": {
+      "chosen": "cold",
+      "means": {
+        "cold": 22.61111111111111,
+        "memory": 22.61111111111111,
+        "peer": 23
+      }
+    },
+    "1:clean:fresh": {
+      "chosen": "cold",
+      "means": {
+        "cold": 22.444444444444443,
+        "memory": 22.444444444444443,
+        "peer": 44.55555555555556
+      }
+    },
+    "1:noisy:existing": {
+      "chosen": "cold",
+      "means": {
+        "cold": 22.27777777777778,
+        "memory": 22.27777777777778,
+        "peer": 25.055555555555557
+      }
+    },
+    "1:noisy:fresh": {
+      "chosen": "cold",
+      "means": {
+        "cold": 22.055555555555557,
+        "memory": 22.055555555555557,
+        "peer": 49.333333333333336
+      }
+    },
+    "4:clean:existing": {
+      "chosen": "peer",
+      "means": {
+        "cold": 87.55555555555556,
+        "memory": 99.11111111111111,
+        "peer": 62
+      }
+    },
+    "4:clean:fresh": {
+      "chosen": "cold",
+      "means": {
+        "cold": 88.44444444444444,
+        "memory": 98.44444444444444,
+        "peer": 158
+      }
+    },
+    "4:noisy:existing": {
+      "chosen": "peer",
+      "means": {
+        "cold": 87.66666666666667,
+        "memory": 93.05555555555556,
+        "peer": 77.44444444444444
+      }
+    },
+    "4:noisy:fresh": {
+      "chosen": "cold",
+      "means": {
+        "cold": 87.55555555555556,
+        "memory": 97.27777777777777,
+        "peer": 179.61111111111111
+      }
+    },
+    "9:clean:existing": {
+      "chosen": "peer",
+      "means": {
+        "cold": 197.66666666666666,
+        "memory": 215.16666666666666,
+        "peer": 127
+      }
+    },
+    "9:clean:fresh": {
+      "chosen": "cold",
+      "means": {
+        "cold": 198.44444444444446,
+        "memory": 213.5,
+        "peer": 339.94444444444446
+      }
+    },
+    "9:noisy:existing": {
+      "chosen": "peer",
+      "means": {
+        "cold": 199.22222222222223,
+        "memory": 217.77777777777777,
+        "peer": 168.22222222222223
+      }
+    },
+    "9:noisy:fresh": {
+      "chosen": "cold",
+      "means": {
+        "cold": 199.22222222222223,
+        "memory": 215.88888888888889,
+        "peer": 376.05555555555554
+      }
+    }
+  },
+  "totals": {
+    "cold": 36906,
+    "memory": 39781,
+    "peer": 48532,
+    "adaptive": 32562,
+    "hindsight": 32480
+  },
+  "counts": {
+    "cold": 240,
+    "memory": 0,
+    "peer": 120
+  },
+  "perContext": {
+    "1:clean:existing": {
+      "choice": "cold",
+      "meanCosts": {
+        "cold": 21.6,
+        "memory": 21.6,
+        "peer": 23
+      }
+    },
+    "1:clean:fresh": {
+      "choice": "cold",
+      "meanCosts": {
+        "cold": 22.266666666666666,
+        "memory": 22.266666666666666,
+        "peer": 45.06666666666667
+      }
+    },
+    "1:noisy:existing": {
+      "choice": "cold",
+      "meanCosts": {
+        "cold": 21.733333333333334,
+        "memory": 21.733333333333334,
+        "peer": 26.566666666666666
+      }
+    },
+    "1:noisy:fresh": {
+      "choice": "cold",
+      "meanCosts": {
+        "cold": 22.266666666666666,
+        "memory": 22.266666666666666,
+        "peer": 47.03333333333333
+      }
+    },
+    "4:clean:existing": {
+      "choice": "peer",
+      "meanCosts": {
+        "cold": 88.33333333333333,
+        "memory": 96.26666666666667,
+        "peer": 62
+      }
+    },
+    "4:clean:fresh": {
+      "choice": "cold",
+      "meanCosts": {
+        "cold": 87.83333333333333,
+        "memory": 96.03333333333333,
+        "peer": 157.8
+      }
+    },
+    "4:noisy:existing": {
+      "choice": "peer",
+      "meanCosts": {
+        "cold": 88.43333333333334,
+        "memory": 96.2,
+        "peer": 75.53333333333333
+      }
+    },
+    "4:noisy:fresh": {
+      "choice": "cold",
+      "meanCosts": {
+        "cold": 87.53333333333333,
+        "memory": 96.03333333333333,
+        "peer": 174.16666666666666
+      }
+    },
+    "9:clean:existing": {
+      "choice": "peer",
+      "meanCosts": {
+        "cold": 197.63333333333333,
+        "memory": 213.76666666666668,
+        "peer": 127
+      }
+    },
+    "9:clean:fresh": {
+      "choice": "cold",
+      "meanCosts": {
+        "cold": 197.9,
+        "memory": 212.1,
+        "peer": 339.96666666666664
+      }
+    },
+    "9:noisy:existing": {
+      "choice": "peer",
+      "meanCosts": {
+        "cold": 197.6,
+        "memory": 211.56666666666666,
+        "peer": 162.66666666666666
+      }
+    },
+    "9:noisy:fresh": {
+      "choice": "cold",
+      "meanCosts": {
+        "cold": 197.06666666666666,
+        "memory": 216.2,
+        "peer": 376.93333333333334
+      }
+    }
+  },
+  "adaptiveExact": 1680,
+  "adaptiveHeldout": 5040,
+  "corruptions": 264,
+  "rejected": 264,
+  "adaptiveSource": 18531,
+  "calibrationCost": 87640
+}
