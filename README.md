@@ -65,6 +65,10 @@ Cost-aware batch strategy selection using the v0.3 learner and verified exchange
 
 Bounded online strategy learning with replayable selected-outcome history: `node runtime/cli-v05.mjs test` or `node runtime/cli-v05.mjs summary`. See [adaptive continuity and drift failure analysis](docs/genesis-field-v05.md). The tested selector adapts away from degraded peer communication but fails to reacquire improved reliability quickly, losing to the best fixed policy overall. Earlier runtimes remain intact.
 
+## Genesis Field v0.6
+
+Elapsed-time memory decay and periodic reinvestigation: `node runtime/cli-v06.mjs test` or `node runtime/cli-v06.mjs summary`. See [temporal relevance benchmark and limitations](docs/genesis-field-v06.md). The combined policy recovers peer use faster and improves on v0.5 in two drift streams, but costs more in stationary conditions and loses to always-peer overall. Separate schema-6 checkpoint; earlier versions intact.
+
 ## Research constraints
 
 Experiments are CPU-local, seeded, finite, and isolated from external systems. No runtime network access, self-deployment, secret access, or automatic promotion of architectural modifications. Record failed experiments, resource budgets and evaluation leakage. Use separate training and held-out observations; do not claim discoveries beyond the tested hypothesis family. Human and AI design choices are explicit and revisable.
