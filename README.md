@@ -53,6 +53,10 @@ First integrated runtime: `node runtime/cli.mjs test` or `node runtime/cli.mjs r
 
 Compositional memory with provenance, bounded executable relationships and expanded search on contradiction: `node runtime/cli-v02.mjs test` or `node runtime/cli-v02.mjs report`. See [protocol, results and initial failed audit](docs/genesis-field-v02.md). Schema 2 is separate from v0.1; use a fresh checkpoint.
 
+## Genesis Field v0.3
+
+Three-instance bounded peer exchange, coordinate calibration and independent auditing: `node runtime/cli-v03.mjs test` or `node runtime/cli-v03.mjs report`. See [protocol and full-cost results](docs/genesis-field-v03.md). Collaboration reduces target-only observation cost but increases total cost in this benchmark. Separate in-process histories; durable multi-instance integration remains future work.
+
 ## Research constraints
 
 Experiments are CPU-local, seeded, finite, and isolated from external systems. No runtime network access, self-deployment, secret access, or automatic promotion of architectural modifications. Record failed experiments, resource budgets and evaluation leakage. Use separate training and held-out observations; do not claim discoveries beyond the tested hypothesis family. Human and AI design choices are explicit and revisable.
