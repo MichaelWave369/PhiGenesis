@@ -85,6 +85,10 @@ Validation milestone for unchanged v0.8: `node runtime/cli-v09.mjs test`, `node 
 
 Finite-domain certification, handled-abort accounting, per-use coordinate recalibration and HMAC-authenticated checkpoints: `node runtime/cli-v10-rc1.mjs test` or `node runtime/cli-v10-rc1.mjs summary`. See [RC1 guarantees, cost results and blocked gate](docs/genesis-field-v10-rc1.md). `gate` remains intentionally blocked pending crash-durable journaling and independent review/key lifecycle. Earlier versions preserved.
 
+## Genesis Field v1.0 RC2
+
+Authenticated append-only attempted-work journal around RC1: `node runtime/cli-v10-rc2.mjs test` and `node runtime/test-crash-v10-rc2.mjs`. See [crash recovery protocol, trust assumptions and release gate](docs/genesis-field-v10-rc2.md). Unfinished reservations remain uncertain; recovery abandons incomplete work without repeating provider calls. Single writer, externally trusted key/head required for rollback protection. Release gate intentionally blocked.
+
 ## Research constraints
 
 Experiments are CPU-local, seeded, finite, and isolated from external systems. No runtime network access, self-deployment, secret access, or automatic promotion of architectural modifications. Record failed experiments, resource budgets and evaluation leakage. Use separate training and held-out observations; do not claim discoveries beyond the tested hypothesis family. Human and AI design choices are explicit and revisable.
