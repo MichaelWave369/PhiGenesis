@@ -73,6 +73,10 @@ Elapsed-time memory decay and periodic reinvestigation: `node runtime/cli-v06.mj
 
 Bounded value-of-information heuristic with a probe budget: `node runtime/cli-v07.mjs test` or `node runtime/cli-v07.mjs summary`. See [curiosity benchmark and cost accounting](docs/genesis-field-v07.md). Improved recipient costs on designed streams versus v0.6, but fully charged peer acquisition remains more expensive than cold discovery. In-memory replay; earlier runtimes preserved.
 
+## Genesis Field v0.8
+
+Integrated bounded event-sourced runtime with three persistent in-process relational libraries, verified transfer and cost-aware inquiry: `node runtime/cli-v08.mjs test` or `node runtime/cli-v08.mjs summary`. See [shared protocol, integration benchmark and limitations](docs/genesis-field-v08.md). Source acquisition is charged in full; the adaptive mode remains more expensive than cold discovery in this test. Schema-8 checkpoints replay raw evidence at episode boundaries; earlier runtimes preserved.
+
 ## Research constraints
 
 Experiments are CPU-local, seeded, finite, and isolated from external systems. No runtime network access, self-deployment, secret access, or automatic promotion of architectural modifications. Record failed experiments, resource budgets and evaluation leakage. Use separate training and held-out observations; do not claim discoveries beyond the tested hypothesis family. Human and AI design choices are explicit and revisable.

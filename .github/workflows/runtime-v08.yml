@@ -1,0 +1,27 @@
+name: Genesis Field v0.8
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  integrated-runtime:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node runtime/cli-v08.mjs test
+      - name: Reproduce benchmark
+        run: |
+          node runtime/cli-v08.mjs summary > "$RUNNER_TEMP/v08.json"
+          node --input-type=module -e 'import fs from "node:fs"; import assert from "node:assert/strict"; assert.deepEqual(JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+"/v08.json")),JSON.parse(fs.readFileSync("results/genesis_field_v08.json")))'
+      - name: Independent process event reconstruction
+        run: |
+          p="$RUNNER_TEMP/v08-checkpoint.json"
+          node runtime/cli-v08.mjs init "$p" 12345 peer
+          node runtime/cli-v08.mjs step "$p"
+          node runtime/cli-v08.mjs step "$p"
+          node runtime/cli-v08.mjs step "$p"
+          node runtime/cli-v08.mjs inspect "$p" > "$RUNNER_TEMP/v08-state.json"
+          node --input-type=module -e 'import fs from "node:fs"; import assert from "node:assert/strict"; import {create,advance,environment,peerAPI} from "./runtime/field-v08.mjs"; let s=create(peerAPI,12345,"peer"); for(let i=0;i<3;i++)s=advance(peerAPI,s,environment(s.seed,i,i%7===0).provider); assert.deepEqual(JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+"/v08-state.json")),s); assert.equal(s.events[0].peerStatus,"rejected"); assert.equal(s.events[2].cost.calibration,0);'
