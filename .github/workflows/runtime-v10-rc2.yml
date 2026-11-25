@@ -1,0 +1,23 @@
+name: Genesis Field v1.0 RC2
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  crash-recovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node runtime/cli-v10-rc2.mjs test
+      - name: Real child process SIGKILL boundaries
+        run: node runtime/test-crash-v10-rc2.mjs
+      - name: Release remains gated
+        run: |
+          set +e
+          node runtime/cli-v10-rc2.mjs gate
+          status=$?
+          set -e
+          test "$status" -eq 1
