@@ -1,0 +1,27 @@
+name: Genesis Field v0.5
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  adaptive-continuity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node runtime/cli-v05.mjs test
+      - name: Reproduce benchmark
+        run: |
+          node runtime/cli-v05.mjs summary > "$RUNNER_TEMP/v05.json"
+          node --input-type=module -e 'import fs from "node:fs"; import assert from "node:assert/strict"; assert.deepEqual(JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+"/v05.json")),JSON.parse(fs.readFileSync("results/genesis_field_v05.json")))'
+      - name: Cross-process online state replay
+        run: |
+          p="$RUNNER_TEMP/v05-checkpoint.json"
+          node runtime/cli-v05.mjs init "$p" 12345
+          node runtime/cli-v05.mjs step "$p"
+          node runtime/cli-v05.mjs step "$p"
+          node runtime/cli-v05.mjs step "$p"
+          node runtime/cli-v05.mjs inspect "$p" > "$RUNNER_TEMP/v05-state.json"
+          node --input-type=module -e 'import fs from "node:fs"; import assert from "node:assert/strict"; import {trial,peerAPI} from "./runtime/field-v05.mjs"; const s=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+"/v05-state.json")); assert.deepEqual(s.events.map(e=>({method:e.method,cost:e.cost})),trial(peerAPI,12345,true,3).rows.map(r=>({method:r.decision,cost:r.outcome.cost}))); assert.equal(s.events.length,3)'
