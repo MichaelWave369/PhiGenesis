@@ -1,0 +1,100 @@
+{
+  "seed": 369,
+  "trials": 369,
+  "counts": {
+    "training_queries": 3321,
+    "heldout_total": 1107,
+    "heldout_pass": 1107,
+    "synthesis_total": 2952,
+    "synthesis_pass": 2952,
+    "sequence_total": 403317,
+    "sequence_pass": 403317,
+    "noncommuting_pairs": 1476,
+    "negative_control_total": 369,
+    "negative_control_detected_by_holdout": 369
+  },
+  "shortest_program_length_counts": {
+    "0": 369,
+    "1": 1107,
+    "2": 1107,
+    "3": 369
+  },
+  "example": {
+    "probe_order": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "learned": {
+      "a": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "b": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "c": [
+        3,
+        2,
+        0,
+        1
+      ]
+    },
+    "programs": {
+      "identity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "a": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "b": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "c": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "aa": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "ab": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "ba": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "aab": [
+        0,
+        1,
+        3,
+        2
+      ]
+    }
+  }
+}

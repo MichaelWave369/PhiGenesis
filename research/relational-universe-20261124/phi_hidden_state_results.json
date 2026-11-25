@@ -1,0 +1,75 @@
+{
+  "seed": 369,
+  "trials_per_family": 369,
+  "training_bits": 96,
+  "test_bits": 256,
+  "reset_bits": 16,
+  "families": {
+    "fresh_iid": {
+      "orders": {
+        "0": 356,
+        "1": 11,
+        "2": 2
+      },
+      "loss": 1.0091108666363955,
+      "baseline_loss": 1.0069516812855053,
+      "accuracy": 0.5008151253387534,
+      "reset_matches": 0
+    },
+    "fixed_tape": {
+      "orders": {
+        "0": 356,
+        "1": 11,
+        "2": 2
+      },
+      "loss": 1.0091108666363955,
+      "baseline_loss": 1.0069516812855053,
+      "accuracy": 0.5008151253387534,
+      "reset_matches": 369
+    },
+    "alternating": {
+      "orders": {
+        "0": 0,
+        "1": 369,
+        "2": 0
+      },
+      "loss": 0.01510689239020824,
+      "baseline_loss": 1.0,
+      "accuracy": 1.0,
+      "reset_matches": 369
+    },
+    "period_0011": {
+      "orders": {
+        "0": 0,
+        "1": 0,
+        "2": 369
+      },
+      "loss": 0.029759997351517728,
+      "baseline_loss": 1.0001568576820836,
+      "accuracy": 1.0,
+      "reset_matches": 369
+    },
+    "persistent_markov": {
+      "orders": {
+        "0": 0,
+        "1": 369,
+        "2": 0
+      },
+      "loss": 0.48897081051945934,
+      "baseline_loss": 1.0754750076395798,
+      "accuracy": 0.8989138719512195,
+      "reset_matches": 19
+    },
+    "noisy_hidden_alternator": {
+      "orders": {
+        "0": 0,
+        "1": 141,
+        "2": 228
+      },
+      "loss": 0.6539179973357686,
+      "baseline_loss": 1.0027222142246224,
+      "accuracy": 0.8176818682249323,
+      "reset_matches": 14
+    }
+  }
+}
