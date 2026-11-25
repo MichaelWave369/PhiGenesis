@@ -1,0 +1,490 @@
+{
+  "modes": {
+    "cold": {
+      "correct": 108,
+      "full": 3456,
+      "cost": 5835,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 9
+    },
+    "memory": {
+      "correct": 108,
+      "full": 3456,
+      "cost": 5935,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 9
+    },
+    "peer": {
+      "correct": 108,
+      "full": 3456,
+      "cost": 12207,
+      "changed": 18,
+      "rejected": 27,
+      "replays": 9
+    },
+    "adaptive": {
+      "correct": 108,
+      "full": 3456,
+      "cost": 6368,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 9
+    }
+  },
+  "sessions": [
+    {
+      "mode": "cold",
+      "seed": 904401473,
+      "correct": 12,
+      "full": 384,
+      "cost": 646,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "cold",
+      "seed": 904532544,
+      "correct": 12,
+      "full": 384,
+      "cost": 643,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "cold",
+      "seed": 904663615,
+      "correct": 12,
+      "full": 384,
+      "cost": 647,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "cold",
+      "seed": 904794686,
+      "correct": 12,
+      "full": 384,
+      "cost": 651,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "cold",
+      "seed": 904925757,
+      "correct": 12,
+      "full": 384,
+      "cost": 646,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "cold",
+      "seed": 905056828,
+      "correct": 12,
+      "full": 384,
+      "cost": 652,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "cold",
+      "seed": 905187899,
+      "correct": 12,
+      "full": 384,
+      "cost": 641,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "cold",
+      "seed": 905318970,
+      "correct": 12,
+      "full": 384,
+      "cost": 653,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "cold",
+      "seed": 905450041,
+      "correct": 12,
+      "full": 384,
+      "cost": 656,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "memory",
+      "seed": 904401473,
+      "correct": 12,
+      "full": 384,
+      "cost": 665,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "memory",
+      "seed": 904532544,
+      "correct": 12,
+      "full": 384,
+      "cost": 631,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "memory",
+      "seed": 904663615,
+      "correct": 12,
+      "full": 384,
+      "cost": 661,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "memory",
+      "seed": 904794686,
+      "correct": 12,
+      "full": 384,
+      "cost": 664,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "memory",
+      "seed": 904925757,
+      "correct": 12,
+      "full": 384,
+      "cost": 668,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "memory",
+      "seed": 905056828,
+      "correct": 12,
+      "full": 384,
+      "cost": 655,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "memory",
+      "seed": 905187899,
+      "correct": 12,
+      "full": 384,
+      "cost": 664,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "memory",
+      "seed": 905318970,
+      "correct": 12,
+      "full": 384,
+      "cost": 663,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "memory",
+      "seed": 905450041,
+      "correct": 12,
+      "full": 384,
+      "cost": 664,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "peer",
+      "seed": 904401473,
+      "correct": 12,
+      "full": 384,
+      "cost": 1378,
+      "changed": 2,
+      "rejected": 3,
+      "replays": 1
+    },
+    {
+      "mode": "peer",
+      "seed": 904532544,
+      "correct": 12,
+      "full": 384,
+      "cost": 1342,
+      "changed": 2,
+      "rejected": 3,
+      "replays": 1
+    },
+    {
+      "mode": "peer",
+      "seed": 904663615,
+      "correct": 12,
+      "full": 384,
+      "cost": 1369,
+      "changed": 2,
+      "rejected": 3,
+      "replays": 1
+    },
+    {
+      "mode": "peer",
+      "seed": 904794686,
+      "correct": 12,
+      "full": 384,
+      "cost": 1359,
+      "changed": 2,
+      "rejected": 3,
+      "replays": 1
+    },
+    {
+      "mode": "peer",
+      "seed": 904925757,
+      "correct": 12,
+      "full": 384,
+      "cost": 1353,
+      "changed": 2,
+      "rejected": 3,
+      "replays": 1
+    },
+    {
+      "mode": "peer",
+      "seed": 905056828,
+      "correct": 12,
+      "full": 384,
+      "cost": 1330,
+      "changed": 2,
+      "rejected": 3,
+      "replays": 1
+    },
+    {
+      "mode": "peer",
+      "seed": 905187899,
+      "correct": 12,
+      "full": 384,
+      "cost": 1341,
+      "changed": 2,
+      "rejected": 3,
+      "replays": 1
+    },
+    {
+      "mode": "peer",
+      "seed": 905318970,
+      "correct": 12,
+      "full": 384,
+      "cost": 1368,
+      "changed": 2,
+      "rejected": 3,
+      "replays": 1
+    },
+    {
+      "mode": "peer",
+      "seed": 905450041,
+      "correct": 12,
+      "full": 384,
+      "cost": 1367,
+      "changed": 2,
+      "rejected": 3,
+      "replays": 1
+    },
+    {
+      "mode": "adaptive",
+      "seed": 904401473,
+      "correct": 12,
+      "full": 384,
+      "cost": 717,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "adaptive",
+      "seed": 904532544,
+      "correct": 12,
+      "full": 384,
+      "cost": 688,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "adaptive",
+      "seed": 904663615,
+      "correct": 12,
+      "full": 384,
+      "cost": 713,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "adaptive",
+      "seed": 904794686,
+      "correct": 12,
+      "full": 384,
+      "cost": 711,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "adaptive",
+      "seed": 904925757,
+      "correct": 12,
+      "full": 384,
+      "cost": 708,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "adaptive",
+      "seed": 905056828,
+      "correct": 12,
+      "full": 384,
+      "cost": 708,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "adaptive",
+      "seed": 905187899,
+      "correct": 12,
+      "full": 384,
+      "cost": 693,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "adaptive",
+      "seed": 905318970,
+      "correct": 12,
+      "full": 384,
+      "cost": 713,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    },
+    {
+      "mode": "adaptive",
+      "seed": 905450041,
+      "correct": 12,
+      "full": 384,
+      "cost": 717,
+      "changed": 0,
+      "rejected": 0,
+      "replays": 1
+    }
+  ],
+  "faults": [
+    {
+      "seed": 2451388337,
+      "flip": 1,
+      "sparseRejected": true,
+      "budgetRecorded": true,
+      "externalRecorded": true,
+      "contradictionRejected": true,
+      "rollback": true,
+      "replays": true
+    },
+    {
+      "seed": 2451453874,
+      "flip": 2,
+      "sparseRejected": true,
+      "budgetRecorded": true,
+      "externalRecorded": true,
+      "contradictionRejected": true,
+      "rollback": true,
+      "replays": true
+    },
+    {
+      "seed": 2451519411,
+      "flip": 1,
+      "sparseRejected": true,
+      "budgetRecorded": true,
+      "externalRecorded": true,
+      "contradictionRejected": true,
+      "rollback": true,
+      "replays": true
+    },
+    {
+      "seed": 2451584948,
+      "flip": 2,
+      "sparseRejected": true,
+      "budgetRecorded": true,
+      "externalRecorded": true,
+      "contradictionRejected": true,
+      "rollback": true,
+      "replays": true
+    },
+    {
+      "seed": 2451650485,
+      "flip": 1,
+      "sparseRejected": true,
+      "budgetRecorded": true,
+      "externalRecorded": true,
+      "contradictionRejected": true,
+      "rollback": true,
+      "replays": true
+    },
+    {
+      "seed": 2451716022,
+      "flip": 1,
+      "sparseRejected": true,
+      "budgetRecorded": true,
+      "externalRecorded": true,
+      "contradictionRejected": true,
+      "rollback": true,
+      "replays": true
+    },
+    {
+      "seed": 2451781559,
+      "flip": 1,
+      "sparseRejected": true,
+      "budgetRecorded": true,
+      "externalRecorded": true,
+      "contradictionRejected": true,
+      "rollback": true,
+      "replays": true
+    },
+    {
+      "seed": 2451847096,
+      "flip": 1,
+      "sparseRejected": true,
+      "budgetRecorded": true,
+      "externalRecorded": true,
+      "contradictionRejected": true,
+      "rollback": true,
+      "replays": true
+    },
+    {
+      "seed": 2451912633,
+      "flip": 1,
+      "sparseRejected": true,
+      "budgetRecorded": true,
+      "externalRecorded": true,
+      "contradictionRejected": true,
+      "rollback": true,
+      "replays": true
+    }
+  ]
+}

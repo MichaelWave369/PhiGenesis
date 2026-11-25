@@ -81,6 +81,10 @@ Integrated bounded event-sourced runtime with three persistent in-process relati
 
 Validation milestone for unchanged v0.8: `node runtime/cli-v09.mjs test`, `node runtime/cli-v09.mjs summary`, or `node runtime/cli-v09.mjs gate` (intentionally exits 1). See [validation, failure witnesses and readiness blockers](docs/genesis-field-v09.md). Supported rules recovered under coordinate drift, but sparse unseen errors can pass admission, aborted work is not ledgered, and replay is not authentication. Diagnostic CI success is not release readiness.
 
+## Genesis Field v1.0 RC1
+
+Finite-domain certification, handled-abort accounting, per-use coordinate recalibration and HMAC-authenticated checkpoints: `node runtime/cli-v10-rc1.mjs test` or `node runtime/cli-v10-rc1.mjs summary`. See [RC1 guarantees, cost results and blocked gate](docs/genesis-field-v10-rc1.md). `gate` remains intentionally blocked pending crash-durable journaling and independent review/key lifecycle. Earlier versions preserved.
+
 ## Research constraints
 
 Experiments are CPU-local, seeded, finite, and isolated from external systems. No runtime network access, self-deployment, secret access, or automatic promotion of architectural modifications. Record failed experiments, resource budgets and evaluation leakage. Use separate training and held-out observations; do not claim discoveries beyond the tested hypothesis family. Human and AI design choices are explicit and revisable.
