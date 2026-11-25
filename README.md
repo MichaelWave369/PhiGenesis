@@ -69,6 +69,10 @@ Bounded online strategy learning with replayable selected-outcome history: `node
 
 Elapsed-time memory decay and periodic reinvestigation: `node runtime/cli-v06.mjs test` or `node runtime/cli-v06.mjs summary`. See [temporal relevance benchmark and limitations](docs/genesis-field-v06.md). The combined policy recovers peer use faster and improves on v0.5 in two drift streams, but costs more in stationary conditions and loses to always-peer overall. Separate schema-6 checkpoint; earlier versions intact.
 
+## Genesis Field v0.7
+
+Bounded value-of-information heuristic with a probe budget: `node runtime/cli-v07.mjs test` or `node runtime/cli-v07.mjs summary`. See [curiosity benchmark and cost accounting](docs/genesis-field-v07.md). Improved recipient costs on designed streams versus v0.6, but fully charged peer acquisition remains more expensive than cold discovery. In-memory replay; earlier runtimes preserved.
+
 ## Research constraints
 
 Experiments are CPU-local, seeded, finite, and isolated from external systems. No runtime network access, self-deployment, secret access, or automatic promotion of architectural modifications. Record failed experiments, resource budgets and evaluation leakage. Use separate training and held-out observations; do not claim discoveries beyond the tested hypothesis family. Human and AI design choices are explicit and revisable.

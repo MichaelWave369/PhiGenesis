@@ -1,0 +1,18 @@
+name: Genesis Field v0.7
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  curiosity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node runtime/cli-v07.mjs test
+      - name: Reproduce benchmark
+        run: |
+          node runtime/cli-v07.mjs summary > "$RUNNER_TEMP/v07.json"
+          node --input-type=module -e 'import fs from "node:fs"; import assert from "node:assert/strict"; assert.deepEqual(JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+"/v07.json")),JSON.parse(fs.readFileSync("results/genesis_field_v07.json")))'
