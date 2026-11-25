@@ -1,0 +1,2289 @@
+{
+  "seeds": 18,
+  "rounds": 180,
+  "targetsPerBatch": 4,
+  "window": 12,
+  "epsilon": 0.12,
+  "summary": {
+    "drift": {
+      "totals": {
+        "cold": 284585,
+        "memory": 313460,
+        "peer": 253521,
+        "adaptive": 262869,
+        "hindsight": 233792
+      },
+      "phases": [
+        {
+          "phase": 0,
+          "rounds": 1080,
+          "cold": 94942,
+          "memory": 104764,
+          "peer": 66960,
+          "adaptive": 70572,
+          "hindsight": 66960,
+          "choices": {
+            "cold": 65,
+            "memory": 52,
+            "peer": 963
+          }
+        },
+        {
+          "phase": 1,
+          "rounds": 1080,
+          "cold": 94969,
+          "memory": 104251,
+          "peer": 114233,
+          "adaptive": 98443,
+          "hindsight": 94645,
+          "choices": {
+            "cold": 869,
+            "memory": 38,
+            "peer": 173
+          }
+        },
+        {
+          "phase": 2,
+          "rounds": 1080,
+          "cold": 94674,
+          "memory": 104445,
+          "peer": 72328,
+          "adaptive": 93854,
+          "hindsight": 72187,
+          "choices": {
+            "cold": 977,
+            "memory": 44,
+            "peer": 59
+          }
+        }
+      ],
+      "exact": 12960,
+      "heldout": 38880,
+      "historicalSource": 115754,
+      "restarts": 18,
+      "allExact": true,
+      "trials": [
+        {
+          "seed": 2207373107,
+          "drift": true,
+          "rounds": 180,
+          "totals": {
+            "cold": 15828,
+            "memory": 17532,
+            "peer": 14051,
+            "adaptive": 14666,
+            "hindsight": 12994
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5252,
+              "memory": 5855,
+              "peer": 3720,
+              "adaptive": 3916,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 3,
+                "memory": 3,
+                "peer": 54
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5286,
+              "memory": 5786,
+              "peer": 6313,
+              "adaptive": 5494,
+              "hindsight": 5265,
+              "choices": {
+                "cold": 47,
+                "memory": 2,
+                "peer": 11
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5290,
+              "memory": 5891,
+              "peer": 4018,
+              "adaptive": 5256,
+              "hindsight": 4009,
+              "choices": {
+                "cold": 52,
+                "memory": 4,
+                "peer": 4
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 6691,
+          "replay": 1
+        },
+        {
+          "seed": 2207404444,
+          "drift": true,
+          "rounds": 180,
+          "totals": {
+            "cold": 15834,
+            "memory": 17457,
+            "peer": 14015,
+            "adaptive": 14565,
+            "hindsight": 12983
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5274,
+              "memory": 5867,
+              "peer": 3720,
+              "adaptive": 3867,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 3,
+                "memory": 2,
+                "peer": 55
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5313,
+              "memory": 5800,
+              "peer": 6318,
+              "adaptive": 5512,
+              "hindsight": 5291,
+              "choices": {
+                "cold": 48,
+                "memory": 3,
+                "peer": 9
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5247,
+              "memory": 5790,
+              "peer": 3977,
+              "adaptive": 5186,
+              "hindsight": 3972,
+              "choices": {
+                "cold": 54,
+                "memory": 2,
+                "peer": 4
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 6596,
+          "replay": 1
+        },
+        {
+          "seed": 2207435781,
+          "drift": true,
+          "rounds": 180,
+          "totals": {
+            "cold": 15772,
+            "memory": 17490,
+            "peer": 14090,
+            "adaptive": 14557,
+            "hindsight": 13007
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5262,
+              "memory": 5849,
+              "peer": 3720,
+              "adaptive": 3907,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 4,
+                "memory": 2,
+                "peer": 54
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5278,
+              "memory": 5787,
+              "peer": 6344,
+              "adaptive": 5498,
+              "hindsight": 5273,
+              "choices": {
+                "cold": 47,
+                "memory": 2,
+                "peer": 11
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5232,
+              "memory": 5854,
+              "peer": 4026,
+              "adaptive": 5152,
+              "hindsight": 4014,
+              "choices": {
+                "cold": 53,
+                "memory": 2,
+                "peer": 5
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 6813,
+          "replay": 1
+        },
+        {
+          "seed": 2207467118,
+          "drift": true,
+          "rounds": 180,
+          "totals": {
+            "cold": 15815,
+            "memory": 17393,
+            "peer": 14117,
+            "adaptive": 14626,
+            "hindsight": 13027
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5277,
+              "memory": 5848,
+              "peer": 3720,
+              "adaptive": 3931,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 4,
+                "memory": 3,
+                "peer": 53
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5262,
+              "memory": 5753,
+              "peer": 6320,
+              "adaptive": 5453,
+              "hindsight": 5246,
+              "choices": {
+                "cold": 49,
+                "memory": 1,
+                "peer": 10
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5276,
+              "memory": 5792,
+              "peer": 4077,
+              "adaptive": 5242,
+              "hindsight": 4061,
+              "choices": {
+                "cold": 51,
+                "memory": 5,
+                "peer": 4
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 6548,
+          "replay": 1
+        },
+        {
+          "seed": 2207498455,
+          "drift": true,
+          "rounds": 180,
+          "totals": {
+            "cold": 15801,
+            "memory": 17379,
+            "peer": 14119,
+            "adaptive": 14526,
+            "hindsight": 13044
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5282,
+              "memory": 5788,
+              "peer": 3720,
+              "adaptive": 3855,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 4,
+                "memory": 1,
+                "peer": 55
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5271,
+              "memory": 5826,
+              "peer": 6336,
+              "adaptive": 5482,
+              "hindsight": 5262,
+              "choices": {
+                "cold": 50,
+                "memory": 0,
+                "peer": 10
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5248,
+              "memory": 5765,
+              "peer": 4063,
+              "adaptive": 5189,
+              "hindsight": 4062,
+              "choices": {
+                "cold": 52,
+                "memory": 4,
+                "peer": 4
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 6637,
+          "replay": 1
+        },
+        {
+          "seed": 2207529792,
+          "drift": true,
+          "rounds": 180,
+          "totals": {
+            "cold": 15823,
+            "memory": 17463,
+            "peer": 14179,
+            "adaptive": 14696,
+            "hindsight": 12959
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5274,
+              "memory": 5834,
+              "peer": 3720,
+              "adaptive": 3993,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 6,
+                "memory": 3,
+                "peer": 51
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5269,
+              "memory": 5849,
+              "peer": 6477,
+              "adaptive": 5474,
+              "hindsight": 5265,
+              "choices": {
+                "cold": 51,
+                "memory": 0,
+                "peer": 9
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5280,
+              "memory": 5780,
+              "peer": 3982,
+              "adaptive": 5229,
+              "hindsight": 3974,
+              "choices": {
+                "cold": 53,
+                "memory": 3,
+                "peer": 4
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 6202,
+          "replay": 1
+        },
+        {
+          "seed": 2207561129,
+          "drift": true,
+          "rounds": 180,
+          "totals": {
+            "cold": 15743,
+            "memory": 17350,
+            "peer": 14048,
+            "adaptive": 14654,
+            "hindsight": 12997
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5251,
+              "memory": 5761,
+              "peer": 3720,
+              "adaptive": 4063,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 6,
+                "memory": 5,
+                "peer": 49
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5264,
+              "memory": 5766,
+              "peer": 6284,
+              "adaptive": 5410,
+              "hindsight": 5242,
+              "choices": {
+                "cold": 51,
+                "memory": 0,
+                "peer": 9
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5228,
+              "memory": 5823,
+              "peer": 4044,
+              "adaptive": 5181,
+              "hindsight": 4035,
+              "choices": {
+                "cold": 55,
+                "memory": 2,
+                "peer": 3
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 5820,
+          "replay": 1
+        },
+        {
+          "seed": 2207592466,
+          "drift": true,
+          "rounds": 180,
+          "totals": {
+            "cold": 15763,
+            "memory": 17502,
+            "peer": 14225,
+            "adaptive": 14634,
+            "hindsight": 12970
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5255,
+              "memory": 5845,
+              "peer": 3720,
+              "adaptive": 3957,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 5,
+                "memory": 3,
+                "peer": 52
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5269,
+              "memory": 5846,
+              "peer": 6502,
+              "adaptive": 5477,
+              "hindsight": 5247,
+              "choices": {
+                "cold": 51,
+                "memory": 0,
+                "peer": 9
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5239,
+              "memory": 5811,
+              "peer": 4003,
+              "adaptive": 5200,
+              "hindsight": 4003,
+              "choices": {
+                "cold": 54,
+                "memory": 3,
+                "peer": 3
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 6210,
+          "replay": 1
+        },
+        {
+          "seed": 2207623803,
+          "drift": true,
+          "rounds": 180,
+          "totals": {
+            "cold": 15824,
+            "memory": 17476,
+            "peer": 14115,
+            "adaptive": 14773,
+            "hindsight": 12995
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5290,
+              "memory": 5827,
+              "peer": 3720,
+              "adaptive": 4011,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 2,
+                "memory": 6,
+                "peer": 52
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5285,
+              "memory": 5840,
+              "peer": 6388,
+              "adaptive": 5521,
+              "hindsight": 5272,
+              "choices": {
+                "cold": 47,
+                "memory": 4,
+                "peer": 9
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5249,
+              "memory": 5809,
+              "peer": 4007,
+              "adaptive": 5241,
+              "hindsight": 4003,
+              "choices": {
+                "cold": 56,
+                "memory": 2,
+                "peer": 2
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 6091,
+          "replay": 1
+        },
+        {
+          "seed": 2207655140,
+          "drift": true,
+          "rounds": 180,
+          "totals": {
+            "cold": 15836,
+            "memory": 17404,
+            "peer": 14001,
+            "adaptive": 14758,
+            "hindsight": 12992
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5273,
+              "memory": 5795,
+              "peer": 3720,
+              "adaptive": 4057,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 7,
+                "memory": 4,
+                "peer": 49
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5288,
+              "memory": 5763,
+              "peer": 6252,
+              "adaptive": 5453,
+              "hindsight": 5254,
+              "choices": {
+                "cold": 50,
+                "memory": 0,
+                "peer": 10
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5275,
+              "memory": 5846,
+              "peer": 4029,
+              "adaptive": 5248,
+              "hindsight": 4018,
+              "choices": {
+                "cold": 55,
+                "memory": 3,
+                "peer": 2
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 5945,
+          "replay": 1
+        },
+        {
+          "seed": 2207686477,
+          "drift": true,
+          "rounds": 180,
+          "totals": {
+            "cold": 15875,
+            "memory": 17264,
+            "peer": 13928,
+            "adaptive": 14570,
+            "hindsight": 12972
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5322,
+              "memory": 5781,
+              "peer": 3720,
+              "adaptive": 3902,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 3,
+                "memory": 3,
+                "peer": 54
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5271,
+              "memory": 5716,
+              "peer": 6188,
+              "adaptive": 5404,
+              "hindsight": 5244,
+              "choices": {
+                "cold": 46,
+                "memory": 4,
+                "peer": 10
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5282,
+              "memory": 5767,
+              "peer": 4020,
+              "adaptive": 5264,
+              "hindsight": 4008,
+              "choices": {
+                "cold": 58,
+                "memory": 1,
+                "peer": 1
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 6289,
+          "replay": 1
+        },
+        {
+          "seed": 2207717814,
+          "drift": true,
+          "rounds": 180,
+          "totals": {
+            "cold": 15778,
+            "memory": 17356,
+            "peer": 14151,
+            "adaptive": 14488,
+            "hindsight": 13041
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5268,
+              "memory": 5870,
+              "peer": 3720,
+              "adaptive": 3839,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 2,
+                "memory": 2,
+                "peer": 56
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5267,
+              "memory": 5771,
+              "peer": 6369,
+              "adaptive": 5469,
+              "hindsight": 5259,
+              "choices": {
+                "cold": 47,
+                "memory": 3,
+                "peer": 10
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5243,
+              "memory": 5715,
+              "peer": 4062,
+              "adaptive": 5180,
+              "hindsight": 4062,
+              "choices": {
+                "cold": 53,
+                "memory": 3,
+                "peer": 4
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 6834,
+          "replay": 1
+        },
+        {
+          "seed": 2207749151,
+          "drift": true,
+          "rounds": 180,
+          "totals": {
+            "cold": 15868,
+            "memory": 17522,
+            "peer": 14022,
+            "adaptive": 14638,
+            "hindsight": 12922
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5294,
+              "memory": 5873,
+              "peer": 3720,
+              "adaptive": 3898,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 3,
+                "memory": 3,
+                "peer": 54
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5267,
+              "memory": 5758,
+              "peer": 6320,
+              "adaptive": 5477,
+              "hindsight": 5222,
+              "choices": {
+                "cold": 44,
+                "memory": 8,
+                "peer": 8
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5307,
+              "memory": 5891,
+              "peer": 3982,
+              "adaptive": 5263,
+              "hindsight": 3980,
+              "choices": {
+                "cold": 57,
+                "memory": 1,
+                "peer": 2
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 6282,
+          "replay": 1
+        },
+        {
+          "seed": 2207780488,
+          "drift": true,
+          "rounds": 180,
+          "totals": {
+            "cold": 15851,
+            "memory": 17454,
+            "peer": 14111,
+            "adaptive": 14667,
+            "hindsight": 12969
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5255,
+              "memory": 5818,
+              "peer": 3720,
+              "adaptive": 3909,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 4,
+                "memory": 2,
+                "peer": 54
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5310,
+              "memory": 5832,
+              "peer": 6419,
+              "adaptive": 5473,
+              "hindsight": 5284,
+              "choices": {
+                "cold": 49,
+                "memory": 2,
+                "peer": 9
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5286,
+              "memory": 5804,
+              "peer": 3972,
+              "adaptive": 5285,
+              "hindsight": 3965,
+              "choices": {
+                "cold": 57,
+                "memory": 2,
+                "peer": 1
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 6213,
+          "replay": 1
+        },
+        {
+          "seed": 2207811825,
+          "drift": true,
+          "rounds": 180,
+          "totals": {
+            "cold": 15784,
+            "memory": 17390,
+            "peer": 14070,
+            "adaptive": 14603,
+            "hindsight": 12886
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5300,
+              "memory": 5836,
+              "peer": 3720,
+              "adaptive": 3906,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 1,
+                "memory": 4,
+                "peer": 55
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5232,
+              "memory": 5739,
+              "peer": 6381,
+              "adaptive": 5438,
+              "hindsight": 5220,
+              "choices": {
+                "cold": 48,
+                "memory": 3,
+                "peer": 9
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5252,
+              "memory": 5815,
+              "peer": 3969,
+              "adaptive": 5259,
+              "hindsight": 3946,
+              "choices": {
+                "cold": 59,
+                "memory": 1,
+                "peer": 0
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 6218,
+          "replay": 1
+        },
+        {
+          "seed": 2207843162,
+          "drift": true,
+          "rounds": 180,
+          "totals": {
+            "cold": 15821,
+            "memory": 17344,
+            "peer": 14103,
+            "adaptive": 14591,
+            "hindsight": 13004
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5273,
+              "memory": 5783,
+              "peer": 3720,
+              "adaptive": 3887,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 5,
+                "memory": 1,
+                "peer": 54
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5288,
+              "memory": 5792,
+              "peer": 6376,
+              "adaptive": 5494,
+              "hindsight": 5277,
+              "choices": {
+                "cold": 45,
+                "memory": 4,
+                "peer": 11
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5260,
+              "memory": 5769,
+              "peer": 4007,
+              "adaptive": 5210,
+              "hindsight": 4007,
+              "choices": {
+                "cold": 56,
+                "memory": 1,
+                "peer": 3
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 6455,
+          "replay": 1
+        },
+        {
+          "seed": 2207874499,
+          "drift": true,
+          "rounds": 180,
+          "totals": {
+            "cold": 15781,
+            "memory": 17333,
+            "peer": 14073,
+            "adaptive": 14431,
+            "hindsight": 12978
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5262,
+              "memory": 5759,
+              "peer": 3720,
+              "adaptive": 3796,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 2,
+                "memory": 1,
+                "peer": 57
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5252,
+              "memory": 5804,
+              "peer": 6318,
+              "adaptive": 5439,
+              "hindsight": 5235,
+              "choices": {
+                "cold": 49,
+                "memory": 0,
+                "peer": 11
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5267,
+              "memory": 5770,
+              "peer": 4035,
+              "adaptive": 5196,
+              "hindsight": 4023,
+              "choices": {
+                "cold": 53,
+                "memory": 1,
+                "peer": 6
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 7123,
+          "replay": 1
+        },
+        {
+          "seed": 2207905836,
+          "drift": true,
+          "rounds": 180,
+          "totals": {
+            "cold": 15788,
+            "memory": 17351,
+            "peer": 14103,
+            "adaptive": 14426,
+            "hindsight": 13052
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5278,
+              "memory": 5775,
+              "peer": 3720,
+              "adaptive": 3878,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 1,
+                "memory": 4,
+                "peer": 55
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5297,
+              "memory": 5823,
+              "peer": 6328,
+              "adaptive": 5475,
+              "hindsight": 5287,
+              "choices": {
+                "cold": 50,
+                "memory": 2,
+                "peer": 8
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5213,
+              "memory": 5753,
+              "peer": 4055,
+              "adaptive": 5073,
+              "hindsight": 4045,
+              "choices": {
+                "cold": 49,
+                "memory": 4,
+                "peer": 7
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 6787,
+          "replay": 1
+        }
+      ]
+    },
+    "stationary": {
+      "totals": {
+        "cold": 284585,
+        "memory": 313460,
+        "peer": 200880,
+        "adaptive": 209638,
+        "hindsight": 200880
+      },
+      "phases": [
+        {
+          "phase": 0,
+          "rounds": 1080,
+          "cold": 94942,
+          "memory": 104764,
+          "peer": 66960,
+          "adaptive": 70572,
+          "hindsight": 66960,
+          "choices": {
+            "cold": 65,
+            "memory": 52,
+            "peer": 963
+          }
+        },
+        {
+          "phase": 1,
+          "rounds": 1080,
+          "cold": 94969,
+          "memory": 104251,
+          "peer": 66960,
+          "adaptive": 69595,
+          "hindsight": 66960,
+          "choices": {
+            "cold": 50,
+            "memory": 38,
+            "peer": 992
+          }
+        },
+        {
+          "phase": 2,
+          "rounds": 1080,
+          "cold": 94674,
+          "memory": 104445,
+          "peer": 66960,
+          "adaptive": 69471,
+          "hindsight": 66960,
+          "choices": {
+            "cold": 41,
+            "memory": 44,
+            "peer": 995
+          }
+        }
+      ],
+      "exact": 12960,
+      "heldout": 38880,
+      "historicalSource": 285410,
+      "restarts": 18,
+      "allExact": true,
+      "trials": [
+        {
+          "seed": 2207373107,
+          "drift": false,
+          "rounds": 180,
+          "totals": {
+            "cold": 15828,
+            "memory": 17532,
+            "peer": 11160,
+            "adaptive": 11673,
+            "hindsight": 11160
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5252,
+              "memory": 5855,
+              "peer": 3720,
+              "adaptive": 3916,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 3,
+                "memory": 3,
+                "peer": 54
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5286,
+              "memory": 5786,
+              "peer": 3720,
+              "adaptive": 3823,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 1,
+                "memory": 2,
+                "peer": 57
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5290,
+              "memory": 5891,
+              "peer": 3720,
+              "adaptive": 3934,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 3,
+                "memory": 4,
+                "peer": 53
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 15794,
+          "replay": 1
+        },
+        {
+          "seed": 2207404444,
+          "drift": false,
+          "rounds": 180,
+          "totals": {
+            "cold": 15834,
+            "memory": 17457,
+            "peer": 11160,
+            "adaptive": 11541,
+            "hindsight": 11160
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5274,
+              "memory": 5867,
+              "peer": 3720,
+              "adaptive": 3867,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 3,
+                "memory": 2,
+                "peer": 55
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5313,
+              "memory": 5800,
+              "peer": 3720,
+              "adaptive": 3883,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 2,
+                "memory": 3,
+                "peer": 55
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5247,
+              "memory": 5790,
+              "peer": 3720,
+              "adaptive": 3791,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 0,
+                "memory": 2,
+                "peer": 58
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 16289,
+          "replay": 1
+        },
+        {
+          "seed": 2207435781,
+          "drift": false,
+          "rounds": 180,
+          "totals": {
+            "cold": 15772,
+            "memory": 17490,
+            "peer": 11160,
+            "adaptive": 11623,
+            "hindsight": 11160
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5262,
+              "memory": 5849,
+              "peer": 3720,
+              "adaptive": 3907,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 4,
+                "memory": 2,
+                "peer": 54
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5278,
+              "memory": 5787,
+              "peer": 3720,
+              "adaptive": 3803,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 1,
+                "memory": 2,
+                "peer": 57
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5232,
+              "memory": 5854,
+              "peer": 3720,
+              "adaptive": 3913,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 5,
+                "memory": 2,
+                "peer": 53
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 15872,
+          "replay": 1
+        },
+        {
+          "seed": 2207467118,
+          "drift": false,
+          "rounds": 180,
+          "totals": {
+            "cold": 15815,
+            "memory": 17393,
+            "peer": 11160,
+            "adaptive": 11746,
+            "hindsight": 11160
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5277,
+              "memory": 5848,
+              "peer": 3720,
+              "adaptive": 3931,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 4,
+                "memory": 3,
+                "peer": 53
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5262,
+              "memory": 5753,
+              "peer": 3720,
+              "adaptive": 3848,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 3,
+                "memory": 1,
+                "peer": 56
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5276,
+              "memory": 5792,
+              "peer": 3720,
+              "adaptive": 3967,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 3,
+                "memory": 5,
+                "peer": 52
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 15602,
+          "replay": 1
+        },
+        {
+          "seed": 2207498455,
+          "drift": false,
+          "rounds": 180,
+          "totals": {
+            "cold": 15801,
+            "memory": 17379,
+            "peer": 11160,
+            "adaptive": 11607,
+            "hindsight": 11160
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5282,
+              "memory": 5788,
+              "peer": 3720,
+              "adaptive": 3855,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 4,
+                "memory": 1,
+                "peer": 55
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5271,
+              "memory": 5826,
+              "peer": 3720,
+              "adaptive": 3803,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 3,
+                "memory": 0,
+                "peer": 57
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5248,
+              "memory": 5765,
+              "peer": 3720,
+              "adaptive": 3949,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 4,
+                "memory": 4,
+                "peer": 52
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 15919,
+          "replay": 1
+        },
+        {
+          "seed": 2207529792,
+          "drift": false,
+          "rounds": 180,
+          "totals": {
+            "cold": 15823,
+            "memory": 17463,
+            "peer": 11160,
+            "adaptive": 11761,
+            "hindsight": 11160
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5274,
+              "memory": 5834,
+              "peer": 3720,
+              "adaptive": 3993,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 6,
+                "memory": 3,
+                "peer": 51
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5269,
+              "memory": 5849,
+              "peer": 3720,
+              "adaptive": 3831,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 4,
+                "memory": 0,
+                "peer": 56
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5280,
+              "memory": 5780,
+              "peer": 3720,
+              "adaptive": 3937,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 5,
+                "memory": 3,
+                "peer": 52
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 15372,
+          "replay": 1
+        },
+        {
+          "seed": 2207561129,
+          "drift": false,
+          "rounds": 180,
+          "totals": {
+            "cold": 15743,
+            "memory": 17350,
+            "peer": 11160,
+            "adaptive": 11704,
+            "hindsight": 11160
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5251,
+              "memory": 5761,
+              "peer": 3720,
+              "adaptive": 4063,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 6,
+                "memory": 5,
+                "peer": 49
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5264,
+              "memory": 5766,
+              "peer": 3720,
+              "adaptive": 3801,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 3,
+                "memory": 0,
+                "peer": 57
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5228,
+              "memory": 5823,
+              "peer": 3720,
+              "adaptive": 3840,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 2,
+                "memory": 2,
+                "peer": 56
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 15661,
+          "replay": 1
+        },
+        {
+          "seed": 2207592466,
+          "drift": false,
+          "rounds": 180,
+          "totals": {
+            "cold": 15763,
+            "memory": 17502,
+            "peer": 11160,
+            "adaptive": 11749,
+            "hindsight": 11160
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5255,
+              "memory": 5845,
+              "peer": 3720,
+              "adaptive": 3957,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 5,
+                "memory": 3,
+                "peer": 52
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5269,
+              "memory": 5846,
+              "peer": 3720,
+              "adaptive": 3819,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 4,
+                "memory": 0,
+                "peer": 56
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5239,
+              "memory": 5811,
+              "peer": 3720,
+              "adaptive": 3973,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 6,
+                "memory": 3,
+                "peer": 51
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 15378,
+          "replay": 1
+        },
+        {
+          "seed": 2207623803,
+          "drift": false,
+          "rounds": 180,
+          "totals": {
+            "cold": 15824,
+            "memory": 17476,
+            "peer": 11160,
+            "adaptive": 11767,
+            "hindsight": 11160
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5290,
+              "memory": 5827,
+              "peer": 3720,
+              "adaptive": 4011,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 2,
+                "memory": 6,
+                "peer": 52
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5285,
+              "memory": 5840,
+              "peer": 3720,
+              "adaptive": 3912,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 2,
+                "memory": 4,
+                "peer": 54
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5249,
+              "memory": 5809,
+              "peer": 3720,
+              "adaptive": 3844,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 2,
+                "memory": 2,
+                "peer": 56
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 15663,
+          "replay": 1
+        },
+        {
+          "seed": 2207655140,
+          "drift": false,
+          "rounds": 180,
+          "totals": {
+            "cold": 15836,
+            "memory": 17404,
+            "peer": 11160,
+            "adaptive": 11700,
+            "hindsight": 11160
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5273,
+              "memory": 5795,
+              "peer": 3720,
+              "adaptive": 4057,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 7,
+                "memory": 4,
+                "peer": 49
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5288,
+              "memory": 5763,
+              "peer": 3720,
+              "adaptive": 3771,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 2,
+                "memory": 0,
+                "peer": 58
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5275,
+              "memory": 5846,
+              "peer": 3720,
+              "adaptive": 3872,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 2,
+                "memory": 3,
+                "peer": 55
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 15686,
+          "replay": 1
+        },
+        {
+          "seed": 2207686477,
+          "drift": false,
+          "rounds": 180,
+          "totals": {
+            "cold": 15875,
+            "memory": 17264,
+            "peer": 11160,
+            "adaptive": 11658,
+            "hindsight": 11160
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5322,
+              "memory": 5781,
+              "peer": 3720,
+              "adaptive": 3902,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 3,
+                "memory": 3,
+                "peer": 54
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5271,
+              "memory": 5716,
+              "peer": 3720,
+              "adaptive": 3968,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 5,
+                "memory": 4,
+                "peer": 51
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5282,
+              "memory": 5767,
+              "peer": 3720,
+              "adaptive": 3788,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 1,
+                "memory": 1,
+                "peer": 58
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 15672,
+          "replay": 1
+        },
+        {
+          "seed": 2207717814,
+          "drift": false,
+          "rounds": 180,
+          "totals": {
+            "cold": 15778,
+            "memory": 17356,
+            "peer": 11160,
+            "adaptive": 11525,
+            "hindsight": 11160
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5268,
+              "memory": 5870,
+              "peer": 3720,
+              "adaptive": 3839,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 2,
+                "memory": 2,
+                "peer": 56
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5267,
+              "memory": 5771,
+              "peer": 3720,
+              "adaptive": 3877,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 2,
+                "memory": 3,
+                "peer": 55
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5243,
+              "memory": 5715,
+              "peer": 3720,
+              "adaptive": 3809,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 0,
+                "memory": 3,
+                "peer": 57
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 16145,
+          "replay": 1
+        },
+        {
+          "seed": 2207749151,
+          "drift": false,
+          "rounds": 180,
+          "totals": {
+            "cold": 15868,
+            "memory": 17522,
+            "peer": 11160,
+            "adaptive": 11758,
+            "hindsight": 11160
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5294,
+              "memory": 5873,
+              "peer": 3720,
+              "adaptive": 3898,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 3,
+                "memory": 3,
+                "peer": 54
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5267,
+              "memory": 5758,
+              "peer": 3720,
+              "adaptive": 4083,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 4,
+                "memory": 8,
+                "peer": 48
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5307,
+              "memory": 5891,
+              "peer": 3720,
+              "adaptive": 3777,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 1,
+                "memory": 1,
+                "peer": 58
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 15547,
+          "replay": 1
+        },
+        {
+          "seed": 2207780488,
+          "drift": false,
+          "rounds": 180,
+          "totals": {
+            "cold": 15851,
+            "memory": 17454,
+            "peer": 11160,
+            "adaptive": 11654,
+            "hindsight": 11160
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5255,
+              "memory": 5818,
+              "peer": 3720,
+              "adaptive": 3909,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 4,
+                "memory": 2,
+                "peer": 54
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5310,
+              "memory": 5832,
+              "peer": 3720,
+              "adaptive": 3927,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 5,
+                "memory": 2,
+                "peer": 53
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5286,
+              "memory": 5804,
+              "peer": 3720,
+              "adaptive": 3818,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 1,
+                "memory": 2,
+                "peer": 57
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 15939,
+          "replay": 1
+        },
+        {
+          "seed": 2207811825,
+          "drift": false,
+          "rounds": 180,
+          "totals": {
+            "cold": 15784,
+            "memory": 17390,
+            "peer": 11160,
+            "adaptive": 11639,
+            "hindsight": 11160
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5300,
+              "memory": 5836,
+              "peer": 3720,
+              "adaptive": 3906,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 1,
+                "memory": 4,
+                "peer": 55
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5232,
+              "memory": 5739,
+              "peer": 3720,
+              "adaptive": 3907,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 3,
+                "memory": 3,
+                "peer": 54
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5252,
+              "memory": 5815,
+              "peer": 3720,
+              "adaptive": 3826,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 3,
+                "memory": 1,
+                "peer": 56
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 16018,
+          "replay": 1
+        },
+        {
+          "seed": 2207843162,
+          "drift": false,
+          "rounds": 180,
+          "totals": {
+            "cold": 15821,
+            "memory": 17344,
+            "peer": 11160,
+            "adaptive": 11583,
+            "hindsight": 11160
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5273,
+              "memory": 5783,
+              "peer": 3720,
+              "adaptive": 3887,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 5,
+                "memory": 1,
+                "peer": 54
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5288,
+              "memory": 5792,
+              "peer": 3720,
+              "adaptive": 3939,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 3,
+                "memory": 4,
+                "peer": 53
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5260,
+              "memory": 5769,
+              "peer": 3720,
+              "adaptive": 3757,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 0,
+                "memory": 1,
+                "peer": 59
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 15979,
+          "replay": 1
+        },
+        {
+          "seed": 2207874499,
+          "drift": false,
+          "rounds": 180,
+          "totals": {
+            "cold": 15781,
+            "memory": 17333,
+            "peer": 11160,
+            "adaptive": 11371,
+            "hindsight": 11160
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5262,
+              "memory": 5759,
+              "peer": 3720,
+              "adaptive": 3796,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 2,
+                "memory": 1,
+                "peer": 57
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5252,
+              "memory": 5804,
+              "peer": 3720,
+              "adaptive": 3772,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 2,
+                "memory": 0,
+                "peer": 58
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5267,
+              "memory": 5770,
+              "peer": 3720,
+              "adaptive": 3803,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 2,
+                "memory": 1,
+                "peer": 57
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 16629,
+          "replay": 1
+        },
+        {
+          "seed": 2207905836,
+          "drift": false,
+          "rounds": 180,
+          "totals": {
+            "cold": 15788,
+            "memory": 17351,
+            "peer": 11160,
+            "adaptive": 11579,
+            "hindsight": 11160
+          },
+          "phases": [
+            {
+              "phase": 0,
+              "rounds": 60,
+              "cold": 5278,
+              "memory": 5775,
+              "peer": 3720,
+              "adaptive": 3878,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 1,
+                "memory": 4,
+                "peer": 55
+              }
+            },
+            {
+              "phase": 1,
+              "rounds": 60,
+              "cold": 5297,
+              "memory": 5823,
+              "peer": 3720,
+              "adaptive": 3828,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 1,
+                "memory": 2,
+                "peer": 57
+              }
+            },
+            {
+              "phase": 2,
+              "rounds": 60,
+              "cold": 5213,
+              "memory": 5753,
+              "peer": 3720,
+              "adaptive": 3873,
+              "hindsight": 3720,
+              "choices": {
+                "cold": 1,
+                "memory": 4,
+                "peer": 55
+              }
+            }
+          ],
+          "exact": 720,
+          "heldout": 2160,
+          "source": 16245,
+          "replay": 1
+        }
+      ]
+    }
+  }
+}
