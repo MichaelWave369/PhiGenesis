@@ -1,0 +1,21 @@
+name: Cycle III temporal horizons
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  horizons:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          node experiments/phi042-temporal-horizons.mjs test
+          node experiments/phi042-temporal-horizons.mjs > /tmp/horizon-a.json
+          node experiments/phi042-temporal-horizons.mjs > /tmp/horizon-b.json
+          cmp /tmp/horizon-a.json /tmp/horizon-b.json
+          node -e 'const r=require("/tmp/horizon-a.json");if(r.rows.length!==24||r.release!=="BLOCKED")process.exit(1);console.log(JSON.stringify(r,null,2))'
