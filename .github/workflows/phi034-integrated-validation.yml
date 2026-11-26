@@ -1,0 +1,59 @@
+name: Phi034 integrated field validation
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  phi034:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/PhiGenesis
+          ref: 22114dc95ee56b49cd23a5eeff1b8a0a3d1d972e
+          path: dependencies/genesis
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/Agentora
+          ref: 49166bb5365975d68df744678f91a837b0da48f2
+          path: dependencies/agentora
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/Altermath
+          ref: 99a40f6f8e6f4ded656dd3655778dfffa72a3754
+          path: dependencies/altermath
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/PhiOS
+          ref: da87f8fe7d26036a61a97aca6eebc2afc2a747c3
+          path: dependencies/phios
+          persist-credentials: false
+      - run: |
+          test "$(git -C dependencies/genesis rev-parse HEAD)" = "22114dc95ee56b49cd23a5eeff1b8a0a3d1d972e"
+          test "$(git -C dependencies/agentora rev-parse HEAD)" = "49166bb5365975d68df744678f91a837b0da48f2"
+          test "$(git -C dependencies/altermath rev-parse HEAD)" = "99a40f6f8e6f4ded656dd3655778dfffa72a3754"
+          test "$(git -C dependencies/phios rev-parse HEAD)" = "da87f8fe7d26036a61a97aca6eebc2afc2a747c3"
+          python -m pip install sqlmodel==0.0.22 pydantic-settings==2.6.0
+      - run: node experiments/phi028-accounting-test.mjs
+      - run: node experiments/phi029-quorum-test.mjs
+      - run: |
+          node dependencies/genesis/experiments/phi032-export.mjs dependencies/altermath/src/causal-belt.mjs > /tmp/phi034-a.json
+          node dependencies/genesis/experiments/phi032-export.mjs dependencies/altermath/src/causal-belt.mjs > /tmp/phi034-b.json
+          cmp /tmp/phi034-a.json /tmp/phi034-b.json
+      - run: |
+          export PYTHONPATH="$PWD/dependencies/agentora/server:$PWD/dependencies/phios:$PWD/dependencies/genesis/experiments"
+          python experiments/phi033_phios_test.py /tmp/phi034-a.json dependencies/genesis dependencies/agentora dependencies/altermath dependencies/phios
+          python experiments/phi034_batch.py /tmp/phi034-a.json dependencies/genesis dependencies/agentora dependencies/altermath dependencies/phios > /tmp/phi034-batch.json
+      - run: node experiments/phi034-integration-test.mjs /tmp/phi034-batch.json
