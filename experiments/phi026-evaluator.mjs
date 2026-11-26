@@ -1,0 +1,11 @@
+import {createHash,createPrivateKey,createPublicKey,sign,verify} from 'node:crypto';
+import {readFileSync} from 'node:fs';
+import {evaluate} from './phi026-protocol.mjs';
+const {context,proposal,trust,seed,salt,keyPath}=JSON.parse(readFileSync(0,'utf8'));
+const enc=x=>Buffer.from(JSON.stringify(x)),hash=x=>createHash('sha256').update(enc(x)).digest('hex');
+const check=(e,role)=>verify(null,enc(e.body),createPublicKey(trust[role]),Buffer.from(e.signature,'base64'));
+if(!check(context,'context')||!check(proposal,'operator')||context.body.session!==proposal.body.session||proposal.body.context!==hash(context)||context.body.suite!=='phi026-eval-v1'||hash([context.body.session,context.body.epoch,context.body.world,seed,salt])!==context.body.commitment)throw Error('context binding');
+const key=createPrivateKey(readFileSync(keyPath));
+if(!createPublicKey(key).export({type:'spki',format:'der'}).equals(createPublicKey(trust.evaluator).export({type:'spki',format:'der'})))throw Error('wrong evaluator key');
+const body={session:context.body.session,proposal:hash(proposal),context:hash(context),commitment:context.body.commitment,...evaluate(context.body.world,seed,proposal.body.incumbent,proposal.body.weights)};
+console.log(JSON.stringify({kind:'receipt',body,signature:sign(null,enc(body),key).toString('base64')}));
