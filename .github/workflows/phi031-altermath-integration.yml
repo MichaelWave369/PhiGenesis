@@ -1,0 +1,29 @@
+name: Phi031 Altermath memory bridge
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  phi031:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/PhiGenesis
+          ref: ccbf26b8b5ce2e0570641875ac3c2d11ab8a8f33
+          path: dependencies/phi030
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/Altermath
+          ref: 99a40f6f8e6f4ded656dd3655778dfffa72a3754
+          path: dependencies/altermath
+          persist-credentials: false
+      - run: |
+          test "$(git -C dependencies/phi030 rev-parse HEAD)" = "ccbf26b8b5ce2e0570641875ac3c2d11ab8a8f33"
+          test "$(git -C dependencies/altermath rev-parse HEAD)" = "99a40f6f8e6f4ded656dd3655778dfffa72a3754"
+          node experiments/phi031-altermath-test.mjs dependencies/phi030/experiments/phi030-memory.mjs dependencies/altermath/src/causal-belt.mjs
