@@ -1,0 +1,28 @@
+name: Cycle III retrieval crucible
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  retrieval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/PhiMemory9
+          ref: 5cba675a3a439023a3ff374c238dd6e4339e3a55
+          path: dependencies/memory
+          persist-credentials: false
+      - run: |
+          test "$(git -C dependencies/memory rev-parse HEAD)" = "5cba675a3a439023a3ff374c238dd6e4339e3a55"
+          export PYTHONPATH="$PWD/dependencies/memory/src"
+          python experiments/phi042_retrieval_crucible.py > /tmp/retrieval-a.json
+          python experiments/phi042_retrieval_crucible.py > /tmp/retrieval-b.json
+          cmp /tmp/retrieval-a.json /tmp/retrieval-b.json
+          python -c 'import json; d=json.load(open("/tmp/retrieval-a.json")); print(json.dumps({k:d[k]["summary"] for k in ("r05","supplemental")},indent=2))'
