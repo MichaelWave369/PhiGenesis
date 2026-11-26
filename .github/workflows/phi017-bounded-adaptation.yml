@@ -1,0 +1,18 @@
+name: Phi017 bounded adaptation
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  phi017:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node experiments/phi017-bounded-adaptation.mjs test
+      - run: |
+          node experiments/phi017-bounded-adaptation.mjs report 90 > /tmp/phi017-a.json
+          node experiments/phi017-bounded-adaptation.mjs report 90 > /tmp/phi017-b.json
+          cmp /tmp/phi017-a.json /tmp/phi017-b.json
