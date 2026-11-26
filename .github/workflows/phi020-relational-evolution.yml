@@ -1,0 +1,18 @@
+name: Phi020 relational evolution
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  phi020:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node experiments/phi020-relational-evolution.mjs test
+      - run: |
+          node experiments/phi020-relational-evolution.mjs report 90 > /tmp/phi020-a.json
+          node experiments/phi020-relational-evolution.mjs report 90 > /tmp/phi020-b.json
+          cmp /tmp/phi020-a.json /tmp/phi020-b.json
