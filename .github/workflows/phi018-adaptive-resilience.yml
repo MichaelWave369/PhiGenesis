@@ -1,0 +1,18 @@
+name: Phi018 adaptive resilience
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  phi018:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node experiments/phi018-adaptive-resilience.mjs test
+      - run: |
+          node experiments/phi018-adaptive-resilience.mjs report 90 > /tmp/phi018-a.json
+          node experiments/phi018-adaptive-resilience.mjs report 90 > /tmp/phi018-b.json
+          cmp /tmp/phi018-a.json /tmp/phi018-b.json
