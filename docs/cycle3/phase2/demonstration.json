@@ -1,0 +1,454 @@
+{
+  "schema": "Phase2.ExecutedLocalDemonstration.v1",
+  "authority": "NONE",
+  "release": "BLOCKED",
+  "environment": {
+    "node": "v24.22.3",
+    "platform": "linux"
+  },
+  "pins": {
+    "PhiGenesis": "22114dc95ee56b49cd23a5eeff1b8a0a3d1d972e",
+    "Agentora": "49166bb5365975d68df744678f91a837b0da48f2",
+    "Altermath": "99a40f6f8e6f4ded656dd3655778dfffa72a3754",
+    "PhiOS": "da87f8fe7d26036a61a97aca6eebc2afc2a747c3",
+    "PhiMemory9": "5cba675a3a439023a3ff374c238dd6e4339e3a55",
+    "NBGPocketMesh": "0687f10970989194d4af554d9b189c7ce8a1ad15"
+  },
+  "trustScope": "Same OS account and disposable witness directory; independent administration NOT ESTABLISHED.",
+  "keyScope": "Ephemeral test keys intentionally not persisted; use an operator supplied key for later CLI inspection.",
+  "session": "0a0321cf-8e14-41a1-87bf-4e7e29790163",
+  "sourceHash": "8ca06e79d63967263a19864655f635ea247396bc98d6b52074d5e92b4f5107a5",
+  "transcript": [
+    {
+      "command": "initialize",
+      "status": "READY",
+      "records": 1
+    },
+    {
+      "command": "core-1",
+      "status": "READY",
+      "records": 4
+    },
+    {
+      "command": "core-2",
+      "status": "READY",
+      "records": 7
+    },
+    {
+      "command": "core-3",
+      "status": "READY",
+      "records": 10
+    },
+    {
+      "command": "core-4",
+      "status": "READY",
+      "records": 13
+    },
+    {
+      "command": "core-5",
+      "status": "READY",
+      "records": 16
+    },
+    {
+      "command": "core-6",
+      "status": "COMPLETED_RESEARCH_ONLY",
+      "records": 19
+    },
+    {
+      "command": "checkpoint-1",
+      "status": "COMPLETED_RESEARCH_ONLY",
+      "records": 22
+    },
+    {
+      "command": "native-memory",
+      "status": "COMPLETED_RESEARCH_ONLY",
+      "records": 25
+    },
+    {
+      "command": "genome",
+      "status": "COMPLETED_RESEARCH_ONLY",
+      "records": 28
+    },
+    {
+      "command": "checkpoint-2",
+      "status": "COMPLETED_RESEARCH_ONLY",
+      "records": 31
+    }
+  ],
+  "journal": {
+    "records": 31,
+    "bytesOnDisk": 123290,
+    "authentication": "HMAC-SHA256; same trusted key holder",
+    "externalHeadPin": false
+  },
+  "artifactDigests": {
+    "memory": "32ac3bc2b8ffea8d88f5f1ee8f299652d70e07f392aefbfa909e12d7fe4815c0",
+    "retrieve": "375777f83480b18d891125e19a4d9f8e8bb16b73f9d2cbadb93334d6b51e43b8",
+    "verify": "f89ed6067c913c89466a466ae0a9b82a369c12d775dc57bbd083a6cce9e9d82e",
+    "plan": "68bc203e683d880934efcbce26baf3e72ce33c5d036d2b0e24480cfd2d9d3d7d",
+    "review": "9169b1b7325d52ea79fe83b9c7aeccbb2faabeb97d5139cef9519cc2ca56dca7",
+    "replay": "77a3392e6f6243934ba758e79ede21654070129e75b025095f43227c1f4d5ff5",
+    "checkpoint": "e587965a3e894a1a5c65fd8b3d86f063722431491311a0607b3a3648289065c1",
+    "native-memory": "d93769b7e65121720d4eb6d819bfa9e6f437d44d5db8c4b6602bbb91ac49ac77",
+    "genome": "54adffa1d4a3d78bb8d48e209c0c5ac9d7ea94b089da77d5c8c02dd9243d8a9a"
+  },
+  "baseAccounting": {
+    "reserved": {
+      "workerCalls": 6,
+      "fixtureRows": 15552,
+      "comparisons": 900000,
+      "interpreterFuel": 594,
+      "receiptChecks": 594,
+      "sqlStatements": 18000,
+      "sourceBytes": 1610612736,
+      "ipcBytes": 9000000,
+      "artifactBytes": 3000000
+    },
+    "measured": {
+      "workerCalls": 6,
+      "fixtureRows": 3888,
+      "comparisons": 19644,
+      "interpreterFuel": 66,
+      "receiptChecks": 66,
+      "sqlStatements": 274,
+      "sourceBytes": 261033640,
+      "ipcBytes": 101714,
+      "artifactBytes": 49326
+    },
+    "uncertain": {
+      "workerCalls": 0,
+      "fixtureRows": 0,
+      "comparisons": 0,
+      "interpreterFuel": 0,
+      "receiptChecks": 0,
+      "sqlStatements": 0,
+      "sourceBytes": 0,
+      "ipcBytes": 0,
+      "artifactBytes": 0
+    },
+    "unused": {
+      "workerCalls": 0,
+      "fixtureRows": 11664,
+      "comparisons": 880356,
+      "interpreterFuel": 528,
+      "receiptChecks": 528,
+      "sqlStatements": 17726,
+      "sourceBytes": 1349579096,
+      "ipcBytes": 8898286,
+      "artifactBytes": 2950674
+    },
+    "open": {
+      "workerCalls": 0,
+      "fixtureRows": 0,
+      "comparisons": 0,
+      "interpreterFuel": 0,
+      "receiptChecks": 0,
+      "sqlStatements": 0,
+      "sourceBytes": 0,
+      "ipcBytes": 0,
+      "artifactBytes": 0
+    }
+  },
+  "activityAccounting": {
+    "reserved": {
+      "workerCalls": 1,
+      "fixtureRows": 0,
+      "comparisons": 0,
+      "interpreterFuel": 0,
+      "receiptChecks": 396,
+      "sqlStatements": 3000,
+      "sourceBytes": 1073741824,
+      "ipcBytes": 6000000,
+      "artifactBytes": 2000000,
+      "nativeRecords": 1024,
+      "provenanceEdges": 4096,
+      "checkpointRecords": 2,
+      "witnessChecks": 6,
+      "graphVisits": 8192
+    },
+    "measured": {
+      "workerCalls": 1,
+      "fixtureRows": 0,
+      "comparisons": 0,
+      "interpreterFuel": 0,
+      "receiptChecks": 0,
+      "sqlStatements": 99,
+      "sourceBytes": 174083680,
+      "ipcBytes": 14668,
+      "artifactBytes": 21924,
+      "nativeRecords": 15,
+      "provenanceEdges": 5,
+      "checkpointRecords": 2,
+      "witnessChecks": 2,
+      "graphVisits": 22
+    },
+    "uncertain": {
+      "workerCalls": 0,
+      "fixtureRows": 0,
+      "comparisons": 0,
+      "interpreterFuel": 0,
+      "receiptChecks": 0,
+      "sqlStatements": 0,
+      "sourceBytes": 0,
+      "ipcBytes": 0,
+      "artifactBytes": 0,
+      "nativeRecords": 0,
+      "provenanceEdges": 0,
+      "checkpointRecords": 0,
+      "witnessChecks": 0,
+      "graphVisits": 0
+    },
+    "unused": {
+      "workerCalls": 0,
+      "fixtureRows": 0,
+      "comparisons": 0,
+      "interpreterFuel": 0,
+      "receiptChecks": 396,
+      "sqlStatements": 2901,
+      "sourceBytes": 899658144,
+      "ipcBytes": 5985332,
+      "artifactBytes": 1978076,
+      "nativeRecords": 1009,
+      "provenanceEdges": 4091,
+      "checkpointRecords": 0,
+      "witnessChecks": 4,
+      "graphVisits": 8170
+    },
+    "open": {
+      "workerCalls": 0,
+      "fixtureRows": 0,
+      "comparisons": 0,
+      "interpreterFuel": 0,
+      "receiptChecks": 0,
+      "sqlStatements": 0,
+      "sourceBytes": 0,
+      "ipcBytes": 0,
+      "artifactBytes": 0,
+      "nativeRecords": 0,
+      "provenanceEdges": 0,
+      "checkpointRecords": 0,
+      "witnessChecks": 0,
+      "graphVisits": 0
+    }
+  },
+  "activityCategories": {
+    "observation": {
+      "workerCalls": 0,
+      "fixtureRows": 0,
+      "comparisons": 0,
+      "interpreterFuel": 0,
+      "receiptChecks": 0,
+      "sqlStatements": 0,
+      "sourceBytes": 0,
+      "ipcBytes": 0,
+      "artifactBytes": 0,
+      "nativeRecords": 0,
+      "provenanceEdges": 0,
+      "checkpointRecords": 0,
+      "witnessChecks": 0,
+      "graphVisits": 0
+    },
+    "memory": {
+      "workerCalls": 1,
+      "fixtureRows": 0,
+      "comparisons": 0,
+      "interpreterFuel": 0,
+      "receiptChecks": 0,
+      "sqlStatements": 99,
+      "sourceBytes": 0,
+      "ipcBytes": 0,
+      "artifactBytes": 0,
+      "nativeRecords": 15,
+      "provenanceEdges": 0,
+      "checkpointRecords": 0,
+      "witnessChecks": 0,
+      "graphVisits": 0
+    },
+    "planning": {
+      "workerCalls": 0,
+      "fixtureRows": 0,
+      "comparisons": 0,
+      "interpreterFuel": 0,
+      "receiptChecks": 0,
+      "sqlStatements": 0,
+      "sourceBytes": 0,
+      "ipcBytes": 0,
+      "artifactBytes": 0,
+      "nativeRecords": 0,
+      "provenanceEdges": 0,
+      "checkpointRecords": 0,
+      "witnessChecks": 0,
+      "graphVisits": 22
+    },
+    "interpreter": {
+      "workerCalls": 0,
+      "fixtureRows": 0,
+      "comparisons": 0,
+      "interpreterFuel": 0,
+      "receiptChecks": 0,
+      "sqlStatements": 0,
+      "sourceBytes": 0,
+      "ipcBytes": 0,
+      "artifactBytes": 0,
+      "nativeRecords": 0,
+      "provenanceEdges": 0,
+      "checkpointRecords": 0,
+      "witnessChecks": 0,
+      "graphVisits": 0
+    },
+    "orchestration": {
+      "workerCalls": 0,
+      "fixtureRows": 0,
+      "comparisons": 0,
+      "interpreterFuel": 0,
+      "receiptChecks": 0,
+      "sqlStatements": 0,
+      "sourceBytes": 0,
+      "ipcBytes": 0,
+      "artifactBytes": 0,
+      "nativeRecords": 0,
+      "provenanceEdges": 0,
+      "checkpointRecords": 0,
+      "witnessChecks": 0,
+      "graphVisits": 0
+    },
+    "evaluation": {
+      "workerCalls": 0,
+      "fixtureRows": 0,
+      "comparisons": 0,
+      "interpreterFuel": 0,
+      "receiptChecks": 0,
+      "sqlStatements": 0,
+      "sourceBytes": 0,
+      "ipcBytes": 0,
+      "artifactBytes": 0,
+      "nativeRecords": 0,
+      "provenanceEdges": 0,
+      "checkpointRecords": 0,
+      "witnessChecks": 0,
+      "graphVisits": 0
+    },
+    "verification": {
+      "workerCalls": 0,
+      "fixtureRows": 0,
+      "comparisons": 0,
+      "interpreterFuel": 0,
+      "receiptChecks": 0,
+      "sqlStatements": 0,
+      "sourceBytes": 174083680,
+      "ipcBytes": 0,
+      "artifactBytes": 0,
+      "nativeRecords": 0,
+      "provenanceEdges": 5,
+      "checkpointRecords": 0,
+      "witnessChecks": 2,
+      "graphVisits": 0
+    },
+    "storage": {
+      "workerCalls": 0,
+      "fixtureRows": 0,
+      "comparisons": 0,
+      "interpreterFuel": 0,
+      "receiptChecks": 0,
+      "sqlStatements": 0,
+      "sourceBytes": 0,
+      "ipcBytes": 0,
+      "artifactBytes": 21924,
+      "nativeRecords": 0,
+      "provenanceEdges": 0,
+      "checkpointRecords": 2,
+      "witnessChecks": 0,
+      "graphVisits": 0
+    },
+    "communication": {
+      "workerCalls": 0,
+      "fixtureRows": 0,
+      "comparisons": 0,
+      "interpreterFuel": 0,
+      "receiptChecks": 0,
+      "sqlStatements": 0,
+      "sourceBytes": 0,
+      "ipcBytes": 14668,
+      "artifactBytes": 0,
+      "nativeRecords": 0,
+      "provenanceEdges": 0,
+      "checkpointRecords": 0,
+      "witnessChecks": 0,
+      "graphVisits": 0
+    }
+  },
+  "timings": [
+    {
+      "activity": "checkpoint",
+      "elapsedMicros": 328957,
+      "requestBytes": 0,
+      "responseBytes": 0
+    },
+    {
+      "activity": "native-memory",
+      "elapsedMicros": 324430,
+      "requestBytes": 2132,
+      "responseBytes": 12536
+    },
+    {
+      "activity": "genome",
+      "elapsedMicros": 259348,
+      "requestBytes": 0,
+      "responseBytes": 0
+    },
+    {
+      "activity": "checkpoint",
+      "elapsedMicros": 283147,
+      "requestBytes": 0,
+      "responseBytes": 0
+    }
+  ],
+  "native": {
+    "databaseDigest": "5524b6019b9fe610324a156367dc1832e7e684a3ada871dc94ed43aea29ec791",
+    "counts": {
+      "eligible": 2,
+      "held": 5,
+      "memories": 7
+    },
+    "holdCounts": {
+      "CONTEXT_MISMATCH": 2,
+      "CONTRADICTORY": 2,
+      "SUPERSEDED": 1,
+      "MISSING_SOURCE": 1
+    },
+    "sources": 2,
+    "claims": 2,
+    "conflicts": 1,
+    "duplicateGroups": 1
+  },
+  "genome": {
+    "parentDigest": "93bc29fd47a17fb7644161fb684d25ebe44159b0c66552bfc8688d67daf5dfbb",
+    "candidateDigest": "89a91bc7782f076600d4b5f46b7a5072ffbb8c3f8f62ce74b6d4c3cb94d11b1d",
+    "actorStable": true,
+    "paths": {
+      "root": "root",
+      "a": "root/b/a",
+      "b": "root/b"
+    },
+    "nativeCompiler": "Altermath.CausalBelt.R1",
+    "nativeAddressMapper": "mandelbrot-pocket-v1"
+  },
+  "continuity": {
+    "schema": "PhiGenesis.ProtectedContinuityRead.v1",
+    "authority": "NONE",
+    "executionAuthority": false,
+    "release": "BLOCKED",
+    "checkpointDigest": "dd3198bcfcaa72f7e19a291efc1d2f3d91275ee1cad68ad0a05cb8b0aed1bd89",
+    "protectedRecords": 28,
+    "unprotectedTailRecords": 3,
+    "proofDigests": [
+      "79aa6f027c9750944e18914a007f1ab0682332769d9b603cfebea314b8bee480"
+    ],
+    "administration": "NOT_ESTABLISHED_BY_THIS_INTERFACE"
+  },
+  "checkpointDigests": [
+    "a7f63dbaf12bffa7d71add99b392e06884479d9b48ca760fafc4a5a76cc22066",
+    "dd3198bcfcaa72f7e19a291efc1d2f3d91275ee1cad68ad0a05cb8b0aed1bd89"
+  ],
+  "preservation": "No native source database writes, provider calls, live executor, production promotion or license selection."
+}

@@ -1,0 +1,77 @@
+{
+  "schema": "Phase2.PathInventoryCacheExperiment.v1",
+  "scope": "Internal local timing; all covered bytes rehashed, no content/mtime cache",
+  "pairs": 9,
+  "coveredBytesPerScan": 21733984,
+  "coveredFiles": 2956,
+  "manifestDigest": "14dda51a35a0ef0e694a20a3afef7881c0b54cd6cbf072fcd05fa669d4fe3eee",
+  "samples": [
+    {
+      "pair": 1,
+      "order": "full-first",
+      "fullMicros": 167736,
+      "cachedMicros": 132476
+    },
+    {
+      "pair": 2,
+      "order": "cached-first",
+      "cachedMicros": 130024,
+      "fullMicros": 192877
+    },
+    {
+      "pair": 3,
+      "order": "full-first",
+      "fullMicros": 150589,
+      "cachedMicros": 129997
+    },
+    {
+      "pair": 4,
+      "order": "cached-first",
+      "cachedMicros": 129070,
+      "fullMicros": 178542
+    },
+    {
+      "pair": 5,
+      "order": "full-first",
+      "fullMicros": 166807,
+      "cachedMicros": 148592
+    },
+    {
+      "pair": 6,
+      "order": "cached-first",
+      "cachedMicros": 131414,
+      "fullMicros": 179841
+    },
+    {
+      "pair": 7,
+      "order": "full-first",
+      "fullMicros": 219009,
+      "cachedMicros": 167958
+    },
+    {
+      "pair": 8,
+      "order": "cached-first",
+      "cachedMicros": 135071,
+      "fullMicros": 143249
+    },
+    {
+      "pair": 9,
+      "order": "full-first",
+      "fullMicros": 157714,
+      "cachedMicros": 145972
+    }
+  ],
+  "full": {
+    "minimum": 143249,
+    "median": 167736,
+    "maximum": 219009
+  },
+  "cached": {
+    "minimum": 129070,
+    "median": 132476,
+    "maximum": 167958
+  },
+  "nativeNode": "v24.22.3",
+  "platform": "linux",
+  "limitations": "Timing variability, shared host and small cohort; no general speed, energy, or complete-runtime efficiency claim."
+}

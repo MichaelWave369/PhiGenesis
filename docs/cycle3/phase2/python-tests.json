@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/workspace/scratch/5bd88ef05d62/.venv-genesis-locked/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests/cycle3_phase2",
+    "-p",
+    "test_native_memory.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "seconds": 0.211,
+  "stdout": "",
+  "stderr": "test_active_wal_and_wrong_source_digest_refused (test_native_memory.NativeMemoryTests.test_active_wal_and_wrong_source_digest_refused) ... ok\ntest_authority_fields_duplicate_declarations_and_unknown_references_refused (test_native_memory.NativeMemoryTests.test_authority_fields_duplicate_declarations_and_unknown_references_refused) ... ok\ntest_authority_text_is_inert_data (test_native_memory.NativeMemoryTests.test_authority_text_is_inert_data) ... ok\ntest_capacity_saturation_refuses_complete_intake_without_truncation (test_native_memory.NativeMemoryTests.test_capacity_saturation_refuses_complete_intake_without_truncation) ... ok\ntest_cold_reconstruction_is_exact (test_native_memory.NativeMemoryTests.test_cold_reconstruction_is_exact) ... ok\ntest_context_change_is_explicit_and_does_not_migrate_memories (test_native_memory.NativeMemoryTests.test_context_change_is_explicit_and_does_not_migrate_memories) ... ok\ntest_delayed_admission_then_explicit_later_read (test_native_memory.NativeMemoryTests.test_delayed_admission_then_explicit_later_read) ... ok\ntest_duplicate_native_observations_do_not_launder_identity (test_native_memory.NativeMemoryTests.test_duplicate_native_observations_do_not_launder_identity) ... ok\ntest_missing_source_and_conflict_remain_distinct_held_records (test_native_memory.NativeMemoryTests.test_missing_source_and_conflict_remain_distinct_held_records) ... ok\ntest_native_read_is_content_private_and_source_bytes_unchanged (test_native_memory.NativeMemoryTests.test_native_read_is_content_private_and_source_bytes_unchanged) ... ok\ntest_native_renewal_and_exact_ancestry_preserved (test_native_memory.NativeMemoryTests.test_native_renewal_and_exact_ancestry_preserved) ... ok\ntest_native_sql_ceiling_stops_before_extra_execution_and_cannot_be_raised (test_native_memory.NativeMemoryTests.test_native_sql_ceiling_stops_before_extra_execution_and_cannot_be_raised) ... ok\ntest_revocation_unavailability_hypothesis_and_missing_labels_preserved (test_native_memory.NativeMemoryTests.test_revocation_unavailability_hypothesis_and_missing_labels_preserved) ... ok\ntest_source_modification_and_validly_rewritten_content_both_refused (test_native_memory.NativeMemoryTests.test_source_modification_and_validly_rewritten_content_both_refused) ... ok\ntest_stale_expired_unknown_and_future_times (test_native_memory.NativeMemoryTests.test_stale_expired_unknown_and_future_times) ... ok\ntest_timestamp_and_boolean_budget_validation (test_native_memory.NativeMemoryTests.test_timestamp_and_boolean_budget_validation) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.130s\n\nOK\n"
+}

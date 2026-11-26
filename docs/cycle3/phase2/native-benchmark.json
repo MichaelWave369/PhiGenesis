@@ -1,0 +1,882 @@
+{
+  "protocol": "unchanged PhiMemory9 R0.5 frozen synthetic evaluation; internal",
+  "identical": true,
+  "seconds": 0.0552,
+  "report": {
+    "schema": "phi-memory9/retrieval-heldout-r0.5",
+    "manifest_sha256": "565c8edc8b164b1ff025fa94361cbaa4b6098f2f676fe22dc1481f94ef854ce9",
+    "data_type": "frozen synthetic examples; NOT real-world held-out evidence",
+    "active_candidates": 24,
+    "historical_ancestor_records": 12,
+    "query_count": 36,
+    "thresholds": {
+      "lexical": 0.6,
+      "ancestry": 0.55,
+      "sparse": 0.48,
+      "sparse_history": 0.48
+    },
+    "positive": {
+      "lexical": {
+        "historical_wording": {
+          "hit_at_1": 0.0,
+          "hit_at_3": 0.0,
+          "mrr_at_3": 0.0
+        },
+        "current_wording": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr_at_3": 1.0
+        }
+      },
+      "ancestry": {
+        "historical_wording": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr_at_3": 1.0
+        },
+        "current_wording": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr_at_3": 1.0
+        }
+      },
+      "sparse": {
+        "historical_wording": {
+          "hit_at_1": 0.0,
+          "hit_at_3": 0.0,
+          "mrr_at_3": 0.0
+        },
+        "current_wording": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr_at_3": 1.0
+        }
+      },
+      "sparse_history": {
+        "historical_wording": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr_at_3": 1.0
+        },
+        "current_wording": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "mrr_at_3": 1.0
+        }
+      }
+    },
+    "negative_controls": {
+      "lexical": {
+        "false_accept_count": 0,
+        "queries": 12
+      },
+      "ancestry": {
+        "false_accept_count": 0,
+        "queries": 12
+      },
+      "sparse": {
+        "false_accept_count": 0,
+        "queries": 12
+      },
+      "sparse_history": {
+        "false_accept_count": 4,
+        "queries": 12
+      }
+    },
+    "queries": [
+      {
+        "index": 0,
+        "group": "historical_wording",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 1,
+        "group": "historical_wording",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 2,
+        "group": "historical_wording",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 3,
+        "group": "historical_wording",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 4,
+        "group": "historical_wording",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 5,
+        "group": "historical_wording",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 6,
+        "group": "historical_wording",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 7,
+        "group": "historical_wording",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 8,
+        "group": "historical_wording",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 9,
+        "group": "historical_wording",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 10,
+        "group": "historical_wording",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 11,
+        "group": "historical_wording",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 12,
+        "group": "current_wording",
+        "results": {
+          "lexical": {
+            "rank": 1,
+            "abstained": false
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 13,
+        "group": "current_wording",
+        "results": {
+          "lexical": {
+            "rank": 1,
+            "abstained": false
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 14,
+        "group": "current_wording",
+        "results": {
+          "lexical": {
+            "rank": 1,
+            "abstained": false
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 15,
+        "group": "current_wording",
+        "results": {
+          "lexical": {
+            "rank": 1,
+            "abstained": false
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 16,
+        "group": "current_wording",
+        "results": {
+          "lexical": {
+            "rank": 1,
+            "abstained": false
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 17,
+        "group": "current_wording",
+        "results": {
+          "lexical": {
+            "rank": 1,
+            "abstained": false
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 18,
+        "group": "current_wording",
+        "results": {
+          "lexical": {
+            "rank": 1,
+            "abstained": false
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 19,
+        "group": "current_wording",
+        "results": {
+          "lexical": {
+            "rank": 1,
+            "abstained": false
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 20,
+        "group": "current_wording",
+        "results": {
+          "lexical": {
+            "rank": 1,
+            "abstained": false
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 21,
+        "group": "current_wording",
+        "results": {
+          "lexical": {
+            "rank": 1,
+            "abstained": false
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 22,
+        "group": "current_wording",
+        "results": {
+          "lexical": {
+            "rank": 1,
+            "abstained": false
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 23,
+        "group": "current_wording",
+        "results": {
+          "lexical": {
+            "rank": 1,
+            "abstained": false
+          },
+          "ancestry": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse": {
+            "rank": 1,
+            "abstained": false
+          },
+          "sparse_history": {
+            "rank": 1,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 24,
+        "group": "negative",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": null,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 25,
+        "group": "negative",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": null,
+            "abstained": true
+          }
+        }
+      },
+      {
+        "index": 26,
+        "group": "negative",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": null,
+            "abstained": true
+          }
+        }
+      },
+      {
+        "index": 27,
+        "group": "negative",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": null,
+            "abstained": true
+          }
+        }
+      },
+      {
+        "index": 28,
+        "group": "negative",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": null,
+            "abstained": true
+          }
+        }
+      },
+      {
+        "index": 29,
+        "group": "negative",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": null,
+            "abstained": true
+          }
+        }
+      },
+      {
+        "index": 30,
+        "group": "negative",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": null,
+            "abstained": true
+          }
+        }
+      },
+      {
+        "index": 31,
+        "group": "negative",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": null,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 32,
+        "group": "negative",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": null,
+            "abstained": false
+          }
+        }
+      },
+      {
+        "index": 33,
+        "group": "negative",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": null,
+            "abstained": true
+          }
+        }
+      },
+      {
+        "index": 34,
+        "group": "negative",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": null,
+            "abstained": true
+          }
+        }
+      },
+      {
+        "index": 35,
+        "group": "negative",
+        "results": {
+          "lexical": {
+            "rank": null,
+            "abstained": true
+          },
+          "ancestry": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse": {
+            "rank": null,
+            "abstained": true
+          },
+          "sparse_history": {
+            "rank": null,
+            "abstained": false
+          }
+        }
+      }
+    ],
+    "limitations": "All examples are hand-authored, synthetic and published with the code. No tuning was conducted against this fixture, but it is not an independently collected holdout. Ancestry methods access retired wording that direct methods do not; sparse TF-IDF is not a neural embedding baseline. Scores are uncalibrated heuristics; no superiority, statistical significance or factual correctness can be inferred."
+  }
+}

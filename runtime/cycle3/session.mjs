@@ -1,11 +1,14 @@
 // Single local research writer. The OS account/runtime/config remain trusted.
 import {readFileSync,writeFileSync,mkdirSync,openSync,closeSync,fsyncSync,unlinkSync,lstatSync,statSync} from 'node:fs';
 import {join,resolve} from 'node:path';
-import {randomUUID} from 'node:crypto';
+import {randomUUID,randomBytes} from 'node:crypto';
 import {spawnSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 import {createJournal,openJournal} from '../journal-disk-v10-rc2.mjs';
-import {VERSION,STAGES,BUDGET,LIMITS,hash,must,exact,replay,artifactCheck,vector,uint,classify} from './protocol.mjs';
+import {VERSION,STAGES,BUDGET,LIMITS,hash,must,exact,artifactCheck,vector,uint,classify} from './protocol.mjs';
+import {VERSION2,ACTIVITY,ACTIVITY_KINDS,activityBudget,activityZero,activityVector,activityArtifact,classifyActivity,replaySession as replay} from './activities.mjs';
+import {makeCheckpoint,verifyContinuity,trustCheck} from './continuity.mjs';
+import {seedGenome,transformGenome,qualifyGenome,reconstructParent} from './genome.mjs';
 import {configCheck,sourceManifest} from './sources.mjs';
 
 const HERE=fileURLToPath(new URL('.',import.meta.url));
@@ -22,9 +25,9 @@ function syncDir(directory) {
 }
 function worker(config,directory,stage,input) {
   const request=JSON.stringify({stage,input,roots:config.roots,directory});
-  const python=['preflight','plan','review','replay'].includes(stage);
+  const python=['preflight','plan','review','replay','native-memory'].includes(stage);
   const executable=python ? config.python : process.execPath;
-  const args=python ? ['-I','-B',join(HERE,'worker.py')] : [join(HERE,'worker.mjs')];
+  const args=python ? ['-I','-B',join(HERE,stage==='native-memory'?'native_worker.py':'worker.py')] : [join(HERE,'worker.mjs')];
   const env=Object.fromEntries(['PATH','SystemRoot','WINDIR','TEMP','TMP','TMPDIR','LANG']
     .filter(k=>process.env[k] !== undefined).map(k=>[k,process.env[k]]));
   env.PYTHONDONTWRITEBYTECODE='1';
@@ -45,7 +48,7 @@ export function initialize(directory,config,key) {
     durable(join(directory,'config.json'),c);
     durable(join(directory,'sources.json'),{...sources,preflight});
     const sourceHash=hash({config:c,manifest:sources.manifest,preflight});
-    createJournal(join(directory,'research.journal'),key,{kind:'header',schema:VERSION,
+    createJournal(join(directory,'research.journal'),key,{kind:'header',schema:c.schema,
       session:randomUUID(),sourceHash,authority:'NONE',budget:{...BUDGET}});
     syncDir(directory);
     return inspect(directory,key);
@@ -60,6 +63,8 @@ function load(directory,key,expectedHead) {
   const sources=JSON.parse(regular(join(directory,'sources.json'),4000000));
   const journal=openJournal(join(directory,'research.journal'),key,{expectedHead});
   const state=replay(journal.records);
+  for(const [i,record]of journal.records.entries())if(record.schema===ACTIVITY&&record.kind==='reserve')
+    must(record.binding.position===i&&record.binding.head===journal.heads[i-1],'activity prefix position/head mismatch');
   must(hash({config,manifest:sources.manifest,preflight:sources.preflight}) === state.sourceHash
     && hash(sources.manifest) === sources.hash,'session configuration/source binding');
   return {directory,config,sources,journal,state};
@@ -102,17 +107,18 @@ export function reserve(directory,key,expectedHead) {
 export function startReserved(directory,key,expectedHead,checkpoint=()=>{}) {
   return exclusive(directory,()=>{
     const s=load(directory,key,expectedHead),p=s.state.pending;
-    must(p && !p.started && !s.state.abandoned,'no unstarted reservation');
+    must(p && !p.scope && !p.started && !s.state.abandoned,'no unstarted core reservation');
     const input=s.state.next ? s.state.artifacts[STAGES[s.state.next-1]] : null;
     // The start is durable before source checks or any adapter computation.
     append(s,event('start',{id:p.id}));
     checkpoint('start'); // Trusted host instrumentation; not exposed through CLI/config/evidence.
     const began=process.hrtime.bigint();
-    const before=sourceManifest(s.config);
+    const inventory=s.config.schema===VERSION2?s.sources.manifest:undefined;
+    const before=sourceManifest(s.config,inventory);
     must(before.hash === s.sources.hash,'runtime/source drift');
     const response=worker(s.config,s.directory,p.stage,input);
     checkpoint('worker-result');
-    const after=sourceManifest(s.config);
+    const after=sourceManifest(s.config,inventory);
     must(after.hash === before.hash,'source changed during operation');
     const {artifact,measured}=response.value;
     must(exact(response.value,['artifact','measured']),'adapter response');
@@ -139,7 +145,9 @@ export function abandon(directory,key,reason,expectedHead) {
     if (!s.state.pending) {
       must(s.state.abandoned,'no unresolved work');return inspect(directory,key);
     }
-    append(s,event('abandon',{id:s.state.pending.id,reason}));
+    append(s,s.state.pending.scope==='activity'
+      ?{schema:ACTIVITY,authority:'NONE',kind:'abandon',id:s.state.pending.id,reason}
+      :event('abandon',{id:s.state.pending.id,reason}));
     return inspect(directory,key);
   });
 }
@@ -154,8 +162,107 @@ export function unlock(directory,key,expectedLockHash,expectedHead) {
   return inspect(directory,key);
 }
 export function fullArtifact(directory,key,stage,expectedHead) {
-  must(STAGES.includes(stage),'unknown artifact');
+  must([...STAGES,...ACTIVITY_KINDS].includes(stage),'unknown artifact');
   const s=load(directory,key,expectedHead);
   must(s.state.artifacts[stage],'artifact unavailable');
   return s.state.artifacts[stage];
+}
+
+function snapshotView(s,position=s.journal.records.length){
+  must(uint(position)&&position>0&&position<=s.journal.records.length,'checkpoint position');
+  const state=replay(s.journal.records.slice(0,position));
+  must(!state.pending&&!state.abandoned,'checkpoint requires a settled prefix');
+  return {session:state.session,protocol:state.schema,position,head:s.journal.heads[position-1],
+    sourceHash:state.sourceHash,runtimeManifestHash:s.sources.hash,configurationDigest:hash(s.config),
+    artifacts:Object.fromEntries(Object.entries(state.artifacts).map(([k,v])=>[k,hash(v)]))};
+}
+export function checkpointView(directory,key,position){return snapshotView(load(directory,key),position);}
+export function reserveActivity(directory,key,kind,request,expectedHead){
+  return exclusive(directory,()=>{
+    const s=load(directory,key,expectedHead);
+    must(s.config.schema===VERSION2&&ACTIVITY_KINDS.includes(kind)&&s.state.next===STAGES.length
+      &&!s.state.pending&&!s.state.abandoned,'explicit v2 completed core required');
+    if(kind==='checkpoint'){
+      must(exact(request,['policy','previous']),'checkpoint request fields');trustCheck(request.policy);
+      must(request.previous===(s.state.artifacts.checkpoint?.content.checkpoint.digest??null),'previous checkpoint mismatch');
+    }
+    if(kind==='genome')must(exact(request,['parent','operation','ancestors'])&&s.state.artifacts['native-memory'],'genome needs native reference catalog');
+    append(s,{schema:ACTIVITY,authority:'NONE',kind:'reserve',id:s.state.activities.length+1,activity:kind,
+      request,requestDigest:hash(request),binding:{position:s.journal.records.length,head:s.journal.head},budget:activityBudget(kind)});
+    return inspect(directory,key);
+  });
+}
+async function exclusiveAsync(directory,fn){
+  const path=join(resolve(directory),'writer.lock');
+  durable(path,{pid:process.pid,token:randomUUID()});syncDir(resolve(directory));
+  let result;try{result=await fn();}finally{unlinkSync(path);syncDir(resolve(directory));}
+  return {...result,lock:null};
+}
+async function witnessCall(call,timeoutMs){
+  must(uint(timeoutMs)&&timeoutMs>0&&timeoutMs<=LIMITS.timeoutMs,'bounded witness timeout');
+  const controller=new AbortController();let timer;
+  try{return await Promise.race([Promise.resolve().then(()=>call(controller.signal)),new Promise((_,reject)=>{
+    timer=setTimeout(()=>{controller.abort();reject(Error('witness timeout; expenditure and remote completion uncertain'));},timeoutMs);
+  })]);}finally{clearTimeout(timer);}
+}
+export async function startActivity(directory,key,expectedHead,{transport,checkpointHook=()=>{},timeoutMs=LIMITS.timeoutMs}={}){
+  return exclusiveAsync(directory,async()=>{
+    const s=load(directory,key,expectedHead),p=s.state.pending;
+    must(s.config.schema===VERSION2&&p?.scope==='activity'&&!p.started&&!s.state.abandoned,'unstarted v2 activity required');
+    append(s,{schema:ACTIVITY,authority:'NONE',kind:'start',id:p.id});checkpointHook('start');
+    const began=process.hrtime.bigint(),before=sourceManifest(s.config,s.sources.manifest);
+    must(before.hash===s.sources.hash,'runtime/source drift');
+    let content,measured=activityZero(),requestBytes=0,responseBytes=0;
+    if(p.stage==='native-memory'){
+      const response=worker(s.config,s.directory,'native-memory',p.request);
+      content=response.value.artifact;Object.assign(measured,response.value.measured);
+      requestBytes=response.requestBytes;responseBytes=response.responseBytes;
+    }else if(p.stage==='genome'){
+      const native=s.state.artifacts['native-memory'].content;
+      const frame={actorId:s.state.session,implementationHash:s.sources.hash,controlDigest:s.state.sourceHash};
+      const expected=s.state.artifacts.genome?.content.candidate??seedGenome(frame,native.references);
+      must(hash(expected)===hash(p.request.parent),'genome parent is not current configuration');
+      const known=new Set();
+      for(const record of s.journal.records)if(record.schema===ACTIVITY&&record.kind==='reserve'&&record.activity==='genome')known.add(hash(record.request.parent));
+      for(const record of s.journal.records)if(record.schema===ACTIVITY&&record.kind==='result'&&record.artifact.kind==='genome')known.add(hash(record.artifact.content.candidate));
+      must(Array.isArray(p.request.ancestors)&&p.request.ancestors.every(a=>known.has(hash(a))),'unrecorded genome ancestor');
+      const catalog=new Map(native.references.map(r=>[r.nativeId,r.recordDigest]));
+      const result=transformGenome(p.request.parent,p.request.operation,p.request.ancestors,frame,catalog);
+      must(hash(reconstructParent(result.candidate,result.receipt,frame,catalog))===hash(p.request.parent),'exact genome reconstruction');
+      const mapping=await qualifyGenome(result,s.config.roots);
+      content={candidate:result.candidate,receipt:result.receipt,mapping};measured.graphVisits=result.visits+result.candidate.pockets.length;
+    }else{
+      must(transport&&typeof transport.commit==='function'&&typeof transport.attest==='function','witness unavailable; explicit transport required');
+      const view=snapshotView(s,p.binding.position);
+      const previous=s.state.artifacts.checkpoint?.content.checkpoint??null;
+      const checkpoint=makeCheckpoint(view,previous,p.request.policy);
+      await witnessCall(signal=>transport.commit(checkpoint,s.journal.heads.slice(0,view.position),{signal}),timeoutMs);checkpointHook('witness-committed');
+      const nonce=randomBytes(16).toString('hex'),proof=await witnessCall(signal=>transport.attest(nonce,{signal}),timeoutMs);
+      const proofs=Array.isArray(proof)?proof:[proof];
+      const verification=await verifyContinuity({root:s.config.roots.NBGPocketMesh,checkpoint,view,
+        heads:s.journal.heads,policy:p.request.policy,proofs,nonce});
+      content={checkpoint,proofs,verification};measured.checkpointRecords=1;measured.witnessChecks=proofs.length;
+    }
+    checkpointHook('worker-result');
+    const after=sourceManifest(s.config,s.sources.manifest);must(after.hash===before.hash,'source changed during activity');
+    const artifact={schema:ACTIVITY,authority:'NONE',kind:p.stage,requestDigest:hash(p.request),content};
+    activityArtifact(artifact,p.stage,p.request);
+    measured.sourceBytes+=before.bytes+after.bytes;measured.ipcBytes=requestBytes+responseBytes;
+    measured.artifactBytes=Buffer.byteLength(JSON.stringify(artifact));activityVector(measured);
+    const diagnostics={elapsedMicros:Number((process.hrtime.bigint()-began)/1000n),requestBytes,responseBytes};
+    append(s,{schema:ACTIVITY,authority:'NONE',kind:'result',id:p.id,artifact,artifactHash:hash(artifact),measured,
+      byCategory:classifyActivity(p.stage,measured),diagnostics});return inspect(directory,key);
+  });
+}
+export async function performActivity(directory,key,kind,request,options={}){
+  const reserved=reserveActivity(directory,key,kind,request,options.expectedHead);
+  return startActivity(directory,key,reserved.head,options);
+}
+export async function protectedRead(directory,key,{checkpoint,policy,transport,expectedHead,timeoutMs=LIMITS.timeoutMs}){
+  const s=load(directory,key,expectedHead);
+  checkpoint??=s.state.artifacts.checkpoint?.content.checkpoint;
+  must(checkpoint&&transport&&typeof transport.attest==='function','protected read requires checkpoint and fresh witness transport');
+  const view=snapshotView(s,checkpoint.body.view.position),nonce=randomBytes(16).toString('hex');
+  const proof=await witnessCall(signal=>transport.attest(nonce,{signal}),timeoutMs),proofs=Array.isArray(proof)?proof:[proof];
+  return verifyContinuity({root:s.config.roots.NBGPocketMesh,checkpoint,view,heads:s.journal.heads,policy,proofs,nonce});
 }
