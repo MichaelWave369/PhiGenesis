@@ -1,0 +1,34 @@
+name: Phi032 Agentora orchestration bridge
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  phi032:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/Agentora
+          ref: 49166bb5365975d68df744678f91a837b0da48f2
+          path: dependencies/agentora
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/Altermath
+          ref: 99a40f6f8e6f4ded656dd3655778dfffa72a3754
+          path: dependencies/altermath
+          persist-credentials: false
+      - run: |
+          test "$(git -C dependencies/agentora rev-parse HEAD)" = "49166bb5365975d68df744678f91a837b0da48f2"
+          test "$(git -C dependencies/altermath rev-parse HEAD)" = "99a40f6f8e6f4ded656dd3655778dfffa72a3754"
+          python -m pip install sqlmodel==0.0.22 pydantic-settings==2.6.0
+      - run: node experiments/phi032-export.mjs dependencies/altermath/src/causal-belt.mjs > /tmp/phi032.json
+      - run: PYTHONPATH="$PWD/dependencies/agentora/server" python experiments/phi032_agentora_test.py /tmp/phi032.json
