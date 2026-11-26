@@ -1,0 +1,110 @@
+name: Cycle III Phase II continuity and native memory
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  phase2-linux:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/PhiGenesis
+          ref: 22114dc95ee56b49cd23a5eeff1b8a0a3d1d972e
+          path: dependencies/genesis
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/Agentora
+          ref: 49166bb5365975d68df744678f91a837b0da48f2
+          path: dependencies/agentora
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/Altermath
+          ref: 99a40f6f8e6f4ded656dd3655778dfffa72a3754
+          path: dependencies/altermath
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/PhiOS
+          ref: da87f8fe7d26036a61a97aca6eebc2afc2a747c3
+          path: dependencies/phios
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/PhiMemory9
+          ref: 5cba675a3a439023a3ff374c238dd6e4339e3a55
+          path: dependencies/memory
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/NBGPocketMesh
+          ref: 0687f10970989194d4af554d9b189c7ce8a1ad15
+          path: dependencies/mesh
+          persist-credentials: false
+      - name: Explicit local test setup
+        run: |
+          python -m venv "$RUNNER_TEMP/phase2-venv"
+          "$RUNNER_TEMP/phase2-venv/bin/python" -m pip install -r runtime/cycle3/requirements.txt
+          node --input-type=module -e '
+            import fs from "node:fs"; import path from "node:path";
+            const d=n=>path.join(process.cwd(),"dependencies",n);
+            fs.writeFileSync(process.env.RUNNER_TEMP+"/phase2-config.json",JSON.stringify({schema:"PhiGenesis.CycleIII.v2",authority:"NONE",
+              python:process.env.RUNNER_TEMP+"/phase2-venv/bin/python",roots:{PhiGenesis:d("genesis"),Agentora:d("agentora"),Altermath:d("altermath"),PhiOS:d("phios"),PhiMemory9:d("memory"),NBGPocketMesh:d("mesh")}}));'
+      - name: Offline Phase II tests and real process interruption
+        env:
+          PHIGENESIS_PHASE2_MESH_ROOT: ${{ github.workspace }}/dependencies/mesh
+          PHIGENESIS_PHASE2_NATIVE_ROOT: ${{ github.workspace }}/dependencies/memory
+        run: |
+          export PHIGENESIS_PHASE2_CONFIG="$RUNNER_TEMP/phase2-config.json"
+          python -m unittest discover -s tests/cycle3_phase2 -p test_native_memory.py -v
+          (cd dependencies/memory && PYTHONPATH=src python -m unittest discover -s tests -v)
+          node --test --test-concurrency=1 tests/cycle3_phase2/*.test.mjs
+          node scripts/phase2-local-demo.mjs "$RUNNER_TEMP/phase2-demo" "$PHIGENESIS_PHASE2_CONFIG" > "$RUNNER_TEMP/phase2-demo.json"
+          node runtime/cli-v10-rc2.mjs test
+          node runtime/test-crash-v10-rc2.mjs
+  phase2-windows-contracts:
+    runs-on: windows-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/PhiMemory9
+          ref: 5cba675a3a439023a3ff374c238dd6e4339e3a55
+          path: dependencies/memory
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/NBGPocketMesh
+          ref: 0687f10970989194d4af554d9b189c7ce8a1ad15
+          path: dependencies/mesh
+          persist-credentials: false
+      - name: Hosted Windows read-only SQLite and pure protocol contracts
+        shell: pwsh
+        run: |
+          $env:PHIGENESIS_PHASE2_NATIVE_ROOT = Join-Path $env:GITHUB_WORKSPACE 'dependencies/memory'
+          $env:PHIGENESIS_PHASE2_MESH_ROOT = Join-Path $env:GITHUB_WORKSPACE 'dependencies/mesh'
+          python -m unittest discover -s tests/cycle3_phase2 -p test_native_memory.py -v
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          node --test --test-concurrency=1 tests/cycle3_phase2/continuity.test.mjs tests/cycle3_phase2/genome.test.mjs
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          # No Windows session-journal/power-loss/GPU/workstation claim.

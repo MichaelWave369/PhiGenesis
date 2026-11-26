@@ -1,0 +1,418 @@
+{
+  "schema": "Phase2.VerifiedBaseline.v1",
+  "observedOn": "2026-11-26",
+  "pr": {
+    "number": 47,
+    "url": "https://github.com/MichaelWave369/PhiGenesis/pull/47",
+    "merged": true,
+    "mergeCommit": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+    "publishedHead": "6ed6e12b140af85241392c776175c3ed798daa8d"
+  },
+  "main": {
+    "sha": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+    "tree": "d8e7c5cb358e99b37f03f9a45c82167be578b2f2"
+  },
+  "treeComparison": "git diff of merged main and published PR #47 head had no changes",
+  "checks": [
+    {
+      "id": 140111368005,
+      "name": "runtime",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443545/job/140111368005"
+    },
+    {
+      "id": 140111367894,
+      "name": "cycle3",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443780/job/140111367894"
+    },
+    {
+      "id": 140111367685,
+      "name": "crash-recovery",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443514/job/140111367685"
+    },
+    {
+      "id": 140111367623,
+      "name": "phi022",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443572/job/140111367623"
+    },
+    {
+      "id": 140111367531,
+      "name": "e22",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443620/job/140111367531"
+    },
+    {
+      "id": 140111367457,
+      "name": "compositional-memory",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443582/job/140111367457"
+    },
+    {
+      "id": 140111367430,
+      "name": "phi018",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443574/job/140111367430"
+    },
+    {
+      "id": 140111367390,
+      "name": "e23",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443566/job/140111367390"
+    },
+    {
+      "id": 140111367338,
+      "name": "phi025",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443556/job/140111367338"
+    },
+    {
+      "id": 140111367320,
+      "name": "phi032",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443557/job/140111367320"
+    },
+    {
+      "id": 140111367309,
+      "name": "e0",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443562/job/140111367309"
+    },
+    {
+      "id": 140111367292,
+      "name": "e21",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443495/job/140111367292"
+    },
+    {
+      "id": 140111367264,
+      "name": "integrity",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443634/job/140111367264"
+    },
+    {
+      "id": 140111367241,
+      "name": "phi034",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443471/job/140111367241"
+    },
+    {
+      "id": 140111367216,
+      "name": "e25",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443553/job/140111367216"
+    },
+    {
+      "id": 140111367145,
+      "name": "integrated-runtime",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443476/job/140111367145"
+    },
+    {
+      "id": 140111367003,
+      "name": "strategy-selection",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443511/job/140111367003"
+    },
+    {
+      "id": 140111366985,
+      "name": "phi026",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443484/job/140111366985"
+    },
+    {
+      "id": 140111366976,
+      "name": "e30",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443474/job/140111366976"
+    },
+    {
+      "id": 140111366964,
+      "name": "curiosity",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443515/job/140111366964"
+    },
+    {
+      "id": 140111366958,
+      "name": "peer-exchange",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443449/job/140111366958"
+    },
+    {
+      "id": 140111366936,
+      "name": "e2",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443252/job/140111366936"
+    },
+    {
+      "id": 140111366933,
+      "name": "phi031",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443443/job/140111366933"
+    },
+    {
+      "id": 140111366870,
+      "name": "adaptive-continuity",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443409/job/140111366870"
+    },
+    {
+      "id": 140111366837,
+      "name": "phi029",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443492/job/140111366837"
+    },
+    {
+      "id": 140111366828,
+      "name": "phi028",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443485/job/140111366828"
+    },
+    {
+      "id": 140111366803,
+      "name": "phi033",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443480/job/140111366803"
+    },
+    {
+      "id": 140111366750,
+      "name": "e24",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443463/job/140111366750"
+    },
+    {
+      "id": 140111366735,
+      "name": "test",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443379/job/140111366735"
+    },
+    {
+      "id": 140111366659,
+      "name": "e31",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443482/job/140111366659"
+    },
+    {
+      "id": 140111366591,
+      "name": "validation",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443479/job/140111366591"
+    },
+    {
+      "id": 140111366576,
+      "name": "phi024",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443307/job/140111366576"
+    },
+    {
+      "id": 140111366471,
+      "name": "phi017",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443430/job/140111366471"
+    },
+    {
+      "id": 140111366307,
+      "name": "phi019",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443288/job/140111366307"
+    },
+    {
+      "id": 140111366271,
+      "name": "phi030",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443293/job/140111366271"
+    },
+    {
+      "id": 140111366255,
+      "name": "e1",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443327/job/140111366255"
+    },
+    {
+      "id": 140111366114,
+      "name": "temporal-relevance",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443343/job/140111366114"
+    },
+    {
+      "id": 140111366087,
+      "name": "phi020",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443281/job/140111366087"
+    },
+    {
+      "id": 140111366045,
+      "name": "phi021",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443278/job/140111366045"
+    },
+    {
+      "id": 140111365973,
+      "name": "phi023",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443282/job/140111365973"
+    },
+    {
+      "id": 140111365761,
+      "name": "phi027",
+      "head": "10a9785c5a2dfacca547b275b82c8295a4d37e8e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MichaelWave369/PhiGenesis/actions/runs/45878443264/job/140111365761"
+    }
+  ],
+  "openGenesisIssues": [],
+  "related": {
+    "phiosRecovery": {
+      "number": 340,
+      "state": "open",
+      "title": "Φ Exit Test R2-R6: full independent recovery and offline acceptance laboratory",
+      "url": "https://github.com/MichaelWave369/PhiOS/issues/340"
+    },
+    "agentora": [
+      {
+        "number": 153,
+        "state": "open",
+        "title": "Autonomous R1 task: r1-r9-docs-field-two",
+        "url": "https://github.com/MichaelWave369/Agentora/issues/153"
+      },
+      {
+        "number": 149,
+        "state": "open",
+        "title": "Autonomous R1 task: r1-r9-docs-field-one",
+        "url": "https://github.com/MichaelWave369/Agentora/issues/149"
+      },
+      {
+        "number": 132,
+        "state": "open",
+        "title": "[Fleet Mission] R12 cloud mission board smoke test",
+        "url": "https://github.com/MichaelWave369/Agentora/issues/132"
+      },
+      {
+        "number": 124,
+        "state": "open",
+        "title": "Fleet R10: connect existing RepoNerve → R9 → Autonomous R1 into one governed development loop",
+        "url": "https://github.com/MichaelWave369/Agentora/issues/124"
+      },
+      {
+        "number": 91,
+        "state": "open",
+        "title": "Autonomous R1 task: r1-code-navlink-20261104192801",
+        "url": "https://github.com/MichaelWave369/Agentora/issues/91"
+      },
+      {
+        "number": 89,
+        "state": "open",
+        "title": "Autonomous R1 task: r1-docs-20261104184600207",
+        "url": "https://github.com/MichaelWave369/Agentora/issues/89"
+      },
+      {
+        "number": 86,
+        "state": "open",
+        "title": "Autonomous R1 task: r1-docs-20261104171030112",
+        "url": "https://github.com/MichaelWave369/Agentora/issues/86"
+      },
+      {
+        "number": 84,
+        "state": "open",
+        "title": "Autonomous R1 task: r1-docs-20261104081537",
+        "url": "https://github.com/MichaelWave369/Agentora/issues/84"
+      },
+      {
+        "number": 75,
+        "state": "open",
+        "title": "Fleet R0.2: completion contracts, executable acceptance checks and priority queue",
+        "url": "https://github.com/MichaelWave369/Agentora/issues/75"
+      }
+    ],
+    "altermathPr": {
+      "number": 31,
+      "state": "open",
+      "title": "Research: Φ47 two-bubble authorized junction exchange",
+      "url": "https://github.com/MichaelWave369/Altermath/pull/31",
+      "head": "d6b3c38f4d58e380fda63284da68c76e947b3904"
+    }
+  }
+}

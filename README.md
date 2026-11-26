@@ -98,6 +98,11 @@ It is the first bounded increment toward Φ035–Φ043; the full roadmap is not 
 See the [verified inventory, traceability, measurements and blockers](docs/cycle3/engineering-report.md).
 Production remains BLOCKED. No model, live worker, service deployment or permission grant.
 
+The [Phase II continuation](docs/cycle3/phase2/local-guide.md) adds an explicit v2
+profile with native PhiMemory9 read-only intake, finite genome proposals and a
+PocketMesh checkpoint adapter. Independent witness custody and production
+qualification remain open; see its [engineering report](docs/cycle3/phase2/engineering-report.md).
+
 ## Research constraints
 
 Experiments are CPU-local, seeded, finite, and isolated from external systems. No runtime network access, self-deployment, secret access, or automatic promotion of architectural modifications. Record failed experiments, resource budgets and evaluation leakage. Use separate training and held-out observations; do not claim discoveries beyond the tested hypothesis family. Human and AI design choices are explicit and revisable.

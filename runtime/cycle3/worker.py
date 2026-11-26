@@ -14,6 +14,9 @@ from urllib.parse import quote
 def main(request):
     stage = request["stage"]
     roots = request["roots"]
+    # The explicit v2 profile adds native memory/mesh roots. The historical
+    # Phi033 contract must still see exactly its original four-source interface.
+    legacy_roots = {name: roots[name] for name in ("PhiGenesis", "Agentora", "Altermath", "PhiOS")}
     candidate = Path(__file__).resolve().parents[2]
     requirements = Path(__file__).with_name("requirements.txt").read_text()
     versions = {}
@@ -90,14 +93,14 @@ def main(request):
             measured["sourceBytes"] += sum((Path(roots[repo]) / path).stat().st_size
                                             for repo, paths in PATHS.items() for path in paths)
             with Session(engine) as session:
-                result = review(session, value["runId"], packet, value["draft"], roots)
+                result = review(session, value["runId"], packet, value["draft"], legacy_roots)
                 artifact = dict(schema="cycle3-review/v1", authority="NONE", packet=packet,
                                 draft=value["draft"], runId=value["runId"], review=result)
         else:
             measured["sourceBytes"] += sum((Path(roots[repo]) / path).stat().st_size
                                             for repo, paths in PATHS.items() for path in paths)
             with Session(engine) as session:
-                if not verify_review(session, value["runId"], packet, value["draft"], roots, value["review"]):
+                if not verify_review(session, value["runId"], packet, value["draft"], legacy_roots, value["review"]):
                     raise ValueError("review replay")
             # Native PhiOS enforcement decision, with an empty permission ceiling.
             # No Spine instance or executor is created or invoked.
