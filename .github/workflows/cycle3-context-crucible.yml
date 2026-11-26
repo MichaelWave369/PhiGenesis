@@ -1,0 +1,19 @@
+name: Cycle III context crucible
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  context:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          node experiments/phi042-context-crucible.mjs test
+          node experiments/phi042-context-crucible.mjs > /tmp/context-a.json
+          node experiments/phi042-context-crucible.mjs > /tmp/context-b.json
+          cmp /tmp/context-a.json /tmp/context-b.json
+          node -e 'const r=require("/tmp/context-a.json");if(r.rows.length!==24||r.release!=="BLOCKED")process.exit(1);console.log(JSON.stringify(r,null,2))'
