@@ -1,0 +1,19 @@
+name: Cycle III adaptive policy selection
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  adaptive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          node experiments/phi042-adaptive-policy.mjs test
+          node experiments/phi042-adaptive-policy.mjs > /tmp/adaptive-a.json
+          node experiments/phi042-adaptive-policy.mjs > /tmp/adaptive-b.json
+          cmp /tmp/adaptive-a.json /tmp/adaptive-b.json
+          node -e 'const r=require("/tmp/adaptive-a.json");if(r.rows.length!==48||r.release!=="BLOCKED")process.exit(1);console.log(JSON.stringify(r,null,2))'
