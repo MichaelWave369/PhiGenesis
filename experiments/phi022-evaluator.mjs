@@ -8,7 +8,7 @@ for(let c=0;c<3;c++){
  const axis=c===1?1:0;
  const label=(x,y)=>Math.floor((axis?y:x)/3);
  const memories=Array.from({length:18},(_,i)=>{const x=i%9,y=(i*4+Math.floor(i/9)*2)%9;return {x,y,label:label(x,y)}});
- const queries=Array.from({length:9},(_,i)=>({x:i,y:(i*2+3)%9,label:label(i,(i*2+3)%9)}));
+ const queries=Array.from({length:9},(_,i)=>({x:i,y:(i+1)%9,label:label(i,(i+1)%9)}));
  const score=w=>{let n=0;for(const q of queries){let best=Infinity,result=-1;for(const m of memories){cost++;const d=w*Math.abs(q.x-m.x)+(8-w)*Math.abs(q.y-m.y);if(d<best){best=d;result=m.label}}if(result===q.label)n++}return n};
  reference.push(score(4));candidate.push(score(p.weights[c]));
 }
