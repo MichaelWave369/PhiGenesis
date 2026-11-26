@@ -1,4 +1,5 @@
 import copy
+from contextlib import closing
 import hashlib
 import importlib.util
 import json
@@ -52,7 +53,9 @@ def fixture(path):
 class NativeMemoryTests(unittest.TestCase):
     def setUp(self):
         self.folder = tempfile.TemporaryDirectory()
-        self.path = Path(self.folder.name) / "native.sqlite3"
+        # Windows runner TEMP can contain 8.3 aliases (e.g. RUNNER~1).
+        # Approve the actual canonical path, as the runtime requires.
+        self.path = Path(self.folder.name).resolve(strict=True) / "native.sqlite3"
         self.request, self.ids, self.contexts = fixture(self.path)
 
     def tearDown(self):
@@ -74,6 +77,17 @@ class NativeMemoryTests(unittest.TestCase):
         self.assertFalse(result["artifact"]["executionAuthority"])
         self.assertNotIn("Tower pressure sensor calibration", json.dumps(result))
         self.assertGreater(result["measured"]["sqlStatements"], 0)
+
+    def test_canonical_source_path_is_required_and_alias_is_refused(self):
+        self.assertEqual(Path(self.request["databasePath"]).resolve(strict=True),
+                         Path(self.request["databasePath"]))
+        alias_dir = self.path.parent / "alias-fixture"
+        alias_dir.mkdir()
+        req = copy.deepcopy(self.request)
+        req["databasePath"] = str(alias_dir / ".." / self.path.name)
+        with self.assertRaisesRegex(ValueError, "digest/path drift"):
+            intake(req)
+        self.assertEqual(self.request["databaseSha256"], file_digest(self.path))
 
     def test_native_renewal_and_exact_ancestry_preserved(self):
         _, rows = self.rows()
@@ -147,7 +161,8 @@ class NativeMemoryTests(unittest.TestCase):
         self.assertEqual(a, b)
 
     def test_source_modification_and_validly_rewritten_content_both_refused(self):
-        with sqlite3.connect(self.path) as db:
+        # Connection context managers commit/rollback but do not close SQLite.
+        with closing(sqlite3.connect(self.path)) as db, db:
             db.execute("UPDATE memories SET content=? WHERE id=?", ("Modified", self.ids["current"]))
         with self.assertRaisesRegex(ValueError, "digest"):
             intake(self.request)

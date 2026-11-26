@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {mkdtempSync,rmSync,cpSync} from 'node:fs';
+import {mkdtempSync,rmSync,cpSync,chmodSync,readdirSync,lstatSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join,resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -18,6 +18,23 @@ const setup=()=>{
     sourceHash:hash('sources'),runtimeManifestHash:hash('runtime'),configurationDigest:hash('config'),artifacts:{memory:hash('memory')}};
   return {key,policy,heads,view};
 };
+// cpSync may recreate directories under the runner's umask rather than
+// preserving the private source mode. Restore the test snapshot with the
+// owner-only permissions required by the native anchor, never by
+// weakening its runtime permission checks.
+function restorePrivateSnapshot(source,destination){
+  cpSync(source,destination,{recursive:true});
+  if(process.platform!=='win32'){
+    function restrict(path){
+      const st=lstatSync(path);
+      assert.ok(st.isDirectory()||st.isFile(),'fixture snapshot must contain only directories and regular files');
+      chmodSync(path,st.isDirectory()?0o700:0o600);
+      if(st.isDirectory())for(const name of readdirSync(path))restrict(join(path,name));
+      assert.equal(lstatSync(path).mode&0o077,0);
+    }
+    restrict(destination);
+  }
+}
 const nonce=()=>randomBytes(16).toString('hex');
 async function verified(w,cp,view,heads,policy){const n=nonce();return verifyContinuity({root,checkpoint:cp,view,heads,policy,nonce:n,proofs:[await w.attest(n)]});}
 function signedProof(key,policy,cp,n){
@@ -92,10 +109,10 @@ test('key substitution and explicit rotation/revocation use current external pol
 test('known limitation: coordinated local rollback defeats same-account reference witness',async()=>{
   const d=mkdtempSync(join(tmpdir(),'phi037-')),backup=d+'-backup';try{
     const s=setup(),w=await referenceWitness({root,directory:d,policy:s.policy,privateKey:s.key.privateKey}),first=makeCheckpoint(s.view,null,s.policy);
-    await w.commit(first,s.heads);cpSync(d,backup,{recursive:true});
+    await w.commit(first,s.heads);restorePrivateSnapshot(d,backup);
     const heads=[...s.heads,hash('new')],view={...s.view,position:3,head:heads.at(-1)},second=makeCheckpoint(view,first,s.policy);
     await w.commit(second,heads);
-    rmSync(d,{recursive:true});cpSync(backup,d,{recursive:true});
+    rmSync(d,{recursive:true});restorePrivateSnapshot(backup,d);
     // Reproduced negative result: a fresh nonce cannot defeat rollback of both
     // independently-unprotected stores by their common administrator.
     const r=await verified(w,first,s.view,s.heads,s.policy);assert.equal(r.protectedRecords,2);
