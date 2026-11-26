@@ -1,0 +1,19 @@
+name: Phi030 experiential memory
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  phi030:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node experiments/phi030-cli.mjs test
+      - run: node experiments/phi030-restart-test.mjs
+      - run: |
+          node experiments/phi030-cli.mjs report 90 > /tmp/phi030-a.json
+          node experiments/phi030-cli.mjs report 90 > /tmp/phi030-b.json
+          cmp /tmp/phi030-a.json /tmp/phi030-b.json
