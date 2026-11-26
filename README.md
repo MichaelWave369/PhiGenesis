@@ -89,6 +89,15 @@ Finite-domain certification, handled-abort accounting, per-use coordinate recali
 
 Authenticated append-only attempted-work journal around RC1: `node runtime/cli-v10-rc2.mjs test` and `node runtime/test-crash-v10-rc2.mjs`. See [crash recovery protocol, trust assumptions and release gate](docs/genesis-field-v10-rc2.md). Unfinished reservations remain uncertain; recovery abandons incomplete work without repeating provider calls. Single writer, externally trusted key/head required for rollback protection. Release gate intentionally blocked.
 
+## Cycle III foundation (experimental)
+
+The [accounted local research runtime](runtime/cycle3/README.md) reuses Φ030–Φ033
+behind a versioned, authenticated session with durable pre-execution reservations,
+separate resource units, native PhiOS denial, and explicit interruption recovery.
+It is the first bounded increment toward Φ035–Φ043; the full roadmap is not complete.
+See the [verified inventory, traceability, measurements and blockers](docs/cycle3/engineering-report.md).
+Production remains BLOCKED. No model, live worker, service deployment or permission grant.
+
 ## Research constraints
 
 Experiments are CPU-local, seeded, finite, and isolated from external systems. No runtime network access, self-deployment, secret access, or automatic promotion of architectural modifications. Record failed experiments, resource budgets and evaluation leakage. Use separate training and held-out observations; do not claim discoveries beyond the tested hypothesis family. Human and AI design choices are explicit and revisable.

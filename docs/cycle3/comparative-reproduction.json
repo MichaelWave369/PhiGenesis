@@ -1,0 +1,337 @@
+[
+  {
+    "name": "phi017",
+    "command": [
+      "node",
+      "experiments/phi017-bounded-adaptation.mjs",
+      "report",
+      "90"
+    ],
+    "first_exit": 0,
+    "second_exit": 0,
+    "identical": true,
+    "seconds": 0.379,
+    "report": {
+      "schema": "phi017-v1",
+      "status": "SIMULATED",
+      "authority": "NONE",
+      "seeds": 90,
+      "rows": [
+        {
+          "regime": "stationary",
+          "policy": "fixed",
+          "accuracy": 0.8774691358024691,
+          "baselineAccuracy": 0.8774691358024691,
+          "eligible": 0,
+          "regressions": 0,
+          "meanComparisons": 4860
+        },
+        {
+          "regime": "stationary",
+          "policy": "flat",
+          "accuracy": 0.9583333333333334,
+          "baselineAccuracy": 0.8774691358024691,
+          "eligible": 75,
+          "regressions": 0,
+          "meanComparisons": 12636
+        },
+        {
+          "regime": "stationary",
+          "policy": "pocket",
+          "accuracy": 0.9558641975308642,
+          "baselineAccuracy": 0.8774691358024691,
+          "eligible": 72,
+          "regressions": 0,
+          "meanComparisons": 12636
+        },
+        {
+          "regime": "specialized",
+          "policy": "fixed",
+          "accuracy": 0.8839506172839506,
+          "baselineAccuracy": 0.8839506172839506,
+          "eligible": 0,
+          "regressions": 0,
+          "meanComparisons": 4860
+        },
+        {
+          "regime": "specialized",
+          "policy": "flat",
+          "accuracy": 0.8839506172839506,
+          "baselineAccuracy": 0.8839506172839506,
+          "eligible": 2,
+          "regressions": 1,
+          "meanComparisons": 12636
+        },
+        {
+          "regime": "specialized",
+          "policy": "pocket",
+          "accuracy": 0.9657407407407408,
+          "baselineAccuracy": 0.8839506172839506,
+          "eligible": 76,
+          "regressions": 0,
+          "meanComparisons": 12636
+        },
+        {
+          "regime": "shifted",
+          "policy": "fixed",
+          "accuracy": 0.8848765432098765,
+          "baselineAccuracy": 0.8848765432098765,
+          "eligible": 0,
+          "regressions": 0,
+          "meanComparisons": 4860
+        },
+        {
+          "regime": "shifted",
+          "policy": "flat",
+          "accuracy": 0.8854938271604939,
+          "baselineAccuracy": 0.8848765432098765,
+          "eligible": 2,
+          "regressions": 1,
+          "meanComparisons": 12636
+        },
+        {
+          "regime": "shifted",
+          "policy": "pocket",
+          "accuracy": 0.466358024691358,
+          "baselineAccuracy": 0.8848765432098765,
+          "eligible": 76,
+          "regressions": 76,
+          "meanComparisons": 12636
+        }
+      ]
+    },
+    "stderr": ""
+  },
+  {
+    "name": "phi030",
+    "command": [
+      "node",
+      "experiments/phi030-cli.mjs",
+      "report",
+      "90"
+    ],
+    "first_exit": 0,
+    "second_exit": 0,
+    "identical": true,
+    "seconds": 7.477,
+    "report": {
+      "schema": "phi030-v1",
+      "status": "SIMULATED",
+      "authority": "NONE",
+      "seeds": 90,
+      "epochs": 24,
+      "capacity": 72,
+      "rows": [
+        {
+          "regime": "stationary",
+          "policy": "recent",
+          "accuracy": 0.8014917695473252,
+          "coverage": 0.9540123456790124,
+          "conditionalAccuracy": 0.8401272511592797,
+          "returnAccuracy": 0.8729938271604938,
+          "meanComparisons": 17568.933333333334,
+          "meanRetained": 61.00324074074074,
+          "conflicts": 0,
+          "stale": 0,
+          "missing": 3814
+        },
+        {
+          "regime": "stationary",
+          "policy": "age-weighted",
+          "accuracy": 0.753858024691358,
+          "coverage": 0.9540123456790124,
+          "conditionalAccuracy": 0.790197347136849,
+          "returnAccuracy": 0.8132458847736626,
+          "meanComparisons": 17568.933333333334,
+          "meanRetained": 61.00324074074074,
+          "conflicts": 0,
+          "stale": 0,
+          "missing": 3814
+        },
+        {
+          "regime": "stationary",
+          "policy": "consolidated",
+          "accuracy": 0.778587962962963,
+          "coverage": 0.8948302469135803,
+          "conditionalAccuracy": 0.8700957144088989,
+          "returnAccuracy": 0.8489197530864198,
+          "meanComparisons": 17568.933333333334,
+          "meanRetained": 61.00324074074074,
+          "conflicts": 9454,
+          "stale": 0,
+          "missing": 3814
+        },
+        {
+          "regime": "stationary",
+          "policy": "context-tagged",
+          "accuracy": 0.731520061728395,
+          "coverage": 0.9540123456790124,
+          "conditionalAccuracy": 0.7667825946295698,
+          "returnAccuracy": 0.7871913580246913,
+          "meanComparisons": 9293.333333333334,
+          "meanRetained": 32.26851851851852,
+          "conflicts": 0,
+          "stale": 0,
+          "missing": 3814
+        },
+        {
+          "regime": "recurrent",
+          "policy": "recent",
+          "accuracy": 0.5797710905349794,
+          "coverage": 0.9540123456790124,
+          "conditionalAccuracy": 0.6077186455300334,
+          "returnAccuracy": 0.5760802469135803,
+          "meanComparisons": 17568.933333333334,
+          "meanRetained": 61.00324074074074,
+          "conflicts": 0,
+          "stale": 31017,
+          "missing": 3814
+        },
+        {
+          "regime": "recurrent",
+          "policy": "age-weighted",
+          "accuracy": 0.6028420781893004,
+          "coverage": 0.9540123456790124,
+          "conditionalAccuracy": 0.6319017577914375,
+          "returnAccuracy": 0.6104938271604938,
+          "meanComparisons": 17568.933333333334,
+          "meanRetained": 61.00324074074074,
+          "conflicts": 0,
+          "stale": 22831,
+          "missing": 3814
+        },
+        {
+          "regime": "recurrent",
+          "policy": "consolidated",
+          "accuracy": 0.5179526748971194,
+          "coverage": 0.8650848765432099,
+          "conditionalAccuracy": 0.5987304702017274,
+          "returnAccuracy": 0.500462962962963,
+          "meanComparisons": 17568.933333333334,
+          "meanRetained": 61.00324074074074,
+          "conflicts": 12940,
+          "stale": 29381,
+          "missing": 3814
+        },
+        {
+          "regime": "recurrent",
+          "policy": "context-tagged",
+          "accuracy": 0.6777006172839506,
+          "coverage": 0.9080246913580247,
+          "conditionalAccuracy": 0.7463460231135283,
+          "returnAccuracy": 0.7881944444444444,
+          "meanComparisons": 8219.333333333334,
+          "meanRetained": 55.539351851851855,
+          "conflicts": 0,
+          "stale": 0,
+          "missing": 3814
+        },
+        {
+          "regime": "delayed",
+          "policy": "recent",
+          "accuracy": 0.44112654320987654,
+          "coverage": 0.9018518518518519,
+          "conditionalAccuracy": 0.48913415468856947,
+          "returnAccuracy": 0.47680041152263375,
+          "meanComparisons": 15697.6,
+          "meanRetained": 54.50555555555555,
+          "conflicts": 0,
+          "stale": 40411,
+          "missing": 11724
+        },
+        {
+          "regime": "delayed",
+          "policy": "age-weighted",
+          "accuracy": 0.4604423868312757,
+          "coverage": 0.9018518518518519,
+          "conditionalAccuracy": 0.5105521332420716,
+          "returnAccuracy": 0.4916152263374486,
+          "meanComparisons": 15697.6,
+          "meanRetained": 54.50555555555555,
+          "conflicts": 0,
+          "stale": 35302,
+          "missing": 11724
+        },
+        {
+          "regime": "delayed",
+          "policy": "consolidated",
+          "accuracy": 0.3914480452674897,
+          "coverage": 0.8129758230452675,
+          "conditionalAccuracy": 0.4815002293686825,
+          "returnAccuracy": 0.4189300411522634,
+          "meanComparisons": 15697.6,
+          "meanRetained": 54.50555555555555,
+          "conflicts": 12512,
+          "stale": 38160,
+          "missing": 11724
+        },
+        {
+          "regime": "delayed",
+          "policy": "context-tagged",
+          "accuracy": 0.5816486625514403,
+          "coverage": 0.8063271604938271,
+          "conditionalAccuracy": 0.7213556618819776,
+          "returnAccuracy": 0.7911522633744856,
+          "meanComparisons": 6678.933333333333,
+          "meanRetained": 50.18518518518518,
+          "conflicts": 0,
+          "stale": 0,
+          "missing": 11724
+        },
+        {
+          "regime": "contradictory",
+          "policy": "recent",
+          "accuracy": 0.5022119341563785,
+          "coverage": 0.9557098765432098,
+          "conditionalAccuracy": 0.5254857634964207,
+          "returnAccuracy": 0.5074074074074074,
+          "meanComparisons": 17554.133333333335,
+          "meanRetained": 60.95185185185185,
+          "conflicts": 0,
+          "stale": 31676,
+          "missing": 3875
+        },
+        {
+          "regime": "contradictory",
+          "policy": "age-weighted",
+          "accuracy": 0.5213734567901235,
+          "coverage": 0.9557098765432098,
+          "conditionalAccuracy": 0.54553528176974,
+          "returnAccuracy": 0.5349794238683128,
+          "meanComparisons": 17554.133333333335,
+          "meanRetained": 60.95185185185185,
+          "conflicts": 0,
+          "stale": 23035,
+          "missing": 3875
+        },
+        {
+          "regime": "contradictory",
+          "policy": "consolidated",
+          "accuracy": 0.43613683127572017,
+          "coverage": 0.8202803497942387,
+          "conditionalAccuracy": 0.5316924041702594,
+          "returnAccuracy": 0.4281121399176955,
+          "meanComparisons": 17554.133333333335,
+          "meanRetained": 60.95185185185185,
+          "conflicts": 17342,
+          "stale": 28066,
+          "missing": 3875
+        },
+        {
+          "regime": "contradictory",
+          "policy": "context-tagged",
+          "accuracy": 0.5664223251028807,
+          "coverage": 0.909104938271605,
+          "conditionalAccuracy": 0.6230549425677587,
+          "returnAccuracy": 0.6527520576131687,
+          "meanComparisons": 8193.6,
+          "meanRetained": 55.45,
+          "conflicts": 0,
+          "stale": 0,
+          "missing": 3875
+        }
+      ]
+    },
+    "stderr": ""
+  }
+]

@@ -31,7 +31,11 @@ export function openJournal(path,key,{expectedHead,repairTail=false}={}){
 }
 export function initJournal(path,key,seed,mode){
  if(!Number.isInteger(seed)||seed<1||seed>0xffffffff||!['cold','memory','peer','adaptive'].includes(mode))throw Error('configuration');
- const record={kind:'header',version:2,seed,mode},line=seal(JSON.stringify({seq:0,prev:null,record}),key);
+ return createJournal(path,key,{kind:'header',version:2,seed,mode});
+}
+// Shared authenticated storage only; each caller must validate its own protocol.
+export function createJournal(path,key,record){
+ const line=seal(JSON.stringify({seq:0,prev:null,record}),key);
  const fd=openSync(path,'wx',0o600);try{writeFileSync(fd,line+'\n','utf8');fsyncSync(fd);}finally{closeSync(fd);}
  syncDir(path);return openJournal(path,key);
 }

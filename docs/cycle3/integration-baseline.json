@@ -1,0 +1,77 @@
+[
+  {
+    "command": [
+      "node",
+      "experiments/phi031-altermath-test.mjs",
+      "/workspace/scratch/5bd88ef05d62/pinned-genesis/experiments/phi030-memory.mjs",
+      "/workspace/scratch/5bd88ef05d62/Altermath/src/causal-belt.mjs"
+    ],
+    "exit_code": 0,
+    "seconds": 0.649,
+    "stdout": "{\n  \"result\": {\n    \"status\": \"passed\",\n    \"checks\": 390,\n    \"cases\": 96,\n    \"ties\": 8,\n    \"empty\": 38,\n    \"events\": 3168,\n    \"fuel\": 3168,\n    \"authority\": \"NONE\"\n  },\n  \"sample\": {\n    \"evidence\": {\n      \"schema\": \"phi031-memory-v1\",\n      \"epoch\": 17,\n      \"query\": {\n        \"context\": 0,\n        \"x\": 4,\n        \"y\": 5,\n        \"tag\": 0\n      },\n      \"minimum\": 0,\n      \"eligible\": 14,\n      \"nearest\": 1,\n      \"partitions\": [\n        {\n          \"name\": \"recent\",\n          \"ids\": [\n            258\n          ],\n          \"votes\": [\n            0,\n            1,\n            0\n          ]\n        },\n        {\n          \"name\": \"middle\",\n          \"ids\": [],\n          \"votes\": [\n            0,\n            0,\n            0\n          ]\n        },\n        {\n          \"name\": \"ancestral\",\n          \"ids\": [],\n          \"votes\": [\n            0,\n            0,\n            0\n          ]\n        }\n      ]\n    },\n    \"votes\": [\n      0,\n      1,\n      0\n    ],\n    \"prediction\": 1,\n    \"heads\": [\n      \"dc41339f49a7cd9783b8b9c47e9c2437e24af0255b8d895da864f20b1530d23c\",\n      \"b3acb881a385cea9b2413ea2b0aa6d5768ba1032208eaf986688dbe30d362a19\",\n      \"dc41339f49a7cd9783b8b9c47e9c2437e24af0255b8d895da864f20b1530d23c\"\n    ]\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/workspace/scratch/5bd88ef05d62/pinned-genesis/experiments/phi032-export.mjs",
+      "/workspace/scratch/5bd88ef05d62/Altermath/src/causal-belt.mjs"
+    ],
+    "exit_code": 0,
+    "seconds": 0.142,
+    "stdout": "See phi034-packets.json",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/workspace/scratch/5bd88ef05d62/.venv-genesis/bin/python",
+      "experiments/phi032_agentora_test.py",
+      "/workspace/scratch/5bd88ef05d62/evidence/phi034-packets.json"
+    ],
+    "exit_code": 0,
+    "seconds": 0.972,
+    "stdout": "{\"status\": \"passed\", \"checks\": 132, \"plans\": 12, \"subgoals\": 48, \"handoffs\": 36, \"executionPerformed\": false}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/workspace/scratch/5bd88ef05d62/.venv-genesis/bin/python",
+      "experiments/phi033_phios_test.py",
+      "/workspace/scratch/5bd88ef05d62/evidence/phi034-packets.json",
+      "/workspace/scratch/5bd88ef05d62/pinned-genesis",
+      "/workspace/scratch/5bd88ef05d62/Agentora",
+      "/workspace/scratch/5bd88ef05d62/Altermath",
+      "/workspace/scratch/5bd88ef05d62/pinned-phios"
+    ],
+    "exit_code": 0,
+    "seconds": 1.241,
+    "stdout": "{\"status\": \"passed\", \"checks\": 158, \"reviews\": 12, \"accepted_descriptive_transitions\": 36, \"held_execution_transitions\": 12, \"authority\": \"NONE\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/workspace/scratch/5bd88ef05d62/.venv-genesis/bin/python",
+      "experiments/phi034_batch.py",
+      "/workspace/scratch/5bd88ef05d62/evidence/phi034-packets.json",
+      "/workspace/scratch/5bd88ef05d62/pinned-genesis",
+      "/workspace/scratch/5bd88ef05d62/Agentora",
+      "/workspace/scratch/5bd88ef05d62/Altermath",
+      "/workspace/scratch/5bd88ef05d62/pinned-phios"
+    ],
+    "exit_code": 0,
+    "seconds": 1.161,
+    "stdout": "See phi034-batch.json",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "experiments/phi034-integration-test.mjs",
+      "/workspace/scratch/5bd88ef05d62/evidence/phi034-batch.json"
+    ],
+    "exit_code": 0,
+    "seconds": 0.156,
+    "stdout": "{\"status\":\"passed\",\"checks\":9,\"reviews\":12,\"association\":{\"schema\":\"phi034-association-v1\",\"identity\":\"ff332f68b9e2d26867cae52bedbd4d8d8248c3bb981cb2be9580b6ab53dac39d\",\"batchHash\":\"a5fa4b41c0e6be06585b8560ae3ef4283397e91a115c15d8ae51bbb049c876c9\",\"journalHead\":\"896d4d9801e53129f6858195faf9dee11d5c4c33f3b1e6a04f7e3c7bb891275e\",\"journalCount\":3,\"totals\":{\"reserved\":16000,\"completed\":0,\"uncertain\":0,\"unused\":16000,\"open\":0},\"authority\":\"NONE\",\"release\":\"BLOCKED\"},\"release\":\"BLOCKED\",\"authority\":\"NONE\",\"blockers\":[\"independent-key-custody\",\"protected-monotonic-witness\",\"runtime-attestation\",\"cross-repo-work-accounting\",\"live-enforcement\",\"independent-evaluation\"]}\n",
+    "stderr": ""
+  }
+]

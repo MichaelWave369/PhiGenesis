@@ -1,0 +1,11 @@
+{
+  "schema": "PhiGenesis.CycleIII.v1",
+  "authority": "NONE",
+  "python": "/absolute/path/to/venv/bin/python",
+  "roots": {
+    "PhiGenesis": "/absolute/path/to/dependencies/genesis",
+    "Agentora": "/absolute/path/to/dependencies/agentora",
+    "Altermath": "/absolute/path/to/dependencies/altermath",
+    "PhiOS": "/absolute/path/to/dependencies/phios"
+  }
+}

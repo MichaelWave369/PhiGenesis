@@ -1,0 +1,12 @@
+# Complete direct and transitive Python set for the audited offline bridge.
+# Install explicitly during setup; runtime never installs packages.
+sqlmodel==0.0.22
+SQLAlchemy==2.0.58
+pydantic==2.13.4
+pydantic-core==2.46.4
+pydantic-settings==2.6.0
+python-dotenv==1.2.2
+annotated-types==0.8.0
+typing-extensions==4.16.0
+typing-inspection==0.4.3
+greenlet==3.5.5
