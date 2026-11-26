@@ -1,0 +1,66 @@
+name: Cycle III accounted local research runtime
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  cycle3:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/PhiGenesis
+          ref: 22114dc95ee56b49cd23a5eeff1b8a0a3d1d972e
+          path: dependencies/genesis
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/Agentora
+          ref: 49166bb5365975d68df744678f91a837b0da48f2
+          path: dependencies/agentora
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/Altermath
+          ref: 99a40f6f8e6f4ded656dd3655778dfffa72a3754
+          path: dependencies/altermath
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: MichaelWave369/PhiOS
+          ref: da87f8fe7d26036a61a97aca6eebc2afc2a747c3
+          path: dependencies/phios
+          persist-credentials: false
+      - name: Explicit dependency setup
+        run: |
+          python -m venv "$RUNNER_TEMP/cycle3-venv"
+          "$RUNNER_TEMP/cycle3-venv/bin/python" -m pip install -r runtime/cycle3/requirements.txt
+          node --input-type=module -e '
+            import fs from "node:fs";
+            import path from "node:path";
+            const base=process.cwd(), dep=name=>path.join(base,"dependencies",name);
+            fs.writeFileSync(process.env.RUNNER_TEMP+"/cycle3-config.json",JSON.stringify({
+              schema:"PhiGenesis.CycleIII.v1",authority:"NONE",
+              python:process.env.RUNNER_TEMP+"/cycle3-venv/bin/python",
+              roots:{PhiGenesis:dep("genesis"),Agentora:dep("agentora"),Altermath:dep("altermath"),PhiOS:dep("phios")}
+            }));'
+      - name: Offline lifecycle and actual interruption tests
+        run: |
+          PHIGENESIS_CYCLE3_CONFIG="$RUNNER_TEMP/cycle3-config.json" node --test tests/cycle3/*.test.mjs
+          node runtime/cli-v10-rc2.mjs test
+          node runtime/test-crash-v10-rc2.mjs
+          set +e
+          node runtime/cycle3/cli.mjs gate > "$RUNNER_TEMP/cycle3-gate.json"
+          status=$?
+          set -e
+          test "$status" -eq 1
+          node --input-type=module -e 'import fs from "node:fs"; import assert from "node:assert/strict"; const gate=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+"/cycle3-gate.json")); assert.equal(gate.release,"BLOCKED"); assert.equal(gate.authority,"NONE");'

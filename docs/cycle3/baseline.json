@@ -1,0 +1,216 @@
+[
+  {
+    "command": [
+      "node",
+      "experiments/phi017-bounded-adaptation.mjs",
+      "test"
+    ],
+    "exit_code": 0,
+    "seconds": 0.231,
+    "stdout": "{\n  \"status\": \"passed\",\n  \"checks\": 334\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "experiments/phi018-adaptive-resilience.mjs",
+      "test"
+    ],
+    "exit_code": 0,
+    "seconds": 0.72,
+    "stdout": "{\n  \"status\": \"passed\",\n  \"checks\": 8342\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "experiments/phi019-ancestral-recall.mjs",
+      "test"
+    ],
+    "exit_code": 0,
+    "seconds": 1.022,
+    "stdout": "{\n  \"status\": \"passed\",\n  \"checks\": 12443\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "experiments/phi020-relational-evolution.mjs",
+      "test"
+    ],
+    "exit_code": 0,
+    "seconds": 0.882,
+    "stdout": "{\n  \"status\": \"passed\",\n  \"checks\": 1050\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "experiments/phi021-collaborative-evolution.mjs",
+      "test"
+    ],
+    "exit_code": 0,
+    "seconds": 0.188,
+    "stdout": "{\n  \"status\": \"passed\",\n  \"checks\": 889\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "experiments/phi022-governance-test.mjs"
+    ],
+    "exit_code": 0,
+    "seconds": 0.206,
+    "stdout": "{\"status\":\"passed\",\"scope\":\"local governance integration\",\"metrics\":{\"protocol\":\"phi022-eval-v1\",\"cost\":972,\"reference\":[7,9,7],\"candidate\":[9,9,9]},\"attempts\":3,\"production\":[4,4,4]}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "experiments/phi023-continuity-test.mjs"
+    ],
+    "exit_code": 0,
+    "seconds": 3.105,
+    "stdout": "{\"status\":\"passed\",\"checks\":53,\"attempts\":4,\"charged\":5832,\"shadow\":[8,4,8],\"production\":[4,4,4],\"rollbackLimitDemonstrated\":true}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "experiments/phi024-integrity-test.mjs"
+    ],
+    "exit_code": 0,
+    "seconds": 2.307,
+    "stdout": "{\"status\":\"passed\",\"checks\":42,\"sequence\":5,\"charged\":2916,\"shadow\":[8,4,4],\"production\":[4,4,4],\"witnessSuffixRollbackLimit\":true}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "experiments/phi025-integration-test.mjs"
+    ],
+    "exit_code": 0,
+    "seconds": 2.99,
+    "stdout": "{\"status\":\"passed\",\"checks\":37,\"pureChecks\":71,\"advisoryComparisons\":25920,\"reservedEvaluationComparisons\":2916,\"shadow\":[8,0,8],\"production\":[4,4,4],\"driftGateMismatch\":true}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "experiments/phi026-context-test.mjs"
+    ],
+    "exit_code": 0,
+    "seconds": 0.49,
+    "stdout": "{\"status\":\"passed\",\"checks\":26,\"metrics\":[{\"session\":\"59338c6e-25a0-4381-92b4-52a2b5e9dc91\",\"proposal\":\"c674aa1caafc9b0e92383953721474335c7374cdd7a6b43adf09bd0e86edcb1c\",\"context\":\"a954c0b26ca03166635e64f76c0770c06fce71dcbe7a03b4acb5234199edb910\",\"commitment\":\"ae5422574d324a01a5157c1a39ba452dd0ff27971d3eb7577f4a1ed75a9cca13\",\"protocol\":\"phi026-eval-v1\",\"cost\":2592,\"baseline\":[10,11,11],\"incumbent\":[10,11,11],\"candidate\":[12,12,12]},{\"session\":\"59338c6e-25a0-4381-92b4-52a2b5e9dc91\",\"proposal\":\"7e79d1511b732336004b2753331bdbc5ba8649134677504edffbf0a3f85803b4\",\"context\":\"f06c32f8450f89e3fe2575faac77e8d00d7dfe87176bb58ba5173cbf29d8edfd\",\"commitment\":\"b0101f72512c8771086b5dafadb1e4f300b6eda5551219fa44a433daf06ff7bc\",\"protocol\":\"phi026-eval-v1\",\"cost\":2592,\"baseline\":[12,12,9],\"incumbent\":[5,5,5],\"candidate\":[12,12,12]}],\"shadow\":[0,8,0],\"production\":[4,4,4],\"charged\":5184}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "experiments/phi027-provenance-test.mjs"
+    ],
+    "exit_code": 0,
+    "seconds": 0.314,
+    "stdout": "{\"status\":\"passed\",\"checks\":40,\"planningComparisons\":34560,\"reservedEvaluationComparisons\":5184,\"discoveries\":[{\"id\":1,\"hash\":\"935d8f13db0484e91e1f4f8237860cf3c9687864c8e777f1f46a362b734fece2\",\"context\":\"bb917ad62a9aad389e8e95ab6652f50c373b18f8f7441defc1b7263cf5ae39e3\",\"reportHash\":\"6729be9c8a0e4ad0c4ec480fd685281b515298c8e5176757d804a6d6af132485\",\"targetCost\":7776,\"sourceCost\":4320,\"outcome\":\"submitted\"},{\"id\":2,\"hash\":\"f14cef93793999a892ce4976e876e81509fe0072ea0f04014063bf8105ba07f6\",\"context\":\"4bd44fb4b46cc9c38a0831e7b4535a59dc80a173db1a542574a4d9d347aea514\",\"reportHash\":\"13e85b223d9166c981dc4e0ea6180b7b04523140e902e049b84bb6c5d2c79fc8\",\"targetCost\":9504,\"sourceCost\":4320,\"outcome\":\"submitted\"},{\"id\":3,\"hash\":\"281e4500ab3a85d68248a0871784f3c85abbf76be7837f79f4887cadfbe50c15\",\"context\":\"4bd44fb4b46cc9c38a0831e7b4535a59dc80a173db1a542574a4d9d347aea514\",\"reportHash\":\"a76912866f613714cfc8c1415dcaad8ead2b7577e6bec8d5ab56df30bfc8d65d\",\"targetCost\":8640,\"sourceCost\":0,\"outcome\":\"no-candidate\"}],\"lineage\":[{\"attempt\":1,\"discovery\":\"935d8f13db0484e91e1f4f8237860cf3c9687864c8e777f1f46a362b734fece2\",\"proposal\":\"c2fd0b9081db9e282dd6440705fda899cb4ce7514cbde4fc3b92b1ff37dd9c3d\",\"context\":\"bb917ad62a9aad389e8e95ab6652f50c373b18f8f7441defc1b7263cf5ae39e3\",\"reportHash\":\"6729be9c8a0e4ad0c4ec480fd685281b515298c8e5176757d804a6d6af132485\",\"receipt\":\"37ae3a8c1d079e1b167f5cf3ba3598a2a7eb4bc3a56d0de2c04b3b436bc249b2\",\"decision\":\"dbaefbce3080e9f209f63eb6d6b60613a009dea49c2adfaf5295b86f8f0408fb\",\"node\":1,\"outcome\":\"approve\"},{\"attempt\":2,\"discovery\":\"f14cef93793999a892ce4976e876e81509fe0072ea0f04014063bf8105ba07f6\",\"proposal\":\"2e86d5da5c36ecce3e2fdbfa1e63a98936875014cdc4dff130eaaa823690d070\",\"context\":\"4bd44fb4b46cc9c38a0831e7b4535a59dc80a173db1a542574a4d9d347aea514\",\"reportHash\":\"13e85b223d9166c981dc4e0ea6180b7b04523140e902e049b84bb6c5d2c79fc8\",\"receipt\":\"f82f2d5d29e10786f1864f4cc3cdb760a13f53424da199e57645fb3235070d2a\",\"decision\":\"66894056b716e3e24f557c00c520d78801fff29ebad1a315c5ab7636aa57f88d\",\"node\":2,\"outcome\":\"approve\"}],\"production\":[4,4,4]}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "experiments/phi028-accounting-test.mjs"
+    ],
+    "exit_code": 0,
+    "seconds": 1.703,
+    "stdout": "{\"status\":\"passed\",\"checks\":19,\"totals\":{\"reserved\":122784,\"completed\":36288,\"uncertain\":43232,\"unused\":43264,\"open\":0},\"work\":[{\"type\":\"planning\",\"id\":1,\"hash\":\"50b40f100cfc8cb4b8607e2a42ad532605b5bd0b67a002ef3ed24c310086b8e9\",\"seed\":1,\"policy\":\"hybrid\",\"reserved\":20320,\"status\":\"unused\",\"actual\":0},{\"type\":\"planning\",\"id\":2,\"hash\":\"690b70c90e42540831710ddde31e064d5ec69312d25fa1c9608c5583459aa923\",\"seed\":1,\"policy\":\"hybrid\",\"reserved\":20320,\"status\":\"uncertain\",\"actual\":0},{\"type\":\"planning\",\"id\":3,\"hash\":\"090fa09c284c059e47d8c7555eeefadbeed1cb7ad79d4a7896b47b2e79715cfd\",\"seed\":1,\"policy\":\"hybrid\",\"reserved\":20320,\"status\":\"uncertain\",\"actual\":0},{\"type\":\"planning\",\"id\":4,\"hash\":\"1683c0936086c6fca217e67cefb918d7f9ac3354e0edaa450beb7beba45ef760\",\"seed\":1,\"policy\":\"hybrid\",\"reserved\":20320,\"status\":\"completed\",\"actual\":12096,\"result\":\"e096e8f7390d1b75cd96b449253bd8c9ff64d7e7bb4c0d2a571b8f5a3c31ea45\"},{\"type\":\"evaluation\",\"id\":1,\"hash\":\"6d81e67c1297ef3f397d99a1e5ca0fb33344d54e2e415af8a1ee9b7c45b77571\",\"reserved\":2592,\"status\":\"completed\",\"actual\":2592,\"result\":\"a9058170f517d8c50bb2c33e91a279b30beda4597a374102d56c578fdb0e0164\"},{\"type\":\"planning\",\"id\":5,\"hash\":\"3be36482f1c3f5c674a2eb07a1ade0628038e34507e557d6905c2c531b2a92dd\",\"seed\":1,\"policy\":\"local\",\"reserved\":16000,\"status\":\"completed\",\"actual\":7776,\"result\":\"53ef335f6d3b6f1d9b7bc2e58025faf931d03c93e2ca0312100acde2d7a1e7f5\"},{\"type\":\"planning\",\"id\":6,\"hash\":\"c5a7c837b5787b854c6466f37acfba42edd16f361b6f30c70b85c1179ab78874\",\"seed\":1,\"policy\":\"hybrid\",\"reserved\":20320,\"status\":\"completed\",\"actual\":13824,\"result\":\"0f05d6a7eefa581b4b1830824ea6076349f77db2e186017bd441448f927ca387\"},{\"type\":\"evaluation\",\"id\":2,\"hash\":\"eac44bcdecc62f097274a1402d5683747506fb1106dcc6284e0387780ff3bebc\",\"reserved\":2592,\"status\":\"uncertain\",\"actual\":0}],\"production\":[4,4,4]}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "experiments/phi029-quorum-test.mjs"
+    ],
+    "exit_code": 0,
+    "seconds": 3.861,
+    "stdout": "{\"status\":\"passed\",\"checks\":61,\"witnesses\":3,\"threshold\":2,\"coordinatedRollbackLimit\":true,\"head\":\"fd0d5b5e027a351b40ffe508f2408c12c72bc766c5604dbd7af75e46891c0566\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "experiments/phi030-restart-test.mjs"
+    ],
+    "exit_code": 0,
+    "seconds": 0.643,
+    "stdout": "{\"status\":\"passed\",\"restart\":true,\"epochs\":24,\"authority\":\"NONE\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "experiments/phi025-cli.mjs",
+      "test"
+    ],
+    "exit_code": 0,
+    "seconds": 0.108,
+    "stdout": "{\"checks\":71,\"status\":\"passed\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "experiments/phi030-cli.mjs",
+      "test"
+    ],
+    "exit_code": 0,
+    "seconds": 1.984,
+    "stdout": "{\"checks\":4946,\"status\":\"passed\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "runtime/cli-v10-rc1.mjs",
+      "test"
+    ],
+    "exit_code": 0,
+    "seconds": 0.759,
+    "stdout": "{\n  \"passed\": [\n    \"all supported rules certified\",\n    \"sparse witnesses rejected\",\n    \"internal budget accounted\",\n    \"external failure accounted\",\n    \"contradictions rejected\",\n    \"no failed admission\",\n    \"failed event replay\",\n    \"coordinate changes repaired\",\n    \"peer packet rejection\",\n    \"session replay\",\n    \"zero budget recorded without work\",\n    \"derived record mutation rejected\"\n  ],\n  \"authenticationAssertions\": 6\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "runtime/cli-v10-rc2.mjs",
+      "test"
+    ],
+    "exit_code": 0,
+    "seconds": 0.082,
+    "stdout": "{\n  \"passed\": [\n    \"complete cold and peer transactions replay\",\n    \"all handled budget and error operations charged\",\n    \"invalid outcome recorded without promotion\",\n    \"unfinished reservation conserved\",\n    \"completed abandoned work not promoted\",\n    \"commit mismatches rejected\",\n    \"unfinished operations cannot commit\"\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "runtime/test-crash-v10-rc2.mjs"
+    ],
+    "exit_code": 0,
+    "seconds": 1.227,
+    "stdout": "{\n  \"crashCases\": [\n    {\n      \"phase\": \"after-begin\",\n      \"kind\": null,\n      \"method\": \"cold\",\n      \"status\": \"crash-abandoned\",\n      \"attempted\": 0,\n      \"completed\": 0,\n      \"uncertain\": 0,\n      \"providerCalls\": 0\n    },\n    {\n      \"phase\": \"after-reserve\",\n      \"kind\": \"observation\",\n      \"method\": \"cold\",\n      \"status\": \"crash-abandoned\",\n      \"attempted\": 1,\n      \"completed\": 0,\n      \"uncertain\": 1,\n      \"providerCalls\": 0\n    },\n    {\n      \"phase\": \"after-invoke\",\n      \"kind\": \"observation\",\n      \"method\": \"cold\",\n      \"status\": \"crash-abandoned\",\n      \"attempted\": 1,\n      \"completed\": 0,\n      \"uncertain\": 1,\n      \"providerCalls\": 1\n    },\n    {\n      \"phase\": \"after-result\",\n      \"kind\": \"observation\",\n      \"method\": \"cold\",\n      \"status\": \"crash-abandoned\",\n      \"attempted\": 1,\n      \"completed\": 1,\n      \"uncertain\": 0,\n      \"providerCalls\": 1\n    },\n    {\n      \"phase\": \"before-commit\",\n      \"kind\": null,\n      \"method\": \"cold\",\n      \"status\": \"crash-abandoned\",\n      \"attempted\": 55,\n      \"completed\": 55,\n      \"uncertain\": 0,\n      \"providerCalls\": 55\n    },\n    {\n      \"phase\": \"after-commit\",\n      \"kind\": null,\n      \"method\": \"cold\",\n      \"status\": \"accepted\",\n      \"attempted\": 55,\n      \"completed\": 55,\n      \"uncertain\": 0,\n      \"providerCalls\": 55\n    },\n    {\n      \"phase\": \"after-reserve\",\n      \"kind\": \"calibration\",\n      \"method\": \"peer\",\n      \"status\": \"crash-abandoned\",\n      \"attempted\": 64,\n      \"completed\": 54,\n      \"uncertain\": 10,\n      \"providerCalls\": 54\n    },\n    {\n      \"phase\": \"after-invoke\",\n      \"kind\": \"calibration\",\n      \"method\": \"peer\",\n      \"status\": \"crash-abandoned\",\n      \"attempted\": 64,\n      \"completed\": 54,\n      \"uncertain\": 10,\n      \"providerCalls\": 55\n    },\n    {\n      \"phase\": \"after-result\",\n      \"kind\": \"calibration\",\n      \"method\": \"peer\",\n      \"status\": \"crash-abandoned\",\n      \"attempted\": 64,\n      \"completed\": 64,\n      \"uncertain\": 0,\n      \"providerCalls\": 55\n    },\n    {\n      \"phase\": \"after-reserve\",\n      \"kind\": \"packet\",\n      \"method\": \"peer\",\n      \"status\": \"crash-abandoned\",\n      \"attempted\": 64,\n      \"completed\": 64,\n      \"uncertain\": 0,\n      \"providerCalls\": 55\n    },\n    {\n      \"phase\": \"after-invoke\",\n      \"kind\": \"packet\",\n      \"method\": \"peer\",\n      \"status\": \"crash-abandoned\",\n      \"attempted\": 64,\n      \"completed\": 64,\n      \"uncertain\": 0,\n      \"providerCalls\": 56\n    },\n    {\n      \"phase\": \"after-result\",\n      \"kind\": \"packet\",\n      \"method\": \"peer\",\n      \"status\": \"crash-abandoned\",\n      \"attempted\": 64,\n      \"completed\": 64,\n      \"uncertain\": 0,\n      \"providerCalls\": 56\n    }\n  ],\n  \"additionalChecks\": 5\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit_code": 0,
+    "seconds": 1.762,
+    "stdout": "",
+    "stderr": "test_bad_budget (test_communication.Communication.test_bad_budget) ... ok\ntest_reproducibility (test_communication.Communication.test_reproducibility) ... ok\ntest_shape_and_bounds (test_communication.Communication.test_shape_and_bounds) ... ok\ntest_transfer (test_communication.Communication.test_transfer) ... ok\ntest_budget (test_constructive.Constructive.test_budget) ... ok\ntest_independent_oracle (test_constructive.Constructive.test_independent_oracle) ... ok\ntest_library (test_constructive.Constructive.test_library) ... ok\ntest_partitions (test_constructive.Constructive.test_partitions) ... ok\ntest_recovery_and_rejection (test_constructive.Constructive.test_recovery_and_rejection) ... ok\ntest_repeatability (test_constructive.Constructive.test_repeatability) ... ok\ntest_composition (test_executable.Relations.test_composition) ... ok\ntest_held_out_transfer (test_executable.Relations.test_held_out_transfer) ... ok\ntest_invalid_budget (test_executable.Relations.test_invalid_budget) ... ok\ntest_inverse (test_executable.Relations.test_inverse) ... ok\ntest_reject_non_affine (test_executable.Relations.test_reject_non_affine) ... ok\ntest_repeatability (test_executable.Relations.test_repeatability) ... ok\ntest_translation (test_executable.Relations.test_translation) ... ok\ntest_authorized_transfer (test_phi_genesis_010.TestNonSovereignAgency.test_authorized_transfer) ... ok\ntest_invalid_requests_and_funds (test_phi_genesis_010.TestNonSovereignAgency.test_invalid_requests_and_funds) ... ok\ntest_matched_cooperative_and_adversarial_controls (test_phi_genesis_010.TestNonSovereignAgency.test_matched_cooperative_and_adversarial_controls) ... ok\ntest_no_self_grant (test_phi_genesis_010.TestNonSovereignAgency.test_no_self_grant) ... ok\ntest_replay_rejects_inconsistent_trace (test_phi_genesis_010.TestNonSovereignAgency.test_replay_rejects_inconsistent_trace) ... ok\ntest_unauthorized_transfer (test_phi_genesis_010.TestNonSovereignAgency.test_unauthorized_transfer) ... ok\ntest_invalid_identity_and_policy (test_phi_genesis_011.TestLocalPerception.test_invalid_identity_and_policy) ... ok\ntest_majority (test_phi_genesis_011.TestLocalPerception.test_majority) ... ok\ntest_non_neighbor_changes_cannot_affect_prediction (test_phi_genesis_011.TestLocalPerception.test_non_neighbor_changes_cannot_affect_prediction) ... ok\ntest_report_accounting (test_phi_genesis_011.TestLocalPerception.test_report_accounting) ... ok\ntest_seeded_world (test_phi_genesis_011.TestLocalPerception.test_seeded_world) ... ok\ntest_wraparound_and_matched_first_observation (test_phi_genesis_011.TestLocalPerception.test_wraparound_and_matched_first_observation) ... ok\ntest_budget (test_selection.Selection.test_budget) ... ok\ntest_familiar (test_selection.Selection.test_familiar) ... ok\ntest_novel_rejection (test_selection.Selection.test_novel_rejection) ... ok\ntest_partitions (test_selection.Selection.test_partitions) ... ok\ntest_reproducibility (test_selection.Selection.test_reproducibility) ... ok\ntest_empty (test_symbols.Symbols.test_empty) ... ok\ntest_invalid_budget (test_symbols.Symbols.test_invalid_budget) ... ok\ntest_roundtrip (test_symbols.Symbols.test_roundtrip) ... ok\ntest_seed_reproducibility (test_symbols.Symbols.test_seed_reproducibility) ... ok\n\n----------------------------------------------------------------------\nRan 38 tests in 1.580s\n\nOK\n"
+  }
+]

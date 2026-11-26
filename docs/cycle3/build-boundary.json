@@ -1,0 +1,92 @@
+{
+  "schema": "genesis-cycle3-build-boundary/v1",
+  "controlling_spec": "controlling-mission.md",
+  "controlling_sha256": "7ed718c4c6e2984049163c39c6f32559f50528601dbe2861e8b185ffdfdb0c22",
+  "authorization": "Operation Genesis Ascension: local engineering, tests, scoped experimental draft PRs; no merge, deploy, live workers or production promotion",
+  "candidate": "Cycle III foundation v0.1",
+  "scope": [
+    "Phi035 versioned local session with fixed adapters",
+    "Phi036 scoped logical attempted-work accounting across actual offline bridge",
+    "Phi041 native deny-only permission decision; no execution hook",
+    "Phi043 limited reproducible local demonstration; full roadmap remains open"
+  ],
+  "deferred": [
+    "independent witness administration",
+    "native PhiMemory9 lifecycle integration",
+    "genome design and PocketMesh bridge",
+    "collaborative inference and worker dispatch",
+    "live runtime enforcement qualification",
+    "independent evolutionary crucible",
+    "production release"
+  ],
+  "implementation_deviation": "No roadmap requirement removed. Implementation is a bounded first increment, as expressly permitted by mission section 7. Legacy formats remain unchanged; Cycle III uses a new research namespace over shared RC2 storage.",
+  "repositories": [
+    {
+      "repository": "MichaelWave369/PhiGenesis",
+      "default_branch": "main",
+      "baseline_sha": "bfedf68cbc7649adb13da97a78a61e68bbf3d970",
+      "inspected": true
+    },
+    {
+      "repository": "MichaelWave369/PhiOS",
+      "default_branch": "main",
+      "baseline_sha": "43620d38d6164b3579d61784cdb140462501ff1f",
+      "inspected": true
+    },
+    {
+      "repository": "MichaelWave369/Altermath",
+      "default_branch": "main",
+      "baseline_sha": "99a40f6f8e6f4ded656dd3655778dfffa72a3754",
+      "inspected": true
+    },
+    {
+      "repository": "MichaelWave369/Agentora",
+      "default_branch": "main",
+      "baseline_sha": "49166bb5365975d68df744678f91a837b0da48f2",
+      "inspected": true
+    },
+    {
+      "repository": "MichaelWave369/PhiMemory9",
+      "default_branch": "main",
+      "baseline_sha": "5cba675a3a439023a3ff374c238dd6e4339e3a55",
+      "inspected": true
+    },
+    {
+      "repository": "MichaelWave369/NBGPocketMesh",
+      "default_branch": "main",
+      "baseline_sha": "0687f10970989194d4af554d9b189c7ce8a1ad15",
+      "inspected": true
+    },
+    {
+      "repository": "MichaelWave369/NestedBubbleGear",
+      "default_branch": "main",
+      "baseline_sha": "41cf5be77cdd9958db55ae8de4bab559f30d79e0",
+      "inspected": true
+    },
+    {
+      "repository": "MichaelWave369/PhiBuddy",
+      "default_branch": "main",
+      "baseline_sha": "5832141379174938bdd4d5487c698e228ccb9537",
+      "inspected": true
+    },
+    {
+      "repository": "MichaelWave369/PhiDiscovery",
+      "default_branch": "main",
+      "baseline_sha": "bb51df2fa556e9df1dba5bf14528ae725fc0fbc1",
+      "inspected": true
+    },
+    {
+      "repository": "MichaelWave369/PhiDevelopmentalIntelligenceMesh",
+      "default_branch": "main",
+      "baseline_sha": "a6b92c9fc98f81940da6598adf61f280f70337ae",
+      "inspected": true
+    },
+    {
+      "repository": "MichaelWave369/Codex",
+      "default_branch": "main",
+      "baseline_sha": "c8db325fb881450ccda8a47072e31cb050afe43f",
+      "inspected": true
+    }
+  ],
+  "source_freeze": "PR46 exact head and all 18 milestones inspected/tested before implementation; current PhiOS separately inventoried, integration keeps historical audited pins."
+}
