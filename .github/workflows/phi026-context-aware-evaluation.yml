@@ -1,0 +1,14 @@
+name: Phi026 context-aware evaluation
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  phi026:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node experiments/phi026-context-test.mjs
