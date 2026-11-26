@@ -1,0 +1,19 @@
+name: Cycle III selective attention
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  attention:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          node experiments/phi042-selective-attention.mjs test
+          node experiments/phi042-selective-attention.mjs > /tmp/attention-a.json
+          node experiments/phi042-selective-attention.mjs > /tmp/attention-b.json
+          cmp /tmp/attention-a.json /tmp/attention-b.json
+          node -e 'const r=require("/tmp/attention-a.json");if(r.rows.length!==72||r.release!=="BLOCKED")process.exit(1);console.log(JSON.stringify(r,null,2))'
