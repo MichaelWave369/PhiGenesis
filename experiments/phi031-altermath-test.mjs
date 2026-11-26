@@ -1,0 +1,13 @@
+import {resolve} from 'node:path';
+import {pathToFileURL} from 'node:url';
+import assert from 'node:assert/strict';
+import {test,retrieve} from './phi031-altermath-bridge.mjs';
+const [memoryPath,altermathPath]=process.argv.slice(2);
+if(!memoryPath||!altermathPath)throw Error('usage: node experiments/phi031-altermath-test.mjs MEMORY_MODULE CAUSAL_MODULE');
+const memory=await import(pathToFileURL(resolve(memoryPath)).href),altermath=await import(pathToFileURL(resolve(altermathPath)).href);
+assert.equal(altermath.CAUSAL_VERSION,'Altermath.CausalBelt.R1');
+const env={restore:memory.restore,runCausalScore:altermath.runCausalScore,verifyCausalReceipts:altermath.verifyCausalReceipts};
+const result=test(env,memory.run);
+assert.equal(result.cases,96);
+const sample=retrieve(memory.run(7,'delayed','context-tagged',18),{context:0,x:4,y:5,tag:0},env);
+console.log(JSON.stringify({result,sample:{evidence:sample.evidence,votes:sample.votes,prediction:sample.prediction,heads:sample.runs.map(r=>r.head)}},null,2));
