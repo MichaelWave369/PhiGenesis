@@ -1,0 +1,14 @@
+name: Phi027 computational provenance
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  phi027:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node experiments/phi027-provenance-test.mjs
