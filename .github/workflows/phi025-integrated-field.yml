@@ -1,0 +1,15 @@
+name: Phi025 integrated evolutionary field
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  phi025:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node experiments/phi025-cli.mjs test
+      - run: node experiments/phi025-integration-test.mjs
